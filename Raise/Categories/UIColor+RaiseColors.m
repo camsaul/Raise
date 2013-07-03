@@ -11,11 +11,32 @@
 @implementation UIColor (RaiseColors)
 
 + (UIColor *)raiseLightGrayColor {
-	return [UIColor colorWithHexString:@"e6e6e6"];
+	return [UIColor colorWithHexString:@"e6e7e8"];
 }
 
 + (UIColor *)raiseBackgroundPattern {
 	return [UIColor colorWithPatternImage:[UIImage imageNamed:@"subtle_stripes.png"]];
 }
+
++ (UIColor *)raiseVeryLightBlueColor {
+	return [UIColor colorWithHexString:@"e2effa"];
+}
+
++ (UIColor *)raiseLightBlueColor {
+	return [UIColor colorWithHexString:@"a9c1d9"];
+}
+
++ (UIColor *)raiseDarkBlueColor {
+	return [UIColor colorWithHexString:@"607890"];
+}
+
++ (UIColor *)raiseTransparentWhiteOverlayColor {
+	return [UIColor colorWithWhite:1.0 alpha:0.9];
+}
+
++ (UIColor *)raiseTransparentBlackOverlayColor {
+	return [UIColor colorWithWhite:0.0 alpha:0.7];
+}
+
 
 @end

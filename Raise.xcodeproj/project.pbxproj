@@ -24,8 +24,6 @@
 		7EFCD6F417839B570067C395 /* Raise.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCD6E817839B570067C395 /* Raise.xcdatamodeld */; };
 		7EFCD6F717839B570067C395 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCD6EF17839B570067C395 /* main.m */; };
 		7EFCD6FB17839C160067C395 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCD6FA17839C160067C395 /* RootViewController.m */; };
-		7EFCD70017839C530067C395 /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCD6FD17839C530067C395 /* MenuView.m */; };
-		7EFCD70117839C530067C395 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCD6FF17839C530067C395 /* MenuViewController.m */; };
 		7EFCD7051783AC5F0067C395 /* JobDiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCD7031783AC5F0067C395 /* JobDiscoveryViewController.m */; };
 		7EFCD7061783AC5F0067C395 /* JobDiscoveryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EFCD7041783AC5F0067C395 /* JobDiscoveryViewController.xib */; };
 		7EFCD71A1783B0B20067C395 /* UIColor+RaiseColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCD7191783B0B20067C395 /* UIColor+RaiseColors.m */; };
@@ -52,6 +50,18 @@
 		7EFCD7571783BD270067C395 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EFCD7431783BD270067C395 /* Images.xcassets */; };
 		7EFCD75A1783BD570067C395 /* UIFont+RaiseFonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCD7591783BD570067C395 /* UIFont+RaiseFonts.m */; };
 		7EFCD75B1783BD570067C395 /* UIFont+RaiseFonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCD7591783BD570067C395 /* UIFont+RaiseFonts.m */; };
+		7EFCD76B1783E4A10067C395 /* JobDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCD7691783E4A10067C395 /* JobDetailViewController.m */; };
+		7EFCD7751783E4EF0067C395 /* JobOverviewPivotCompanyPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCD7731783E4EF0067C395 /* JobOverviewPivotCompanyPage.m */; };
+		7EFCD7761783E4EF0067C395 /* JobOverviewPivotCompanyPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EFCD7741783E4EF0067C395 /* JobOverviewPivotCompanyPage.xib */; };
+		7EFCD77A1783EB5E0067C395 /* RaiseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCD7791783EB5E0067C395 /* RaiseButton.m */; };
+		7EFCD77D1783F02A0067C395 /* RaiseHeaderLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCD77C1783F02A0067C395 /* RaiseHeaderLabel.m */; };
+		7EFCD7801783F2080067C395 /* RaiseBodyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCD77F1783F2080067C395 /* RaiseBodyLabel.m */; };
+		7EFCD783178406A00067C395 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EFCD781178406A00067C395 /* menu.png */; };
+		7EFCD784178406A00067C395 /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EFCD782178406A00067C395 /* menu@2x.png */; };
+		7EFCD788178406C20067C395 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCD786178406C20067C395 /* MenuViewController.m */; };
+		7EFCD789178406C20067C395 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EFCD787178406C20067C395 /* MenuViewController.xib */; };
+		7EFCD78C17840A250067C395 /* fake_facebook_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EFCD78A17840A250067C395 /* fake_facebook_background.png */; };
+		7EFCD78D17840A250067C395 /* fake_facebook_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EFCD78B17840A250067C395 /* fake_facebook_background@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,10 +97,6 @@
 		7EFCD6F117839B570067C395 /* Raise-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Raise-Prefix.pch"; sourceTree = "<group>"; };
 		7EFCD6F917839C160067C395 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		7EFCD6FA17839C160067C395 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		7EFCD6FC17839C530067C395 /* MenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuView.h; sourceTree = "<group>"; };
-		7EFCD6FD17839C530067C395 /* MenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuView.m; sourceTree = "<group>"; };
-		7EFCD6FE17839C530067C395 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
-		7EFCD6FF17839C530067C395 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		7EFCD7021783AC5F0067C395 /* JobDiscoveryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobDiscoveryViewController.h; sourceTree = "<group>"; };
 		7EFCD7031783AC5F0067C395 /* JobDiscoveryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobDiscoveryViewController.m; sourceTree = "<group>"; };
 		7EFCD7041783AC5F0067C395 /* JobDiscoveryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobDiscoveryViewController.xib; sourceTree = "<group>"; };
@@ -119,6 +125,25 @@
 		7EFCD7431783BD270067C395 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7EFCD7581783BD570067C395 /* UIFont+RaiseFonts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+RaiseFonts.h"; sourceTree = "<group>"; };
 		7EFCD7591783BD570067C395 /* UIFont+RaiseFonts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+RaiseFonts.m"; sourceTree = "<group>"; };
+		7EFCD7661783D2240067C395 /* RaiseNavigationParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaiseNavigationParams.h; sourceTree = "<group>"; };
+		7EFCD7681783E4A10067C395 /* JobDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobDetailViewController.h; sourceTree = "<group>"; };
+		7EFCD7691783E4A10067C395 /* JobDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobDetailViewController.m; sourceTree = "<group>"; };
+		7EFCD7721783E4EF0067C395 /* JobOverviewPivotCompanyPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobOverviewPivotCompanyPage.h; sourceTree = "<group>"; };
+		7EFCD7731783E4EF0067C395 /* JobOverviewPivotCompanyPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobOverviewPivotCompanyPage.m; sourceTree = "<group>"; };
+		7EFCD7741783E4EF0067C395 /* JobOverviewPivotCompanyPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobOverviewPivotCompanyPage.xib; sourceTree = "<group>"; };
+		7EFCD7781783EB5E0067C395 /* RaiseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaiseButton.h; sourceTree = "<group>"; };
+		7EFCD7791783EB5E0067C395 /* RaiseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RaiseButton.m; sourceTree = "<group>"; };
+		7EFCD77B1783F02A0067C395 /* RaiseHeaderLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaiseHeaderLabel.h; sourceTree = "<group>"; };
+		7EFCD77C1783F02A0067C395 /* RaiseHeaderLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RaiseHeaderLabel.m; sourceTree = "<group>"; };
+		7EFCD77E1783F2080067C395 /* RaiseBodyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaiseBodyLabel.h; sourceTree = "<group>"; };
+		7EFCD77F1783F2080067C395 /* RaiseBodyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RaiseBodyLabel.m; sourceTree = "<group>"; };
+		7EFCD781178406A00067C395 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		7EFCD782178406A00067C395 /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
+		7EFCD785178406C20067C395 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		7EFCD786178406C20067C395 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		7EFCD787178406C20067C395 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		7EFCD78A17840A250067C395 /* fake_facebook_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fake_facebook_background.png; sourceTree = "<group>"; };
+		7EFCD78B17840A250067C395 /* fake_facebook_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fake_facebook_background@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				7EFCD6E817839B570067C395 /* Raise.xcdatamodeld */,
+				7EFCD7661783D2240067C395 /* RaiseNavigationParams.h */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -246,15 +272,16 @@
 		7EFCD6F217839B570067C395 /* Views+ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				7EFCD7771783EB4D0067C395 /* UI */,
+				7EFCD7671783E4A10067C395 /* JobDetailPivot */,
 				7EFCD6F917839C160067C395 /* RootViewController.h */,
 				7EFCD6FA17839C160067C395 /* RootViewController.m */,
-				7EFCD6FC17839C530067C395 /* MenuView.h */,
-				7EFCD6FD17839C530067C395 /* MenuView.m */,
-				7EFCD6FE17839C530067C395 /* MenuViewController.h */,
-				7EFCD6FF17839C530067C395 /* MenuViewController.m */,
 				7EFCD7021783AC5F0067C395 /* JobDiscoveryViewController.h */,
 				7EFCD7031783AC5F0067C395 /* JobDiscoveryViewController.m */,
 				7EFCD7041783AC5F0067C395 /* JobDiscoveryViewController.xib */,
+				7EFCD785178406C20067C395 /* MenuViewController.h */,
+				7EFCD786178406C20067C395 /* MenuViewController.m */,
+				7EFCD787178406C20067C395 /* MenuViewController.xib */,
 			);
 			path = "Views+ViewControllers";
 			sourceTree = "<group>";
@@ -338,12 +365,41 @@
 		7EFCD73E1783BD270067C395 /* Mockups */ = {
 			isa = PBXGroup;
 			children = (
+				7EFCD78A17840A250067C395 /* fake_facebook_background.png */,
+				7EFCD78B17840A250067C395 /* fake_facebook_background@2x.png */,
+				7EFCD781178406A00067C395 /* menu.png */,
+				7EFCD782178406A00067C395 /* menu@2x.png */,
 				7EFCD73F1783BD270067C395 /* discovery.png */,
 				7EFCD7401783BD270067C395 /* discovery@2x.png */,
 				7EFCD7411783BD270067C395 /* login.png */,
 				7EFCD7421783BD270067C395 /* login@2x.png */,
 			);
 			path = Mockups;
+			sourceTree = "<group>";
+		};
+		7EFCD7671783E4A10067C395 /* JobDetailPivot */ = {
+			isa = PBXGroup;
+			children = (
+				7EFCD7681783E4A10067C395 /* JobDetailViewController.h */,
+				7EFCD7691783E4A10067C395 /* JobDetailViewController.m */,
+				7EFCD7721783E4EF0067C395 /* JobOverviewPivotCompanyPage.h */,
+				7EFCD7731783E4EF0067C395 /* JobOverviewPivotCompanyPage.m */,
+				7EFCD7741783E4EF0067C395 /* JobOverviewPivotCompanyPage.xib */,
+			);
+			path = JobDetailPivot;
+			sourceTree = "<group>";
+		};
+		7EFCD7771783EB4D0067C395 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				7EFCD7781783EB5E0067C395 /* RaiseButton.h */,
+				7EFCD7791783EB5E0067C395 /* RaiseButton.m */,
+				7EFCD77B1783F02A0067C395 /* RaiseHeaderLabel.h */,
+				7EFCD77C1783F02A0067C395 /* RaiseHeaderLabel.m */,
+				7EFCD77E1783F2080067C395 /* RaiseBodyLabel.h */,
+				7EFCD77F1783F2080067C395 /* RaiseBodyLabel.m */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -425,15 +481,21 @@
 			files = (
 				7EFCD7501783BD270067C395 /* button_side_menu@2x.png in Resources */,
 				7EFCD74B1783BD270067C395 /* Cabin-SemiBold.otf in Resources */,
+				7EFCD789178406C20067C395 /* MenuViewController.xib in Resources */,
+				7EFCD783178406A00067C395 /* menu.png in Resources */,
 				7EFCD7461783BD270067C395 /* Cabin-BoldItalic.otf in Resources */,
 				7EFCD7541783BD270067C395 /* discovery@2x.png in Resources */,
+				7EFCD78C17840A250067C395 /* fake_facebook_background.png in Resources */,
+				7EFCD7761783E4EF0067C395 /* JobOverviewPivotCompanyPage.xib in Resources */,
 				7EFCD7451783BD270067C395 /* Cabin-Bold.otf in Resources */,
 				7EFCD7481783BD270067C395 /* Cabin-Medium.otf in Resources */,
 				7EFCD7561783BD270067C395 /* login@2x.png in Resources */,
 				7EFCD7551783BD270067C395 /* login.png in Resources */,
 				7EFCD7531783BD270067C395 /* discovery.png in Resources */,
+				7EFCD78D17840A250067C395 /* fake_facebook_background@2x.png in Resources */,
 				7EFCD7571783BD270067C395 /* Images.xcassets in Resources */,
 				7EFCD74C1783BD270067C395 /* Cabin-SemiBoldItalic.otf in Resources */,
+				7EFCD784178406A00067C395 /* menu@2x.png in Resources */,
 				7EFCD7491783BD270067C395 /* Cabin-MediumItalic.otf in Resources */,
 				7EFCD74E1783BD270067C395 /* subtle_stripes_@2X.png in Resources */,
 				7EFCD7511783BD270067C395 /* logo_navbar.png in Resources */,
@@ -493,15 +555,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EFCD77A1783EB5E0067C395 /* RaiseButton.m in Sources */,
+				7EFCD7801783F2080067C395 /* RaiseBodyLabel.m in Sources */,
+				7EFCD7751783E4EF0067C395 /* JobOverviewPivotCompanyPage.m in Sources */,
 				7EFCD7051783AC5F0067C395 /* JobDiscoveryViewController.m in Sources */,
+				7EFCD788178406C20067C395 /* MenuViewController.m in Sources */,
 				7EFCD6F417839B570067C395 /* Raise.xcdatamodeld in Sources */,
-				7EFCD70117839C530067C395 /* MenuViewController.m in Sources */,
 				7EFCD6F717839B570067C395 /* main.m in Sources */,
 				7EFCD6FB17839C160067C395 /* RootViewController.m in Sources */,
+				7EFCD77D1783F02A0067C395 /* RaiseHeaderLabel.m in Sources */,
 				7EFCD6F317839B570067C395 /* AppDelegate.m in Sources */,
+				7EFCD76B1783E4A10067C395 /* JobDetailViewController.m in Sources */,
 				7EFCD71A1783B0B20067C395 /* UIColor+RaiseColors.m in Sources */,
 				7EFCD75A1783BD570067C395 /* UIFont+RaiseFonts.m in Sources */,
-				7EFCD70017839C530067C395 /* MenuView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

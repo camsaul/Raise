@@ -21,4 +21,6 @@
 	#import "AppDelegate.h"
 	#define APP_DELEGATE ((AppDelegate *)[[UIApplication sharedApplication] delegate])
 	#define ROOT_VIEW_CONTROLLER APP_DELEGATE.rootViewController
+
+	#import "RaiseNavigationParams.h"
 #endif

@@ -38,10 +38,12 @@
 	self.navigationItem.leftBarButtonItem = menuButtonItem;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)notInterestedButtonPressed:(id)sender {
+	TODO_ALERT(@"show the next job");
+}
+
+- (IBAction)tellMeMoreButtonPressed:(id)sender {
+	[NavigationService navigateTo:@"JobDetailViewController" params:@{ParamJobID: @(100)}];
 }
 
 @end
