@@ -16,4 +16,5 @@
 	#import <CoreData/CoreData.h>
 
 	#import "BirdKit.h"
+	#import "Categories-Prefix.h"
 #endif

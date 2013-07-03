@@ -7,21 +7,23 @@
 //
 
 #import "AppDelegate.h"
+#import "RootViewController.h"
+
+@interface AppDelegate ()
+PROP_STRONG NSManagedObjectContext *managedObjectContext;
+PROP_STRONG NSManagedObjectModel *managedObjectModel;
+PROP_STRONG NSPersistentStoreCoordinator *persistentStoreCoordinator;
+
+PROP_STRONG RootViewController *rootViewController;
+@end
 
 @implementation AppDelegate
 
-@synthesize managedObjectContext = _managedObjectContext;
-@synthesize managedObjectModel = _managedObjectModel;
-@synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-	UIViewController *vc = [[UIViewController alloc] init];
-	vc.view = [[UIView alloc] init];
-	vc.view.backgroundColor = [UIColor colorWithHexString:@"#FF0000"];
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+	self.rootViewController = [[RootViewController alloc] init];
 	
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-	self.window.rootViewController = vc;
+	self.window.rootViewController = self.rootViewController;
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
