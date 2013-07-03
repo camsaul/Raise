@@ -11,6 +11,7 @@
 @interface UIColor (RaiseColors)
 
 + (UIColor *)raiseLightGrayColor;
++ (UIColor *)raiseDarkGrayColor;
 + (UIColor *)raiseVeryLightBlueColor;
 + (UIColor *)raiseLightBlueColor;
 + (UIColor *)raiseDarkBlueColor;

@@ -2,10 +2,11 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4457.6" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment defaultVersion="1536" identifier="iOS"/>
+        <development version="5000" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3682.6"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JobOverviewPivotCompanyPage">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JobDetailPivotOverviewPage">
             <connections>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
@@ -15,18 +16,6 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" image="fake_facebook_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="W62-fc-SB0">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
-                    <autoresizingMask key="autoresizingMask"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="320" id="QGh-tx-0Sa"/>
-                    </constraints>
-                </imageView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7vM-ke-LXN">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="478"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999998807907104" colorSpace="calibratedRGB"/>
-                </view>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Lead" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qj9-w4-Bkh" customClass="RaiseHeaderLabel">
                     <rect key="frame" x="20" y="20" width="280" height="43"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -42,7 +31,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="VBM-c2-0LF">
-                    <rect key="frame" x="20" y="132" width="280" height="699"/>
+                    <rect key="frame" x="20" y="132" width="280" height="649"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <string key="text">Facebook Product Managers work with teams of engineers and designers to build products. We are looking for extremely entrepreneurial Product Managers to help innovate and execute product initiatives across the company. This position is full time and based at our Menlo Park office.
 
@@ -67,8 +56,8 @@ Maximize efficiency in a constantly evolving environment where the process is fl
                             <rect key="frame" x="20" y="10" width="80" height="51"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <constraints>
+                                <constraint firstAttribute="width" constant="80" id="3bQ-i6-Mb7"/>
                                 <constraint firstAttribute="height" constant="50" id="PLc-YY-O7m"/>
-                                <constraint firstAttribute="width" constant="80" id="Zqw-7t-QXk"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                             <state key="normal" title="save for later">
@@ -80,10 +69,10 @@ Maximize efficiency in a constantly evolving environment where the process is fl
                             </state>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ku-zR-nB3" customClass="RaiseButton">
-                            <rect key="frame" x="118" y="10" width="84" height="51"/>
+                            <rect key="frame" x="120" y="10" width="80" height="51"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="80" id="AGi-F3-Xnv"/>
+                                <constraint firstAttribute="width" constant="80" id="CZy-sz-gYB"/>
                                 <constraint firstAttribute="height" constant="50" id="RT9-Il-aGq"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="boldSystem" size="button"/>
@@ -99,8 +88,8 @@ Maximize efficiency in a constantly evolving environment where the process is fl
                             <rect key="frame" x="220" y="10" width="80" height="51"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="80" id="DQl-F5-ev4"/>
                                 <constraint firstAttribute="height" constant="50" id="T6Y-JL-1Uk"/>
+                                <constraint firstAttribute="width" constant="80" id="oXi-KR-F4T"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="boldSystem" size="button"/>
                             <state key="normal" title="apply now">
@@ -130,18 +119,13 @@ Maximize efficiency in a constantly evolving environment where the process is fl
                 <constraint firstItem="wsn-oh-xhL" firstAttribute="top" secondItem="qj9-w4-Bkh" secondAttribute="bottom" constant="20" id="23t-Q1-PAc"/>
                 <constraint firstItem="qj9-w4-Bkh" firstAttribute="top" secondItem="1" secondAttribute="top" constant="20" id="6Yx-T3-WVW"/>
                 <constraint firstItem="wsn-oh-xhL" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="6vl-go-44W"/>
-                <constraint firstItem="7vM-ke-LXN" firstAttribute="top" secondItem="1" secondAttribute="top" id="AyC-iu-3YB"/>
                 <constraint firstItem="yHZ-a5-V50" firstAttribute="bottom" secondItem="1" secondAttribute="bottom" id="DZF-vF-bdF"/>
                 <constraint firstItem="VBM-c2-0LF" firstAttribute="top" secondItem="wsn-oh-xhL" secondAttribute="bottom" constant="20" id="HJL-Og-qit"/>
                 <constraint firstItem="qj9-w4-Bkh" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="Ltw-ho-qGZ"/>
-                <constraint firstItem="W62-fc-SB0" firstAttribute="top" secondItem="1" secondAttribute="top" id="Q1g-oN-6lC"/>
                 <constraint firstAttribute="trailing" secondItem="wsn-oh-xhL" secondAttribute="trailing" constant="20" id="U1K-7X-Ycb"/>
                 <constraint firstAttribute="trailing" secondItem="qj9-w4-Bkh" secondAttribute="trailing" constant="20" id="g1s-rR-kdX"/>
-                <constraint firstItem="7vM-ke-LXN" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="gtx-7h-dj6"/>
                 <constraint firstItem="VBM-c2-0LF" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="mOa-d5-OCN"/>
-                <constraint firstItem="yHZ-a5-V50" firstAttribute="top" secondItem="7vM-ke-LXN" secondAttribute="bottom" id="pdt-N0-DOQ"/>
                 <constraint firstItem="yHZ-a5-V50" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="pmi-FW-76N"/>
-                <constraint firstAttribute="trailing" secondItem="7vM-ke-LXN" secondAttribute="trailing" id="pvL-VR-VCt"/>
                 <constraint firstItem="yHZ-a5-V50" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="wDV-aK-iaO"/>
                 <constraint firstAttribute="trailing" secondItem="VBM-c2-0LF" secondAttribute="trailing" constant="20" id="yzs-mz-jdm"/>
             </constraints>
@@ -149,12 +133,9 @@ Maximize efficiency in a constantly evolving environment where the process is fl
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
-    <resources>
-        <image name="fake_facebook_background.png" width="320" height="416"/>
-    </resources>
     <classes>
-        <class className="JobOverviewPivotCompanyPage" superclassName="ParamsViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/JobOverviewPivotCompanyPage.h"/>
+        <class className="JobDetailPivotOverviewPage" superclassName="ParamsViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/JobDetailPivotOverviewPage.h"/>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>

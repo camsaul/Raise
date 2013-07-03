@@ -6,8 +6,22 @@
 //  Copyright (c) 2013 LuckyBird, Inc. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+typedef enum : NSUInteger {
+	MenuButtonDiscover,
+	MenuButtonSearch,
+	MenuButtonFollowing,
+	MenuButtonDismiss,
+	MenuButtonProfile
+} MenuButton;
+
+@protocol MenuViewControllerDelegate;
+
 
 @interface MenuViewController : UIViewController
+PROP_DELEGATE(MenuViewControllerDelegate);
+@end
 
+
+@protocol MenuViewControllerDelegate <NSObject>
+- (void)menuViewControllerButtonPressed:(MenuButton)button;
 @end

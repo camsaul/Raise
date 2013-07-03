@@ -20,6 +20,23 @@
 		7E6115141783926B00433603 /* RaiseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6115131783926B00433603 /* RaiseTests.m */; };
 		7E611530178396A900433603 /* libBirdKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E61152F178396A900433603 /* libBirdKit.a */; };
 		7E611532178396B200433603 /* libBirdKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E611531178396B200433603 /* libBirdKit.a */; };
+		7E8D50FC178429C900701897 /* JobDetailPivotSimilarPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8D50FA178429C900701897 /* JobDetailPivotSimilarPage.m */; };
+		7E8D50FD178429C900701897 /* JobDetailPivotSimilarPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E8D50FB178429C900701897 /* JobDetailPivotSimilarPage.xib */; };
+		7ED63D3517840C4700295D48 /* following.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED63D3317840C4700295D48 /* following.png */; };
+		7ED63D3617840C4700295D48 /* following@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED63D3417840C4700295D48 /* following@2x.png */; };
+		7ED63D3A17840C5A00295D48 /* FollowingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED63D3817840C5A00295D48 /* FollowingViewController.m */; };
+		7ED63D3B17840C5A00295D48 /* FollowingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ED63D3917840C5A00295D48 /* FollowingViewController.xib */; };
+		7ED63D41178413E100295D48 /* UIBarButtonItem+RaiseButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED63D40178413E100295D48 /* UIBarButtonItem+RaiseButtons.m */; };
+		7ED63D44178414B700295D48 /* UIImageView+RaiseImages.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED63D43178414B700295D48 /* UIImageView+RaiseImages.m */; };
+		7ED63D471784173500295D48 /* job_card.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED63D451784173500295D48 /* job_card.png */; };
+		7ED63D481784173500295D48 /* job_card@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED63D461784173500295D48 /* job_card@2x.png */; };
+		7ED63D4C1784191100295D48 /* JobDetailPivotCompanyPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED63D4A1784191100295D48 /* JobDetailPivotCompanyPage.m */; };
+		7ED63D4D1784191100295D48 /* JobDetailPivotCompanyPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ED63D4B1784191100295D48 /* JobDetailPivotCompanyPage.xib */; };
+		7ED63D511784192600295D48 /* JobDetailPivotLocationPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED63D4F1784192600295D48 /* JobDetailPivotLocationPage.m */; };
+		7ED63D521784192600295D48 /* JobDetailPivotLocationPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ED63D501784192600295D48 /* JobDetailPivotLocationPage.xib */; };
+		7ED63D591784266900295D48 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED63D581784266900295D48 /* QuartzCore.framework */; };
+		7ED63D5B1784266F00295D48 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED63D5A1784266F00295D48 /* MapKit.framework */; };
+		7ED63D5D1784267400295D48 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED63D5C1784267400295D48 /* CoreLocation.framework */; };
 		7EFCD6F317839B570067C395 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCD6E617839B570067C395 /* AppDelegate.m */; };
 		7EFCD6F417839B570067C395 /* Raise.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCD6E817839B570067C395 /* Raise.xcdatamodeld */; };
 		7EFCD6F717839B570067C395 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCD6EF17839B570067C395 /* main.m */; };
@@ -43,16 +60,14 @@
 		7EFCD7501783BD270067C395 /* button_side_menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EFCD73A1783BD270067C395 /* button_side_menu@2x.png */; };
 		7EFCD7511783BD270067C395 /* logo_navbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EFCD73C1783BD270067C395 /* logo_navbar.png */; };
 		7EFCD7521783BD270067C395 /* logo_navbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EFCD73D1783BD270067C395 /* logo_navbar@2x.png */; };
-		7EFCD7531783BD270067C395 /* discovery.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EFCD73F1783BD270067C395 /* discovery.png */; };
-		7EFCD7541783BD270067C395 /* discovery@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EFCD7401783BD270067C395 /* discovery@2x.png */; };
 		7EFCD7551783BD270067C395 /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EFCD7411783BD270067C395 /* login.png */; };
 		7EFCD7561783BD270067C395 /* login@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EFCD7421783BD270067C395 /* login@2x.png */; };
 		7EFCD7571783BD270067C395 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EFCD7431783BD270067C395 /* Images.xcassets */; };
 		7EFCD75A1783BD570067C395 /* UIFont+RaiseFonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCD7591783BD570067C395 /* UIFont+RaiseFonts.m */; };
 		7EFCD75B1783BD570067C395 /* UIFont+RaiseFonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCD7591783BD570067C395 /* UIFont+RaiseFonts.m */; };
-		7EFCD76B1783E4A10067C395 /* JobDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCD7691783E4A10067C395 /* JobDetailViewController.m */; };
-		7EFCD7751783E4EF0067C395 /* JobOverviewPivotCompanyPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCD7731783E4EF0067C395 /* JobOverviewPivotCompanyPage.m */; };
-		7EFCD7761783E4EF0067C395 /* JobOverviewPivotCompanyPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EFCD7741783E4EF0067C395 /* JobOverviewPivotCompanyPage.xib */; };
+		7EFCD76B1783E4A10067C395 /* JobDetailPivotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCD7691783E4A10067C395 /* JobDetailPivotViewController.m */; };
+		7EFCD7751783E4EF0067C395 /* JobDetailPivotOverviewPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCD7731783E4EF0067C395 /* JobDetailPivotOverviewPage.m */; };
+		7EFCD7761783E4EF0067C395 /* JobDetailPivotOverviewPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EFCD7741783E4EF0067C395 /* JobDetailPivotOverviewPage.xib */; };
 		7EFCD77A1783EB5E0067C395 /* RaiseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCD7791783EB5E0067C395 /* RaiseButton.m */; };
 		7EFCD77D1783F02A0067C395 /* RaiseHeaderLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCD77C1783F02A0067C395 /* RaiseHeaderLabel.m */; };
 		7EFCD7801783F2080067C395 /* RaiseBodyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCD77F1783F2080067C395 /* RaiseBodyLabel.m */; };
@@ -89,6 +104,29 @@
 		7E6115131783926B00433603 /* RaiseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RaiseTests.m; sourceTree = "<group>"; };
 		7E61152F178396A900433603 /* libBirdKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBirdKit.a; path = "../BirdKit/build/Debug-iphoneos/libBirdKit.a"; sourceTree = "<group>"; };
 		7E611531178396B200433603 /* libBirdKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBirdKit.a; path = "../BirdKit/build/Debug-iphoneos/libBirdKit.a"; sourceTree = "<group>"; };
+		7E8D50F9178429C900701897 /* JobDetailPivotSimilarPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobDetailPivotSimilarPage.h; sourceTree = "<group>"; };
+		7E8D50FA178429C900701897 /* JobDetailPivotSimilarPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobDetailPivotSimilarPage.m; sourceTree = "<group>"; };
+		7E8D50FB178429C900701897 /* JobDetailPivotSimilarPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobDetailPivotSimilarPage.xib; sourceTree = "<group>"; };
+		7ED63D3317840C4700295D48 /* following.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = following.png; sourceTree = "<group>"; };
+		7ED63D3417840C4700295D48 /* following@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "following@2x.png"; sourceTree = "<group>"; };
+		7ED63D3717840C5A00295D48 /* FollowingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowingViewController.h; sourceTree = "<group>"; };
+		7ED63D3817840C5A00295D48 /* FollowingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowingViewController.m; sourceTree = "<group>"; };
+		7ED63D3917840C5A00295D48 /* FollowingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FollowingViewController.xib; sourceTree = "<group>"; };
+		7ED63D3F178413E100295D48 /* UIBarButtonItem+RaiseButtons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+RaiseButtons.h"; sourceTree = "<group>"; };
+		7ED63D40178413E100295D48 /* UIBarButtonItem+RaiseButtons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+RaiseButtons.m"; sourceTree = "<group>"; };
+		7ED63D42178414B700295D48 /* UIImageView+RaiseImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+RaiseImages.h"; sourceTree = "<group>"; };
+		7ED63D43178414B700295D48 /* UIImageView+RaiseImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+RaiseImages.m"; sourceTree = "<group>"; };
+		7ED63D451784173500295D48 /* job_card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = job_card.png; sourceTree = "<group>"; };
+		7ED63D461784173500295D48 /* job_card@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "job_card@2x.png"; sourceTree = "<group>"; };
+		7ED63D491784191100295D48 /* JobDetailPivotCompanyPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobDetailPivotCompanyPage.h; sourceTree = "<group>"; };
+		7ED63D4A1784191100295D48 /* JobDetailPivotCompanyPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobDetailPivotCompanyPage.m; sourceTree = "<group>"; };
+		7ED63D4B1784191100295D48 /* JobDetailPivotCompanyPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobDetailPivotCompanyPage.xib; sourceTree = "<group>"; };
+		7ED63D4E1784192600295D48 /* JobDetailPivotLocationPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobDetailPivotLocationPage.h; sourceTree = "<group>"; };
+		7ED63D4F1784192600295D48 /* JobDetailPivotLocationPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobDetailPivotLocationPage.m; sourceTree = "<group>"; };
+		7ED63D501784192600295D48 /* JobDetailPivotLocationPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobDetailPivotLocationPage.xib; sourceTree = "<group>"; };
+		7ED63D581784266900295D48 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7ED63D5A1784266F00295D48 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7ED63D5C1784267400295D48 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7EFCD6E517839B570067C395 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7EFCD6E617839B570067C395 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7EFCD6E917839B570067C395 /* Raise.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Raise.xcdatamodel; sourceTree = "<group>"; };
@@ -118,19 +156,17 @@
 		7EFCD73A1783BD270067C395 /* button_side_menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_side_menu@2x.png"; sourceTree = "<group>"; };
 		7EFCD73C1783BD270067C395 /* logo_navbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_navbar.png; sourceTree = "<group>"; };
 		7EFCD73D1783BD270067C395 /* logo_navbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo_navbar@2x.png"; sourceTree = "<group>"; };
-		7EFCD73F1783BD270067C395 /* discovery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = discovery.png; sourceTree = "<group>"; };
-		7EFCD7401783BD270067C395 /* discovery@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "discovery@2x.png"; sourceTree = "<group>"; };
 		7EFCD7411783BD270067C395 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
 		7EFCD7421783BD270067C395 /* login@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login@2x.png"; sourceTree = "<group>"; };
 		7EFCD7431783BD270067C395 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7EFCD7581783BD570067C395 /* UIFont+RaiseFonts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+RaiseFonts.h"; sourceTree = "<group>"; };
 		7EFCD7591783BD570067C395 /* UIFont+RaiseFonts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+RaiseFonts.m"; sourceTree = "<group>"; };
 		7EFCD7661783D2240067C395 /* RaiseNavigationParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaiseNavigationParams.h; sourceTree = "<group>"; };
-		7EFCD7681783E4A10067C395 /* JobDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobDetailViewController.h; sourceTree = "<group>"; };
-		7EFCD7691783E4A10067C395 /* JobDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobDetailViewController.m; sourceTree = "<group>"; };
-		7EFCD7721783E4EF0067C395 /* JobOverviewPivotCompanyPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobOverviewPivotCompanyPage.h; sourceTree = "<group>"; };
-		7EFCD7731783E4EF0067C395 /* JobOverviewPivotCompanyPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobOverviewPivotCompanyPage.m; sourceTree = "<group>"; };
-		7EFCD7741783E4EF0067C395 /* JobOverviewPivotCompanyPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobOverviewPivotCompanyPage.xib; sourceTree = "<group>"; };
+		7EFCD7681783E4A10067C395 /* JobDetailPivotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobDetailPivotViewController.h; sourceTree = "<group>"; };
+		7EFCD7691783E4A10067C395 /* JobDetailPivotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobDetailPivotViewController.m; sourceTree = "<group>"; };
+		7EFCD7721783E4EF0067C395 /* JobDetailPivotOverviewPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobDetailPivotOverviewPage.h; sourceTree = "<group>"; };
+		7EFCD7731783E4EF0067C395 /* JobDetailPivotOverviewPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobDetailPivotOverviewPage.m; sourceTree = "<group>"; };
+		7EFCD7741783E4EF0067C395 /* JobDetailPivotOverviewPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobDetailPivotOverviewPage.xib; sourceTree = "<group>"; };
 		7EFCD7781783EB5E0067C395 /* RaiseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaiseButton.h; sourceTree = "<group>"; };
 		7EFCD7791783EB5E0067C395 /* RaiseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RaiseButton.m; sourceTree = "<group>"; };
 		7EFCD77B1783F02A0067C395 /* RaiseHeaderLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaiseHeaderLabel.h; sourceTree = "<group>"; };
@@ -151,12 +187,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E611530178396A900433603 /* libBirdKit.a in Frameworks */,
-				7E6114EB1783926B00433603 /* CoreGraphics.framework in Frameworks */,
-				7E6114EF1783926B00433603 /* CoreData.framework in Frameworks */,
-				7E6114ED1783926B00433603 /* UIKit.framework in Frameworks */,
 				7E6114E91783926B00433603 /* Foundation.framework in Frameworks */,
+				7E6114ED1783926B00433603 /* UIKit.framework in Frameworks */,
+				7E6114EF1783926B00433603 /* CoreData.framework in Frameworks */,
+				7E6114EB1783926B00433603 /* CoreGraphics.framework in Frameworks */,
+				7ED63D591784266900295D48 /* QuartzCore.framework in Frameworks */,
+				7ED63D5D1784267400295D48 /* CoreLocation.framework in Frameworks */,
+				7ED63D5B1784266F00295D48 /* MapKit.framework in Frameworks */,
 				540C68B5B1954585A03C0EEA /* libPods.a in Frameworks */,
+				7E611530178396A900433603 /* libBirdKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +237,9 @@
 		7E6114E71783926B00433603 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7ED63D5C1784267400295D48 /* CoreLocation.framework */,
+				7ED63D5A1784266F00295D48 /* MapKit.framework */,
+				7ED63D581784266900295D48 /* QuartzCore.framework */,
 				7E611531178396B200433603 /* libBirdKit.a */,
 				7E61152F178396A900433603 /* libBirdKit.a */,
 				7E6114E81783926B00433603 /* Foundation.framework */,
@@ -282,6 +324,9 @@
 				7EFCD785178406C20067C395 /* MenuViewController.h */,
 				7EFCD786178406C20067C395 /* MenuViewController.m */,
 				7EFCD787178406C20067C395 /* MenuViewController.xib */,
+				7ED63D3717840C5A00295D48 /* FollowingViewController.h */,
+				7ED63D3817840C5A00295D48 /* FollowingViewController.m */,
+				7ED63D3917840C5A00295D48 /* FollowingViewController.xib */,
 			);
 			path = "Views+ViewControllers";
 			sourceTree = "<group>";
@@ -294,6 +339,10 @@
 				7EFCD7191783B0B20067C395 /* UIColor+RaiseColors.m */,
 				7EFCD7581783BD570067C395 /* UIFont+RaiseFonts.h */,
 				7EFCD7591783BD570067C395 /* UIFont+RaiseFonts.m */,
+				7ED63D3F178413E100295D48 /* UIBarButtonItem+RaiseButtons.h */,
+				7ED63D40178413E100295D48 /* UIBarButtonItem+RaiseButtons.m */,
+				7ED63D42178414B700295D48 /* UIImageView+RaiseImages.h */,
+				7ED63D43178414B700295D48 /* UIImageView+RaiseImages.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -365,12 +414,14 @@
 		7EFCD73E1783BD270067C395 /* Mockups */ = {
 			isa = PBXGroup;
 			children = (
+				7ED63D451784173500295D48 /* job_card.png */,
+				7ED63D461784173500295D48 /* job_card@2x.png */,
+				7ED63D3317840C4700295D48 /* following.png */,
+				7ED63D3417840C4700295D48 /* following@2x.png */,
 				7EFCD78A17840A250067C395 /* fake_facebook_background.png */,
 				7EFCD78B17840A250067C395 /* fake_facebook_background@2x.png */,
 				7EFCD781178406A00067C395 /* menu.png */,
 				7EFCD782178406A00067C395 /* menu@2x.png */,
-				7EFCD73F1783BD270067C395 /* discovery.png */,
-				7EFCD7401783BD270067C395 /* discovery@2x.png */,
 				7EFCD7411783BD270067C395 /* login.png */,
 				7EFCD7421783BD270067C395 /* login@2x.png */,
 			);
@@ -380,11 +431,20 @@
 		7EFCD7671783E4A10067C395 /* JobDetailPivot */ = {
 			isa = PBXGroup;
 			children = (
-				7EFCD7681783E4A10067C395 /* JobDetailViewController.h */,
-				7EFCD7691783E4A10067C395 /* JobDetailViewController.m */,
-				7EFCD7721783E4EF0067C395 /* JobOverviewPivotCompanyPage.h */,
-				7EFCD7731783E4EF0067C395 /* JobOverviewPivotCompanyPage.m */,
-				7EFCD7741783E4EF0067C395 /* JobOverviewPivotCompanyPage.xib */,
+				7EFCD7681783E4A10067C395 /* JobDetailPivotViewController.h */,
+				7EFCD7691783E4A10067C395 /* JobDetailPivotViewController.m */,
+				7EFCD7721783E4EF0067C395 /* JobDetailPivotOverviewPage.h */,
+				7EFCD7731783E4EF0067C395 /* JobDetailPivotOverviewPage.m */,
+				7EFCD7741783E4EF0067C395 /* JobDetailPivotOverviewPage.xib */,
+				7ED63D491784191100295D48 /* JobDetailPivotCompanyPage.h */,
+				7ED63D4A1784191100295D48 /* JobDetailPivotCompanyPage.m */,
+				7ED63D4B1784191100295D48 /* JobDetailPivotCompanyPage.xib */,
+				7ED63D4E1784192600295D48 /* JobDetailPivotLocationPage.h */,
+				7ED63D4F1784192600295D48 /* JobDetailPivotLocationPage.m */,
+				7ED63D501784192600295D48 /* JobDetailPivotLocationPage.xib */,
+				7E8D50F9178429C900701897 /* JobDetailPivotSimilarPage.h */,
+				7E8D50FA178429C900701897 /* JobDetailPivotSimilarPage.m */,
+				7E8D50FB178429C900701897 /* JobDetailPivotSimilarPage.xib */,
 			);
 			path = JobDetailPivot;
 			sourceTree = "<group>";
@@ -479,25 +539,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ED63D521784192600295D48 /* JobDetailPivotLocationPage.xib in Resources */,
+				7ED63D481784173500295D48 /* job_card@2x.png in Resources */,
+				7E8D50FD178429C900701897 /* JobDetailPivotSimilarPage.xib in Resources */,
 				7EFCD7501783BD270067C395 /* button_side_menu@2x.png in Resources */,
 				7EFCD74B1783BD270067C395 /* Cabin-SemiBold.otf in Resources */,
 				7EFCD789178406C20067C395 /* MenuViewController.xib in Resources */,
+				7ED63D471784173500295D48 /* job_card.png in Resources */,
 				7EFCD783178406A00067C395 /* menu.png in Resources */,
 				7EFCD7461783BD270067C395 /* Cabin-BoldItalic.otf in Resources */,
-				7EFCD7541783BD270067C395 /* discovery@2x.png in Resources */,
 				7EFCD78C17840A250067C395 /* fake_facebook_background.png in Resources */,
-				7EFCD7761783E4EF0067C395 /* JobOverviewPivotCompanyPage.xib in Resources */,
+				7EFCD7761783E4EF0067C395 /* JobDetailPivotOverviewPage.xib in Resources */,
+				7ED63D3B17840C5A00295D48 /* FollowingViewController.xib in Resources */,
 				7EFCD7451783BD270067C395 /* Cabin-Bold.otf in Resources */,
+				7ED63D3517840C4700295D48 /* following.png in Resources */,
 				7EFCD7481783BD270067C395 /* Cabin-Medium.otf in Resources */,
+				7ED63D4D1784191100295D48 /* JobDetailPivotCompanyPage.xib in Resources */,
 				7EFCD7561783BD270067C395 /* login@2x.png in Resources */,
 				7EFCD7551783BD270067C395 /* login.png in Resources */,
-				7EFCD7531783BD270067C395 /* discovery.png in Resources */,
 				7EFCD78D17840A250067C395 /* fake_facebook_background@2x.png in Resources */,
 				7EFCD7571783BD270067C395 /* Images.xcassets in Resources */,
 				7EFCD74C1783BD270067C395 /* Cabin-SemiBoldItalic.otf in Resources */,
 				7EFCD784178406A00067C395 /* menu@2x.png in Resources */,
 				7EFCD7491783BD270067C395 /* Cabin-MediumItalic.otf in Resources */,
 				7EFCD74E1783BD270067C395 /* subtle_stripes_@2X.png in Resources */,
+				7ED63D3617840C4700295D48 /* following@2x.png in Resources */,
 				7EFCD7511783BD270067C395 /* logo_navbar.png in Resources */,
 				7EFCD7521783BD270067C395 /* logo_navbar@2x.png in Resources */,
 				7EFCD74D1783BD270067C395 /* subtle_stripes.png in Resources */,
@@ -557,15 +623,21 @@
 			files = (
 				7EFCD77A1783EB5E0067C395 /* RaiseButton.m in Sources */,
 				7EFCD7801783F2080067C395 /* RaiseBodyLabel.m in Sources */,
-				7EFCD7751783E4EF0067C395 /* JobOverviewPivotCompanyPage.m in Sources */,
+				7EFCD7751783E4EF0067C395 /* JobDetailPivotOverviewPage.m in Sources */,
 				7EFCD7051783AC5F0067C395 /* JobDiscoveryViewController.m in Sources */,
 				7EFCD788178406C20067C395 /* MenuViewController.m in Sources */,
+				7ED63D44178414B700295D48 /* UIImageView+RaiseImages.m in Sources */,
 				7EFCD6F417839B570067C395 /* Raise.xcdatamodeld in Sources */,
+				7ED63D4C1784191100295D48 /* JobDetailPivotCompanyPage.m in Sources */,
 				7EFCD6F717839B570067C395 /* main.m in Sources */,
 				7EFCD6FB17839C160067C395 /* RootViewController.m in Sources */,
+				7ED63D511784192600295D48 /* JobDetailPivotLocationPage.m in Sources */,
+				7ED63D41178413E100295D48 /* UIBarButtonItem+RaiseButtons.m in Sources */,
+				7ED63D3A17840C5A00295D48 /* FollowingViewController.m in Sources */,
 				7EFCD77D1783F02A0067C395 /* RaiseHeaderLabel.m in Sources */,
+				7E8D50FC178429C900701897 /* JobDetailPivotSimilarPage.m in Sources */,
 				7EFCD6F317839B570067C395 /* AppDelegate.m in Sources */,
-				7EFCD76B1783E4A10067C395 /* JobDetailViewController.m in Sources */,
+				7EFCD76B1783E4A10067C395 /* JobDetailPivotViewController.m in Sources */,
 				7EFCD71A1783B0B20067C395 /* UIColor+RaiseColors.m in Sources */,
 				7EFCD75A1783BD570067C395 /* UIFont+RaiseFonts.m in Sources */,
 			);
@@ -693,6 +765,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "Raise/SupportingFiles/Raise-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../BirdKit/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -706,6 +782,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "Raise/SupportingFiles/Raise-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../BirdKit/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

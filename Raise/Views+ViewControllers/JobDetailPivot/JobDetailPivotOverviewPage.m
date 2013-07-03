@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 LuckyBird, Inc. All rights reserved.
 //
 
-#import "JobOverviewPivotCompanyPage.h"
+#import "JobDetailPivotOverviewPage.h"
 
-@interface JobOverviewPivotCompanyPage ()
+@interface JobDetailPivotOverviewPage ()
 
 @end
 
-@implementation JobOverviewPivotCompanyPage
+@implementation JobDetailPivotOverviewPage
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -22,10 +22,10 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+	
+	self.view.backgroundColor = [UIColor clearColor];
 }
 
 @end

@@ -35,4 +35,24 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)discoverButtonPressed:(id)sender {
+	[self.delegate menuViewControllerButtonPressed:MenuButtonDiscover];
+}
+
+- (IBAction)searchButtonPressed:(id)sender {
+	[self.delegate menuViewControllerButtonPressed:MenuButtonSearch];
+}
+
+- (IBAction)followingButtonPressed:(id)sender {
+	[self.delegate menuViewControllerButtonPressed:MenuButtonFollowing];
+}
+
+- (IBAction)dismissButtonPressed:(id)sender {
+	[self.delegate menuViewControllerButtonPressed:MenuButtonDismiss];
+}
+
+- (IBAction)profileButtonPressed:(id)sender {
+	[self.delegate menuViewControllerButtonPressed:MenuButtonProfile];
+}
+
 @end

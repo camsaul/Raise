@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JobOverviewPivotCompanyPage : ParamsViewController
+@interface JobDetailPivotOverviewPage : ParamsViewController
 
 @end

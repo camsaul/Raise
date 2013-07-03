@@ -8,3 +8,5 @@
 
 #import "UIColor+RaiseColors.h"
 #import "UIFont+RaiseFonts.h"
+#import "UIBarButtonItem+RaiseButtons.h"
+#import "UIImageView+RaiseImages.h"

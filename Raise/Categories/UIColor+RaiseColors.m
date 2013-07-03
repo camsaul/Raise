@@ -14,6 +14,10 @@
 	return [UIColor colorWithHexString:@"e6e7e8"];
 }
 
++ (UIColor *)raiseDarkGrayColor {
+	return [UIColor colorWithHexString:@"b3b3b3"];
+}
+
 + (UIColor *)raiseBackgroundPattern {
 	return [UIColor colorWithPatternImage:[UIImage imageNamed:@"subtle_stripes.png"]];
 }

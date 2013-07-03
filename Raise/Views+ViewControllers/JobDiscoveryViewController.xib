@@ -15,10 +15,6 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="discovery.png" translatesAutoresizingMaskIntoConstraints="NO" id="XJO-YI-InL">
-                    <rect key="frame" x="0.0" y="-44" width="320" height="460"/>
-                    <autoresizingMask key="autoresizingMask"/>
-                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tw8-6q-Sac" customClass="RaiseButton">
                     <rect key="frame" x="20" y="324" width="133" height="56"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -49,6 +45,18 @@
                         <action selector="tellMeMoreButtonPressed:" destination="-1" eventType="touchUpInside" id="I0y-PC-6Ac"/>
                     </connections>
                 </button>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="job_card.png" translatesAutoresizingMaskIntoConstraints="NO" id="N7M-db-M0y">
+                    <rect key="frame" x="30" y="43" width="260" height="260"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="job_card.png" translatesAutoresizingMaskIntoConstraints="NO" id="al5-vM-EbX">
+                    <rect key="frame" x="301" y="72" width="200" height="200"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="job_card.png" translatesAutoresizingMaskIntoConstraints="NO" id="EKo-GN-D9U">
+                    <rect key="frame" x="-180" y="72" width="200" height="200"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
@@ -56,6 +64,6 @@
         </view>
     </objects>
     <resources>
-        <image name="discovery.png" width="320" height="460"/>
+        <image name="job_card.png" width="260" height="260"/>
     </resources>
 </document>
