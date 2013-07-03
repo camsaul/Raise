@@ -1,5 +1,5 @@
 //
-//  UIColor+RaiseColors.h
+//  UIFont+RaiseFonts.h
 //  Raise
 //
 //  Created by Cameron Saul on 7/2/13.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIColor (RaiseColors)
-
-+ (UIColor *)raiseLightGrayColor;
-+ (UIColor *)raiseBackgroundPattern;
+@interface UIFont (RaiseFonts)
 
 @end

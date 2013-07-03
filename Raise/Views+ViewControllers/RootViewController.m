@@ -28,6 +28,13 @@ PROP_STRONG UINavigationController *navigationController;
 	return self;
 }
 
+- (void)menuButtonPressed {
+	// slide the navigation controller to reveal the menu
+	NSLog(@"menu button pressed");
+	
+	
+}
+
 - (void)loadView {
 	self.view = [[UIView alloc] init];
 	self.view.backgroundColor = [UIColor magentaColor];

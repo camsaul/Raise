@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "RootViewController.h"
 
 @interface AppDelegate ()
 PROP_STRONG NSManagedObjectContext *managedObjectContext;

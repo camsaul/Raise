@@ -14,4 +14,8 @@
 	return [UIColor colorWithHexString:@"e6e6e6"];
 }
 
++ (UIColor *)raiseBackgroundPattern {
+	return [UIColor colorWithPatternImage:[UIImage imageNamed:@"subtle_stripes.png"]];
+}
+
 @end

@@ -13,4 +13,6 @@
 - (MenuViewController *)menuViewController;
 - (UINavigationController *)navigationController;
 
+- (void)menuButtonPressed;
+
 @end

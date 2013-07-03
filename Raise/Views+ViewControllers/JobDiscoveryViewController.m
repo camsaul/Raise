@@ -23,11 +23,19 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 	
 	self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo_navbar.png"]];
+	
+	UIButton *menuButton = [UIButton buttonWithType:UIButtonTypeCustom];
+	menuButton.backgroundColor = [UIColor orangeColor];
+	UIImage *menuButtonImage = [UIImage imageNamed:@"button_side_menu.png"];
+	[menuButton setImage:menuButtonImage forState:UIControlStateNormal];
+	menuButton.frame = CGRectMake(0, 0, menuButtonImage.size.width, menuButtonImage.size.height);
+	[menuButton addTarget:ROOT_VIEW_CONTROLLER action:@selector(menuButtonPressed)];
+	UIBarButtonItem *menuButtonItem = [[UIBarButtonItem alloc] initWithCustomView:menuButton];
+	self.navigationItem.leftBarButtonItem = menuButtonItem;
 }
 
 - (void)didReceiveMemoryWarning

@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 LuckyBird, Inc. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "RootViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -15,6 +15,8 @@ PROP_STRONG UIWindow *window;
 - (NSManagedObjectContext *)managedObjectContext;
 - (NSManagedObjectModel *)managedObjectModel;
 - (NSPersistentStoreCoordinator *)persistentStoreCoordinator;
+
+- (RootViewController *)rootViewController;
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
