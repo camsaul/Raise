@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4457.6" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4457.6" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
         <deployment defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3682.6"/>
@@ -7,7 +7,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JobDiscoveryViewController">
             <connections>
+                <outlet property="infoButton" destination="7f4-0q-vR4" id="PxV-AB-itc"/>
+                <outlet property="jobCardImageView" destination="al5-vM-EbX" id="zOn-3o-Tdp"/>
+                <outlet property="noButton" destination="tw8-6q-Sac" id="wHF-QN-yvj"/>
                 <outlet property="view" destination="1" id="3"/>
+                <outlet property="yesButton" destination="R2s-iw-05D" id="wnQ-MH-8qT"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -15,11 +19,11 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tw8-6q-Sac" customClass="RaiseButton">
-                    <rect key="frame" x="20" y="324" width="133" height="56"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tw8-6q-Sac">
+                    <rect key="frame" x="20" y="300" width="80" height="80"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                    <state key="normal" title="not interested">
+                    <state key="normal" image="button_close_80.png">
                         <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -27,14 +31,14 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="notInterestedButtonPressed:" destination="-1" eventType="touchUpInside" id="6mx-MR-QmX"/>
+                        <action selector="noButtonPressed:" destination="-1" eventType="touchUpInside" id="6Tn-gL-r85"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2s-iw-05D" customClass="RaiseButton">
-                    <rect key="frame" x="167" y="324" width="133" height="56"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="R2s-iw-05D">
+                    <rect key="frame" x="220" y="300" width="80" height="80"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                    <state key="normal" title="tell me more">
+                    <state key="normal" title="tell me more" image="button_check_80.png">
                         <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -42,21 +46,28 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="tellMeMoreButtonPressed:" destination="-1" eventType="touchUpInside" id="I0y-PC-6Ac"/>
+                        <action selector="yesButtonPressed:" destination="-1" eventType="touchUpInside" id="rD6-zu-Tfd"/>
                     </connections>
                 </button>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="job_card.png" translatesAutoresizingMaskIntoConstraints="NO" id="N7M-db-M0y">
-                    <rect key="frame" x="30" y="43" width="260" height="260"/>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="job_card.png" id="al5-vM-EbX">
+                    <rect key="frame" x="20" y="20" width="280" height="260"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="job_card.png" translatesAutoresizingMaskIntoConstraints="NO" id="al5-vM-EbX">
-                    <rect key="frame" x="301" y="72" width="200" height="200"/>
-                    <autoresizingMask key="autoresizingMask"/>
-                </imageView>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="job_card.png" translatesAutoresizingMaskIntoConstraints="NO" id="EKo-GN-D9U">
-                    <rect key="frame" x="-180" y="72" width="200" height="200"/>
-                    <autoresizingMask key="autoresizingMask"/>
-                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7f4-0q-vR4">
+                    <rect key="frame" x="130" y="341" width="60" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Button" image="button_info_60.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="infoButtonPressed:" destination="-1" eventType="touchUpInside" id="mwE-WM-w9q"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
@@ -64,6 +75,9 @@
         </view>
     </objects>
     <resources>
+        <image name="button_check_80.png" width="80" height="80"/>
+        <image name="button_close_80.png" width="80" height="80"/>
+        <image name="button_info_60.png" width="60" height="60"/>
         <image name="job_card.png" width="260" height="260"/>
     </resources>
 </document>

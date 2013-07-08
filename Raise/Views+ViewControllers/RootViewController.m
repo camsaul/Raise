@@ -10,6 +10,7 @@
 #import "MenuViewController.h"
 #import "JobDiscoveryViewController.h"
 #import "FollowingViewController.h"
+#import "LoginViewController.h"
 
 static const CGFloat AnimationDuration = 0.3;
 
@@ -119,7 +120,7 @@ PROP_STRONG UINavigationController *navigationController;
 		case MenuButtonFollowing:	[self setNavControllerRootVC:[FollowingViewController class]]; break;
 		case MenuButtonSearch:		TODO_ALERT(@"Show the search page."); break;
 		case MenuButtonDismiss:		break;
-		case MenuButtonProfile:		TODO_ALERT(@"Show the profile page/submenu."); break;
+		case MenuButtonProfile:		[self setNavControllerRootVC:[LoginViewController class]]; break;
 	}
 	[self hideMenu];
 }

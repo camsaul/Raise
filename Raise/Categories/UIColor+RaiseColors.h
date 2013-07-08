@@ -15,6 +15,8 @@
 + (UIColor *)raiseVeryLightBlueColor;
 + (UIColor *)raiseLightBlueColor;
 + (UIColor *)raiseDarkBlueColor;
++ (UIColor *)raiseRedColor;
++ (UIColor *)raiseGreenColor;
 + (UIColor *)raiseTransparentWhiteOverlayColor;
 + (UIColor *)raiseTransparentBlackOverlayColor;
 + (UIColor *)raiseBackgroundPattern;

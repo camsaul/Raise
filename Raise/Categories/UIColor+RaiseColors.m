@@ -34,6 +34,14 @@
 	return [UIColor colorWithHexString:@"607890"];
 }
 
++ (UIColor *)raiseRedColor {
+	return [UIColor colorWithHexString:@"c36048"];
+}
+
++ (UIColor *)raiseGreenColor {
+	return [UIColor colorWithHexString:@"8e9e82"];
+}
+
 + (UIColor *)raiseTransparentWhiteOverlayColor {
 	return [UIColor colorWithWhite:1.0 alpha:0.9];
 }

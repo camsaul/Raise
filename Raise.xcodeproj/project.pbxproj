@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		540C68B5B1954585A03C0EEA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4BB796C41D4AE58B5C7F04 /* libPods.a */; };
+		7E218AA9178503EE00EAFE65 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E218AA7178503EE00EAFE65 /* LoginViewController.m */; };
+		7E218AAA178503EE00EAFE65 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E218AA8178503EE00EAFE65 /* LoginViewController.xib */; };
+		7E218AB117850BCD00EAFE65 /* button_check_80.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E218AAB17850BCD00EAFE65 /* button_check_80.png */; };
+		7E218AB217850BCD00EAFE65 /* button_check_80@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E218AAC17850BCD00EAFE65 /* button_check_80@2x.png */; };
+		7E218AB317850BCD00EAFE65 /* button_close_80.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E218AAD17850BCD00EAFE65 /* button_close_80.png */; };
+		7E218AB417850BCD00EAFE65 /* button_close_80@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E218AAE17850BCD00EAFE65 /* button_close_80@2x.png */; };
+		7E218AB517850BCD00EAFE65 /* button_info_60.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E218AAF17850BCD00EAFE65 /* button_info_60.png */; };
+		7E218AB617850BCD00EAFE65 /* button_info_60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E218AB017850BCD00EAFE65 /* button_info_60@2x.png */; };
 		7E6114E91783926B00433603 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E6114E81783926B00433603 /* Foundation.framework */; };
 		7E6114EB1783926B00433603 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E6114EA1783926B00433603 /* CoreGraphics.framework */; };
 		7E6114ED1783926B00433603 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E6114EC1783926B00433603 /* UIKit.framework */; };
@@ -92,6 +100,15 @@
 /* Begin PBXFileReference section */
 		453A707A4B2240CF9E663E90 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		5F4BB796C41D4AE58B5C7F04 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E218AA6178503EE00EAFE65 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		7E218AA7178503EE00EAFE65 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		7E218AA8178503EE00EAFE65 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		7E218AAB17850BCD00EAFE65 /* button_check_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_check_80.png; sourceTree = "<group>"; };
+		7E218AAC17850BCD00EAFE65 /* button_check_80@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_check_80@2x.png"; sourceTree = "<group>"; };
+		7E218AAD17850BCD00EAFE65 /* button_close_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_close_80.png; sourceTree = "<group>"; };
+		7E218AAE17850BCD00EAFE65 /* button_close_80@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_close_80@2x.png"; sourceTree = "<group>"; };
+		7E218AAF17850BCD00EAFE65 /* button_info_60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_info_60.png; sourceTree = "<group>"; };
+		7E218AB017850BCD00EAFE65 /* button_info_60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_info_60@2x.png"; sourceTree = "<group>"; };
 		7E6114E51783926B00433603 /* Raise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Raise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6114E81783926B00433603 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7E6114EA1783926B00433603 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -327,6 +344,9 @@
 				7ED63D3717840C5A00295D48 /* FollowingViewController.h */,
 				7ED63D3817840C5A00295D48 /* FollowingViewController.m */,
 				7ED63D3917840C5A00295D48 /* FollowingViewController.xib */,
+				7E218AA6178503EE00EAFE65 /* LoginViewController.h */,
+				7E218AA7178503EE00EAFE65 /* LoginViewController.m */,
+				7E218AA8178503EE00EAFE65 /* LoginViewController.xib */,
 			);
 			path = "Views+ViewControllers";
 			sourceTree = "<group>";
@@ -396,6 +416,12 @@
 		7EFCD7381783BD270067C395 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				7E218AAB17850BCD00EAFE65 /* button_check_80.png */,
+				7E218AAC17850BCD00EAFE65 /* button_check_80@2x.png */,
+				7E218AAD17850BCD00EAFE65 /* button_close_80.png */,
+				7E218AAE17850BCD00EAFE65 /* button_close_80@2x.png */,
+				7E218AAF17850BCD00EAFE65 /* button_info_60.png */,
+				7E218AB017850BCD00EAFE65 /* button_info_60@2x.png */,
 				7EFCD7391783BD270067C395 /* button_side_menu.png */,
 				7EFCD73A1783BD270067C395 /* button_side_menu@2x.png */,
 			);
@@ -543,25 +569,32 @@
 				7ED63D481784173500295D48 /* job_card@2x.png in Resources */,
 				7E8D50FD178429C900701897 /* JobDetailPivotSimilarPage.xib in Resources */,
 				7EFCD7501783BD270067C395 /* button_side_menu@2x.png in Resources */,
+				7E218AB117850BCD00EAFE65 /* button_check_80.png in Resources */,
 				7EFCD74B1783BD270067C395 /* Cabin-SemiBold.otf in Resources */,
 				7EFCD789178406C20067C395 /* MenuViewController.xib in Resources */,
 				7ED63D471784173500295D48 /* job_card.png in Resources */,
 				7EFCD783178406A00067C395 /* menu.png in Resources */,
+				7E218AAA178503EE00EAFE65 /* LoginViewController.xib in Resources */,
 				7EFCD7461783BD270067C395 /* Cabin-BoldItalic.otf in Resources */,
+				7E218AB217850BCD00EAFE65 /* button_check_80@2x.png in Resources */,
 				7EFCD78C17840A250067C395 /* fake_facebook_background.png in Resources */,
 				7EFCD7761783E4EF0067C395 /* JobDetailPivotOverviewPage.xib in Resources */,
+				7E218AB617850BCD00EAFE65 /* button_info_60@2x.png in Resources */,
 				7ED63D3B17840C5A00295D48 /* FollowingViewController.xib in Resources */,
 				7EFCD7451783BD270067C395 /* Cabin-Bold.otf in Resources */,
 				7ED63D3517840C4700295D48 /* following.png in Resources */,
 				7EFCD7481783BD270067C395 /* Cabin-Medium.otf in Resources */,
 				7ED63D4D1784191100295D48 /* JobDetailPivotCompanyPage.xib in Resources */,
+				7E218AB317850BCD00EAFE65 /* button_close_80.png in Resources */,
 				7EFCD7561783BD270067C395 /* login@2x.png in Resources */,
 				7EFCD7551783BD270067C395 /* login.png in Resources */,
 				7EFCD78D17840A250067C395 /* fake_facebook_background@2x.png in Resources */,
 				7EFCD7571783BD270067C395 /* Images.xcassets in Resources */,
 				7EFCD74C1783BD270067C395 /* Cabin-SemiBoldItalic.otf in Resources */,
+				7E218AB417850BCD00EAFE65 /* button_close_80@2x.png in Resources */,
 				7EFCD784178406A00067C395 /* menu@2x.png in Resources */,
 				7EFCD7491783BD270067C395 /* Cabin-MediumItalic.otf in Resources */,
+				7E218AB517850BCD00EAFE65 /* button_info_60.png in Resources */,
 				7EFCD74E1783BD270067C395 /* subtle_stripes_@2X.png in Resources */,
 				7ED63D3617840C4700295D48 /* following@2x.png in Resources */,
 				7EFCD7511783BD270067C395 /* logo_navbar.png in Resources */,
@@ -625,6 +658,7 @@
 				7EFCD7801783F2080067C395 /* RaiseBodyLabel.m in Sources */,
 				7EFCD7751783E4EF0067C395 /* JobDetailPivotOverviewPage.m in Sources */,
 				7EFCD7051783AC5F0067C395 /* JobDiscoveryViewController.m in Sources */,
+				7E218AA9178503EE00EAFE65 /* LoginViewController.m in Sources */,
 				7EFCD788178406C20067C395 /* MenuViewController.m in Sources */,
 				7ED63D44178414B700295D48 /* UIImageView+RaiseImages.m in Sources */,
 				7EFCD6F417839B570067C395 /* Raise.xcdatamodeld in Sources */,
