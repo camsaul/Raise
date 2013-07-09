@@ -24,15 +24,6 @@
     self.navigationItem.titleView = [UIImageView raiseNavBarLogoImageView];
 	self.navigationItem.leftBarButtonItem = [UIBarButtonItem raiseMenuBarButtonItem];
 	
-	// loop over all the labels and correct the font
-	for (UILabel *label in self.view.subviews) {
-		if (![label isKindOfClass:[UILabel class]]) continue;
-		
-		BOOL isBold = [label.font.fontName containsString:@"Bold"];
-		CGFloat size = label.font.pointSize;
-		
-		label.font = [UIFont fontWithName:(isBold ? @"Cabin-Bold" : @"Cabin-Regular") size:size];
-	}
 	self.nameLabel.textColor = [UIColor raiseDarkBlueColor]; // for some reason nib is being ignored
 	
 	// fix the buttons

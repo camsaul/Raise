@@ -7,6 +7,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FollowingViewController">
             <connections>
+                <outlet property="searchPopunder" destination="O1S-Ic-uob" id="hWM-SV-2Cb"/>
+                <outlet property="tableView" destination="Zm8-Et-7x3" id="jLJ-A0-dMy"/>
+                <outlet property="textField" destination="inf-SB-i8f" id="kHe-LP-Tli"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -15,23 +18,87 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="following.png" translatesAutoresizingMaskIntoConstraints="NO" id="1wK-6A-FdT">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
-                    <autoresizingMask key="autoresizingMask"/>
-                </imageView>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YBT-AK-HT9" userLabel="gray bg">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.70196078431372544" green="0.70196078431372544" blue="0.70196078431372544" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DcH-5f-df9" userLabel="white bg">
+                    <rect key="frame" x="10" y="10" width="300" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="search for a job or company..." minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="inf-SB-i8f" userLabel="search field">
+                    <rect key="frame" x="15" y="10" width="255" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="textColor" red="0.37647058820000001" green="0.47058823529999999" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Iyd-qr-O6R"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9v5-pb-3y0">
+                    <rect key="frame" x="275" y="15" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="button_search_30.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="searchButtonPressed:" destination="-1" eventType="touchUpInside" id="4Bp-GT-gv2"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Following" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQK-gC-8IF">
+                    <rect key="frame" x="10" y="78" width="106" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <color key="textColor" red="0.66274511814117432" green="0.75686275959014893" blue="0.85098040103912354" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Zm8-Et-7x3">
+                    <rect key="frame" x="21" y="119" width="280" height="297"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="J6x-U5-zml"/>
+                        <outlet property="delegate" destination="-1" id="1cG-ec-zcA"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstAttribute="centerX" secondItem="1wK-6A-FdT" secondAttribute="centerX" id="T2s-kP-Hqh"/>
-                <constraint firstAttribute="centerY" secondItem="1wK-6A-FdT" secondAttribute="centerY" id="dsy-6X-gmi"/>
-                <constraint firstAttribute="centerX" secondItem="1wK-6A-FdT" secondAttribute="centerX" id="n43-N4-4gO"/>
-                <constraint firstAttribute="centerY" secondItem="1wK-6A-FdT" secondAttribute="centerY" id="yDo-Go-Rco"/>
-            </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
+        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="following_search.png" id="O1S-Ic-uob">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+        </imageView>
     </objects>
     <resources>
-        <image name="following.png" width="320" height="416"/>
+        <image name="button_search_30.png" width="30" height="30"/>
+        <image name="following_search.png" width="300" height="180"/>
     </resources>
+    <classes>
+        <class className="FollowingViewController" superclassName="RaiseViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FollowingViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="searchButtonPressed:"/>
+                <relationship kind="outlet" name="searchPopunder" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="textField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="ParamsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ParamsViewController.h"/>
+        </class>
+        <class className="RaiseViewController" superclassName="ParamsViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RaiseViewController.h"/>
+        </class>
+    </classes>
 </document>

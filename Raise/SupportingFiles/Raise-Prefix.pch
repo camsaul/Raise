@@ -26,4 +26,5 @@
 	#define ROOT_VIEW_CONTROLLER APP_DELEGATE.rootViewController
 
 	#import "RaiseNavigationParams.h"
+	#import "RaiseViewController.h"
 #endif
