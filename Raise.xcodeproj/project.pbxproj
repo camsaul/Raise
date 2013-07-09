@@ -28,6 +28,7 @@
 		7E6115141783926B00433603 /* RaiseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6115131783926B00433603 /* RaiseTests.m */; };
 		7E611530178396A900433603 /* libBirdKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E61152F178396A900433603 /* libBirdKit.a */; };
 		7E611532178396B200433603 /* libBirdKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E611531178396B200433603 /* libBirdKit.a */; };
+		7E71103A178BA6230039186F /* FunnelGaugeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E711038178BA0E00039186F /* FunnelGaugeView.m */; };
 		7EB19AE5178B93DE0014ED51 /* fake_facebook_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19AC7178B93DE0014ED51 /* fake_facebook_background.png */; };
 		7EB19AE6178B93DE0014ED51 /* fake_facebook_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19AC8178B93DE0014ED51 /* fake_facebook_background@2x.png */; };
 		7EB19AE7178B93DE0014ED51 /* following.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19AC9178B93DE0014ED51 /* following.png */; };
@@ -42,10 +43,6 @@
 		7EB19AF0178B93DE0014ED51 /* funnel_location_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19AD2178B93DE0014ED51 /* funnel_location_2@2x.png */; };
 		7EB19AF1178B93DE0014ED51 /* funnel_name.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19AD3178B93DE0014ED51 /* funnel_name.png */; };
 		7EB19AF2178B93DE0014ED51 /* funnel_name@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19AD4178B93DE0014ED51 /* funnel_name@2x.png */; };
-		7EB19AF3178B93DE0014ED51 /* funnel_salary.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19AD5178B93DE0014ED51 /* funnel_salary.png */; };
-		7EB19AF4178B93DE0014ED51 /* funnel_salary@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19AD6178B93DE0014ED51 /* funnel_salary@2x.png */; };
-		7EB19AF5178B93DE0014ED51 /* funnel_years.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19AD7178B93DE0014ED51 /* funnel_years.png */; };
-		7EB19AF6178B93DE0014ED51 /* funnel_years@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19AD8178B93DE0014ED51 /* funnel_years@2x.png */; };
 		7EB19AF7178B93DE0014ED51 /* job_card.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19AD9178B93DE0014ED51 /* job_card.png */; };
 		7EB19AF8178B93DE0014ED51 /* job_card@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19ADA178B93DE0014ED51 /* job_card@2x.png */; };
 		7EB19AF9178B93DE0014ED51 /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19ADB178B93DE0014ED51 /* login.png */; };
@@ -65,9 +62,7 @@
 		7EB19B11178B96250014ED51 /* FunnelLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB19B0F178B96250014ED51 /* FunnelLocationViewController.m */; };
 		7EB19B12178B96250014ED51 /* FunnelLocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19B10178B96250014ED51 /* FunnelLocationViewController.xib */; };
 		7EB19B16178B96490014ED51 /* FunnelSalaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB19B14178B96490014ED51 /* FunnelSalaryViewController.m */; };
-		7EB19B17178B96490014ED51 /* FunnelSalaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19B15178B96490014ED51 /* FunnelSalaryViewController.xib */; };
 		7EB19B1B178B96690014ED51 /* FunnelYearsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB19B19178B96690014ED51 /* FunnelYearsViewController.m */; };
-		7EB19B1C178B96690014ED51 /* FunnelYearsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19B1A178B96690014ED51 /* FunnelYearsViewController.xib */; };
 		7EB19B20178B96A50014ED51 /* FunnelDreamJobViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB19B1E178B96A50014ED51 /* FunnelDreamJobViewController.m */; };
 		7EB19B21178B96A50014ED51 /* FunnelDreamJobViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19B1F178B96A50014ED51 /* FunnelDreamJobViewController.xib */; };
 		7EB19B25178B96C70014ED51 /* FunnelDoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB19B23178B96C70014ED51 /* FunnelDoneViewController.m */; };
@@ -152,6 +147,8 @@
 		7E6115131783926B00433603 /* RaiseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RaiseTests.m; sourceTree = "<group>"; };
 		7E61152F178396A900433603 /* libBirdKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBirdKit.a; path = "../BirdKit/build/Debug-iphoneos/libBirdKit.a"; sourceTree = "<group>"; };
 		7E611531178396B200433603 /* libBirdKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBirdKit.a; path = "../BirdKit/build/Debug-iphoneos/libBirdKit.a"; sourceTree = "<group>"; };
+		7E711037178BA0E00039186F /* FunnelGaugeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunnelGaugeView.h; sourceTree = "<group>"; };
+		7E711038178BA0E00039186F /* FunnelGaugeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunnelGaugeView.m; sourceTree = "<group>"; };
 		7EB19AC7178B93DE0014ED51 /* fake_facebook_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fake_facebook_background.png; sourceTree = "<group>"; };
 		7EB19AC8178B93DE0014ED51 /* fake_facebook_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fake_facebook_background@2x.png"; sourceTree = "<group>"; };
 		7EB19AC9178B93DE0014ED51 /* following.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = following.png; sourceTree = "<group>"; };
@@ -166,10 +163,6 @@
 		7EB19AD2178B93DE0014ED51 /* funnel_location_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "funnel_location_2@2x.png"; sourceTree = "<group>"; };
 		7EB19AD3178B93DE0014ED51 /* funnel_name.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = funnel_name.png; sourceTree = "<group>"; };
 		7EB19AD4178B93DE0014ED51 /* funnel_name@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "funnel_name@2x.png"; sourceTree = "<group>"; };
-		7EB19AD5178B93DE0014ED51 /* funnel_salary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = funnel_salary.png; sourceTree = "<group>"; };
-		7EB19AD6178B93DE0014ED51 /* funnel_salary@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "funnel_salary@2x.png"; sourceTree = "<group>"; };
-		7EB19AD7178B93DE0014ED51 /* funnel_years.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = funnel_years.png; sourceTree = "<group>"; };
-		7EB19AD8178B93DE0014ED51 /* funnel_years@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "funnel_years@2x.png"; sourceTree = "<group>"; };
 		7EB19AD9178B93DE0014ED51 /* job_card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = job_card.png; sourceTree = "<group>"; };
 		7EB19ADA178B93DE0014ED51 /* job_card@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "job_card@2x.png"; sourceTree = "<group>"; };
 		7EB19ADB178B93DE0014ED51 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
@@ -193,10 +186,8 @@
 		7EB19B10178B96250014ED51 /* FunnelLocationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FunnelLocationViewController.xib; sourceTree = "<group>"; };
 		7EB19B13178B96490014ED51 /* FunnelSalaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunnelSalaryViewController.h; sourceTree = "<group>"; };
 		7EB19B14178B96490014ED51 /* FunnelSalaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunnelSalaryViewController.m; sourceTree = "<group>"; };
-		7EB19B15178B96490014ED51 /* FunnelSalaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FunnelSalaryViewController.xib; sourceTree = "<group>"; };
 		7EB19B18178B96690014ED51 /* FunnelYearsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunnelYearsViewController.h; sourceTree = "<group>"; };
 		7EB19B19178B96690014ED51 /* FunnelYearsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunnelYearsViewController.m; sourceTree = "<group>"; };
-		7EB19B1A178B96690014ED51 /* FunnelYearsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FunnelYearsViewController.xib; sourceTree = "<group>"; };
 		7EB19B1D178B96A50014ED51 /* FunnelDreamJobViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunnelDreamJobViewController.h; sourceTree = "<group>"; };
 		7EB19B1E178B96A50014ED51 /* FunnelDreamJobViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunnelDreamJobViewController.m; sourceTree = "<group>"; };
 		7EB19B1F178B96A50014ED51 /* FunnelDreamJobViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FunnelDreamJobViewController.xib; sourceTree = "<group>"; };
@@ -270,11 +261,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ED63D591784266900295D48 /* QuartzCore.framework in Frameworks */,
 				7E6114E91783926B00433603 /* Foundation.framework in Frameworks */,
 				7E6114ED1783926B00433603 /* UIKit.framework in Frameworks */,
 				7E6114EF1783926B00433603 /* CoreData.framework in Frameworks */,
 				7E6114EB1783926B00433603 /* CoreGraphics.framework in Frameworks */,
-				7ED63D591784266900295D48 /* QuartzCore.framework in Frameworks */,
 				7ED63D5D1784267400295D48 /* CoreLocation.framework in Frameworks */,
 				7ED63D5B1784266F00295D48 /* MapKit.framework in Frameworks */,
 				540C68B5B1954585A03C0EEA /* libPods.a in Frameworks */,
@@ -383,10 +374,6 @@
 				7EB19AD2178B93DE0014ED51 /* funnel_location_2@2x.png */,
 				7EB19AD3178B93DE0014ED51 /* funnel_name.png */,
 				7EB19AD4178B93DE0014ED51 /* funnel_name@2x.png */,
-				7EB19AD5178B93DE0014ED51 /* funnel_salary.png */,
-				7EB19AD6178B93DE0014ED51 /* funnel_salary@2x.png */,
-				7EB19AD7178B93DE0014ED51 /* funnel_years.png */,
-				7EB19AD8178B93DE0014ED51 /* funnel_years@2x.png */,
 				7EB19AD9178B93DE0014ED51 /* job_card.png */,
 				7EB19ADA178B93DE0014ED51 /* job_card@2x.png */,
 				7EB19ADB178B93DE0014ED51 /* login.png */,
@@ -414,16 +401,16 @@
 				7EB19B10178B96250014ED51 /* FunnelLocationViewController.xib */,
 				7EB19B13178B96490014ED51 /* FunnelSalaryViewController.h */,
 				7EB19B14178B96490014ED51 /* FunnelSalaryViewController.m */,
-				7EB19B15178B96490014ED51 /* FunnelSalaryViewController.xib */,
 				7EB19B18178B96690014ED51 /* FunnelYearsViewController.h */,
 				7EB19B19178B96690014ED51 /* FunnelYearsViewController.m */,
-				7EB19B1A178B96690014ED51 /* FunnelYearsViewController.xib */,
 				7EB19B1D178B96A50014ED51 /* FunnelDreamJobViewController.h */,
 				7EB19B1E178B96A50014ED51 /* FunnelDreamJobViewController.m */,
 				7EB19B1F178B96A50014ED51 /* FunnelDreamJobViewController.xib */,
 				7EB19B22178B96C70014ED51 /* FunnelDoneViewController.h */,
 				7EB19B23178B96C70014ED51 /* FunnelDoneViewController.m */,
 				7EB19B24178B96C70014ED51 /* FunnelDoneViewController.xib */,
+				7E711037178BA0E00039186F /* FunnelGaugeView.h */,
+				7E711038178BA0E00039186F /* FunnelGaugeView.m */,
 			);
 			path = Funnel;
 			sourceTree = "<group>";
@@ -683,8 +670,6 @@
 				7EB19AFF178B93DE0014ED51 /* pivot_jobs.png in Resources */,
 				7E218AB617850BCD00EAFE65 /* button_info_60@2x.png in Resources */,
 				7EB19AF1178B93DE0014ED51 /* funnel_name.png in Resources */,
-				7EB19B1C178B96690014ED51 /* FunnelYearsViewController.xib in Resources */,
-				7EB19AF4178B93DE0014ED51 /* funnel_salary@2x.png in Resources */,
 				7ED63D3B17840C5A00295D48 /* FollowingViewController.xib in Resources */,
 				7EFCD7451783BD270067C395 /* Cabin-Bold.otf in Resources */,
 				7EB19AF8178B93DE0014ED51 /* job_card@2x.png in Resources */,
@@ -703,7 +688,6 @@
 				7EB19B2A178B9AE10014ED51 /* bg_navbar@2x.png in Resources */,
 				7E218AB517850BCD00EAFE65 /* button_info_60.png in Resources */,
 				7EFCD74E1783BD270067C395 /* subtle_stripes_@2X.png in Resources */,
-				7EB19AF5178B93DE0014ED51 /* funnel_years.png in Resources */,
 				7EFCD7511783BD270067C395 /* logo_navbar.png in Resources */,
 				7EB19AEE178B93DE0014ED51 /* funnel_location@2x.png in Resources */,
 				7EB19B0D178B95F90014ED51 /* FunnelNameViewController.xib in Resources */,
@@ -713,16 +697,13 @@
 				7EB19AED178B93DE0014ED51 /* funnel_location.png in Resources */,
 				7EB19AE6178B93DE0014ED51 /* fake_facebook_background@2x.png in Resources */,
 				7EB19B01178B93DE0014ED51 /* profile.png in Resources */,
-				7EB19B17178B96490014ED51 /* FunnelSalaryViewController.xib in Resources */,
 				7EB19AF7178B93DE0014ED51 /* job_card.png in Resources */,
 				7EB19B07178B940A0014ED51 /* JobDetailViewController.xib in Resources */,
 				7EB19B02178B93DE0014ED51 /* profile@2x.png in Resources */,
 				7EBFF7E0178B4E6600423373 /* ProfileViewController.xib in Resources */,
 				7EB19B00178B93DE0014ED51 /* pivot_jobs@2x.png in Resources */,
 				7EFCD74F1783BD270067C395 /* button_side_menu.png in Resources */,
-				7EB19AF3178B93DE0014ED51 /* funnel_salary.png in Resources */,
 				7EB19AEC178B93DE0014ED51 /* funnel_dream_job@2x.png in Resources */,
-				7EB19AF6178B93DE0014ED51 /* funnel_years@2x.png in Resources */,
 				7EB19AF2178B93DE0014ED51 /* funnel_name@2x.png in Resources */,
 				7EB19AFA178B93DE0014ED51 /* login@2x.png in Resources */,
 				7EFCD74A1783BD270067C395 /* Cabin-Regular.otf in Resources */,
@@ -783,6 +764,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EFCD77A1783EB5E0067C395 /* RaiseButton.m in Sources */,
+				7E71103A178BA6230039186F /* FunnelGaugeView.m in Sources */,
 				7EB19B2E178B9B6A0014ED51 /* CompanyDetailViewController.m in Sources */,
 				7EB19B1B178B96690014ED51 /* FunnelYearsViewController.m in Sources */,
 				7EFCD7801783F2080067C395 /* RaiseBodyLabel.m in Sources */,

@@ -7,33 +7,45 @@
 //
 
 #import "FunnelYearsViewController.h"
+#import "FunnelGaugeView.h"
 
-@interface FunnelYearsViewController ()
-
+@interface FunnelYearsViewController () <FunnelGaugeViewDelegate>
+PROP_STRONG FunnelGaugeView *view;
 @end
 
 @implementation FunnelYearsViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
+- (void)loadView {
+	self.view = [[FunnelGaugeView alloc] init];
+	self.view.delegate = self;
+	self.view.titleLabel.text = @"I have this many years of job experience:";
 	
-    self.navigationItem.title = @"Experience";
+	self.view.gauge.minValue = 0;
+	self.view.minValueLabel.text = @"0 years";
+	self.view.gauge.maxValue = 20;
+	self.view.maxValueLabel.text = @"20+ years";
+	self.view.valueLabel.text = @"2 years";
+	dispatch_next_run_loop(^{
+		[self.view.gauge setValue:2.0f animated:YES];
+	});
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidLoad {
+    [super viewDidLoad];
+	self.navigationItem.title = @"Experience";
+}
+
+- (void)continueButtonPressed {
+	float value = roundf(self.view.gauge.value);
+	TODO_ALERT(@"save the user's years of experience: %.0f years", value);
+}
+
+
+#pragma mark - FunnelGaugeViewDelegate
+
+- (NSString *)funnelGaugeViewStringForValue:(float)value {
+	value = roundf(self.view.gauge.value); // round value to the nearest year
+	return [NSString stringWithFormat:@"%.0f%@ years", value, (value == 20.0f ? @"+" : @"")];
 }
 
 @end

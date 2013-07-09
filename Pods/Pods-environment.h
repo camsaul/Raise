@@ -25,6 +25,12 @@
 #define COCOAPODS_VERSION_MINOR_MBProgressHUD 7
 #define COCOAPODS_VERSION_PATCH_MBProgressHUD 0
 
+// MSSimpleGauge
+#define COCOAPODS_POD_AVAILABLE_MSSimpleGauge
+#define COCOAPODS_VERSION_MAJOR_MSSimpleGauge 0
+#define COCOAPODS_VERSION_MINOR_MSSimpleGauge 3
+#define COCOAPODS_VERSION_PATCH_MSSimpleGauge 0
+
 // Reachability
 #define COCOAPODS_POD_AVAILABLE_Reachability
 #define COCOAPODS_VERSION_MAJOR_Reachability 3
