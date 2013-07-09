@@ -67,8 +67,6 @@
 		7E7110C9178BF3AE0039186F /* funnel_done@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E711091178BF3AE0039186F /* funnel_done@2x.png */; };
 		7E7110CA178BF3AE0039186F /* funnel_location_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E711092178BF3AE0039186F /* funnel_location_2.png */; };
 		7E7110CB178BF3AE0039186F /* funnel_location_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E711093178BF3AE0039186F /* funnel_location_2@2x.png */; };
-		7E7110CC178BF3AE0039186F /* funnel_name.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E711094178BF3AE0039186F /* funnel_name.png */; };
-		7E7110CD178BF3AE0039186F /* funnel_name@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E711095178BF3AE0039186F /* funnel_name@2x.png */; };
 		7E7110CE178BF3AE0039186F /* job_card.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E711096178BF3AE0039186F /* job_card.png */; };
 		7E7110CF178BF3AE0039186F /* job_card@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E711097178BF3AE0039186F /* job_card@2x.png */; };
 		7E7110D2178BF3AE0039186F /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E71109A178BF3AE0039186F /* menu.png */; };
@@ -204,12 +202,10 @@
 		7E71108D178BF3AE0039186F /* following_cell_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "following_cell_2@2x.png"; sourceTree = "<group>"; };
 		7E71108E178BF3AE0039186F /* following_search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = following_search.png; sourceTree = "<group>"; };
 		7E71108F178BF3AE0039186F /* following_search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "following_search@2x.png"; sourceTree = "<group>"; };
-		7E711090178BF3AE0039186F /* funnel_done.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = funnel_done.png; sourceTree = "<group>"; };
-		7E711091178BF3AE0039186F /* funnel_done@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "funnel_done@2x.png"; sourceTree = "<group>"; };
+		7E711090178BF3AE0039186F /* funnel_done.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = funnel_done.png; path = Mockups/funnel_done.png; sourceTree = "<group>"; };
+		7E711091178BF3AE0039186F /* funnel_done@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "funnel_done@2x.png"; path = "Mockups/funnel_done@2x.png"; sourceTree = "<group>"; };
 		7E711092178BF3AE0039186F /* funnel_location_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = funnel_location_2.png; sourceTree = "<group>"; };
 		7E711093178BF3AE0039186F /* funnel_location_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "funnel_location_2@2x.png"; sourceTree = "<group>"; };
-		7E711094178BF3AE0039186F /* funnel_name.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = funnel_name.png; sourceTree = "<group>"; };
-		7E711095178BF3AE0039186F /* funnel_name@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "funnel_name@2x.png"; sourceTree = "<group>"; };
 		7E711096178BF3AE0039186F /* job_card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = job_card.png; sourceTree = "<group>"; };
 		7E711097178BF3AE0039186F /* job_card@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "job_card@2x.png"; sourceTree = "<group>"; };
 		7E71109A178BF3AE0039186F /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
@@ -218,8 +214,8 @@
 		7E71109D178BF3AE0039186F /* pivot_company@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pivot_company@2x.png"; sourceTree = "<group>"; };
 		7E71109E178BF3AE0039186F /* pivot_jobs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pivot_jobs.png; sourceTree = "<group>"; };
 		7E71109F178BF3AE0039186F /* pivot_jobs@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pivot_jobs@2x.png"; sourceTree = "<group>"; };
-		7E7110A0178BF3AE0039186F /* profile_pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_pic.png; sourceTree = "<group>"; };
-		7E7110A1178BF3AE0039186F /* profile_pic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile_pic@2x.png"; sourceTree = "<group>"; };
+		7E7110A0178BF3AE0039186F /* profile_pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = profile_pic.png; path = Mockups/profile_pic.png; sourceTree = "<group>"; };
+		7E7110A1178BF3AE0039186F /* profile_pic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "profile_pic@2x.png"; path = "Mockups/profile_pic@2x.png"; sourceTree = "<group>"; };
 		7E7110DA178BF5730039186F /* RaiseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaiseNavigationController.h; sourceTree = "<group>"; };
 		7E7110DB178BF5730039186F /* RaiseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RaiseNavigationController.m; sourceTree = "<group>"; };
 		7E7110DD178BF6980039186F /* FunnelNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunnelNavigationController.h; sourceTree = "<group>"; };
@@ -406,6 +402,7 @@
 				7E711066178BF3AE0039186F /* Backgrounds */,
 				7E71106B178BF3AE0039186F /* Buttons */,
 				7E711082178BF3AE0039186F /* Logo */,
+				7E7110E3178C03D90039186F /* Mockups_OK */,
 				7E711087178BF3AE0039186F /* Mockups */,
 			);
 			path = Images;
@@ -473,12 +470,8 @@
 				7E71108D178BF3AE0039186F /* following_cell_2@2x.png */,
 				7E71108E178BF3AE0039186F /* following_search.png */,
 				7E71108F178BF3AE0039186F /* following_search@2x.png */,
-				7E711090178BF3AE0039186F /* funnel_done.png */,
-				7E711091178BF3AE0039186F /* funnel_done@2x.png */,
 				7E711092178BF3AE0039186F /* funnel_location_2.png */,
 				7E711093178BF3AE0039186F /* funnel_location_2@2x.png */,
-				7E711094178BF3AE0039186F /* funnel_name.png */,
-				7E711095178BF3AE0039186F /* funnel_name@2x.png */,
 				7E711096178BF3AE0039186F /* job_card.png */,
 				7E711097178BF3AE0039186F /* job_card@2x.png */,
 				7E71109A178BF3AE0039186F /* menu.png */,
@@ -487,10 +480,19 @@
 				7E71109D178BF3AE0039186F /* pivot_company@2x.png */,
 				7E71109E178BF3AE0039186F /* pivot_jobs.png */,
 				7E71109F178BF3AE0039186F /* pivot_jobs@2x.png */,
-				7E7110A0178BF3AE0039186F /* profile_pic.png */,
-				7E7110A1178BF3AE0039186F /* profile_pic@2x.png */,
 			);
 			path = Mockups;
+			sourceTree = "<group>";
+		};
+		7E7110E3178C03D90039186F /* Mockups_OK */ = {
+			isa = PBXGroup;
+			children = (
+				7E7110A0178BF3AE0039186F /* profile_pic.png */,
+				7E7110A1178BF3AE0039186F /* profile_pic@2x.png */,
+				7E711090178BF3AE0039186F /* funnel_done.png */,
+				7E711091178BF3AE0039186F /* funnel_done@2x.png */,
+			);
+			name = Mockups_OK;
 			sourceTree = "<group>";
 		};
 		7EB19B08178B95D40014ED51 /* Funnel */ = {
@@ -730,7 +732,6 @@
 				7E7110C0178BF3AE0039186F /* fake_facebook_background.png in Resources */,
 				7E7110B1178BF3AE0039186F /* button_info_60@2x.png in Resources */,
 				7E7110B4178BF3AE0039186F /* button_login_later.png in Resources */,
-				7E7110CC178BF3AE0039186F /* funnel_name.png in Resources */,
 				7E7110A7178BF3AE0039186F /* button_check_80@2x.png in Resources */,
 				7E218AAA178503EE00EAFE65 /* LoginViewController.xib in Resources */,
 				7EFCD7461783BD270067C395 /* Cabin-BoldItalic.otf in Resources */,
@@ -787,7 +788,6 @@
 				7E7110AF178BF3AE0039186F /* button_connect_logout@2x.png in Resources */,
 				7E7110AB178BF3AE0039186F /* button_connect_facebook@2x.png in Resources */,
 				7E7110C6178BF3AE0039186F /* following_search.png in Resources */,
-				7E7110CD178BF3AE0039186F /* funnel_name@2x.png in Resources */,
 				7E7110CA178BF3AE0039186F /* funnel_location_2.png in Resources */,
 				7E7110B8178BF3AE0039186F /* button_search_30.png in Resources */,
 				7E7110A3178BF3AE0039186F /* bg_navbar@2x.png in Resources */,

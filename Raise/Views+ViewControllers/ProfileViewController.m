@@ -7,10 +7,11 @@
 //
 
 #import "ProfileViewController.h"
+#import "FunnelViewController.h"
 #import "LoginViewController.h"
 #import "JobDiscoveryViewController.h"
 
-@interface ProfileViewController ()
+@interface ProfileViewController () <FunnelViewControllerDelegate>
 @property (strong, nonatomic) IBOutlet UILabel *nameLabel;
 @property (strong, nonatomic) IBOutlet UIButton *salaryButton;
 @property (strong, nonatomic) IBOutlet UIButton *yearsButton;
@@ -49,23 +50,23 @@
 }
 
 - (IBAction)salaryButtonPressed:(id)sender {
-	[NavigationService navigateTo:@"FunnelSalaryViewController" params:nil];
+	[NavigationService navigateTo:@"FunnelSalaryViewController" params:@{NavigationServiceDelegateParam: self}];
 }
 
 - (IBAction)experienceButtonPressed:(id)sender {
-	[NavigationService navigateTo:@"FunnelYearsViewController" params:nil];
+	[NavigationService navigateTo:@"FunnelYearsViewController" params:@{NavigationServiceDelegateParam: self}];
 }
 
 - (IBAction)locationButtonPressed:(id)sender {
-	[NavigationService navigateTo:@"FunnelLocationViewController" params:nil];
+	[NavigationService navigateTo:@"FunnelLocationViewController" params:@{NavigationServiceDelegateParam: self}];
 }
 
 - (IBAction)dreamJobButtonPressed:(id)sender {
-	[NavigationService navigateTo:@"FunnelDreamJobViewController" params:nil];
+	[NavigationService navigateTo:@"FunnelDreamJobViewController" params:@{NavigationServiceDelegateParam: self}];
 }
 
 - (IBAction)nameButtonPressed:(id)sender {
-	[NavigationService navigateTo:@"FunnelNameViewController" params:nil];
+	[NavigationService navigateTo:@"FunnelNameViewController" params:@{NavigationServiceDelegateParam: self}];
 }
 
 - (IBAction)connectWithFacebookPressed:(id)sender {
@@ -81,6 +82,13 @@
 	[ROOT_VIEW_CONTROLLER presentViewController:loginVC animated:YES completion:nil];
 	
 	[ROOT_VIEW_CONTROLLER setNavControllerRootVC:[JobDiscoveryViewController class] options:0];
+}
+
+
+#pragma mark - FunnelViewControllerDelegate
+
+- (void)funnelViewControllerDidFinish {
+	[APP_DELEGATE.rootViewController.navigationController popViewControllerAnimated:YES];
 }
 
 @end
