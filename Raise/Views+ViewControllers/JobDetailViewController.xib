@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4457.6" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3682.6"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JobDetailViewController">
+            <connections>
+                <outlet property="contentView" destination="MFh-Ir-mFd" id="vUX-qn-X0c"/>
+                <outlet property="scrollView" destination="Ljz-cP-jb8" id="Gbt-pg-hQL"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ljz-cP-jb8">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="548"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="Aac-uZ-Eeh"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Ljz-cP-jb8" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="Cjv-tv-EPw"/>
+                <constraint firstItem="Ljz-cP-jb8" firstAttribute="top" secondItem="1" secondAttribute="top" id="ejX-Ue-2G0"/>
+                <constraint firstItem="Ljz-cP-jb8" firstAttribute="bottom" secondItem="1" secondAttribute="bottom" id="yBd-Xl-nWj"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+        <view contentMode="scaleToFill" id="MFh-Ir-mFd" userLabel="Content View">
+            <rect key="frame" x="0.0" y="0.0" width="1220" height="416"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="pivot_jobs.png" translatesAutoresizingMaskIntoConstraints="NO" id="SJf-vg-I1G">
+                    <rect key="frame" x="0.0" y="0.0" width="1220" height="416"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2H-Ak-LNE" userLabel="Company Info Button">
+                    <rect key="frame" x="550" y="10" width="40" height="41"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Button" image="button_info_60.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="companyInfoButtonPressed:" destination="-1" eventType="touchUpInside" id="rHD-q1-gFh"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="SJf-vg-I1G" firstAttribute="bottom" secondItem="MFh-Ir-mFd" secondAttribute="bottom" id="0bs-D5-3Wi"/>
+                <constraint firstItem="SJf-vg-I1G" firstAttribute="trailing" secondItem="MFh-Ir-mFd" secondAttribute="trailing" id="Sxc-dk-FJM"/>
+                <constraint firstItem="SJf-vg-I1G" firstAttribute="top" secondItem="MFh-Ir-mFd" secondAttribute="top" id="lIk-ls-M48"/>
+                <constraint firstItem="SJf-vg-I1G" firstAttribute="leading" secondItem="MFh-Ir-mFd" secondAttribute="leading" id="vTe-he-kZX"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="button_info_60.png" width="60" height="60"/>
+        <image name="pivot_jobs.png" width="1220" height="416"/>
+    </resources>
+</document>

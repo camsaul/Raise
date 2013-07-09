@@ -142,7 +142,7 @@ PROP CGPoint originalJobCardCenter;
 }
 
 - (void)infoAction {
-	[NavigationService navigateTo:@"JobDetailPivotViewController" params:@{ParamJobID: @(100)}];
+	[NavigationService navigateTo:@"JobDetailViewController" params:@{ParamJobID: @(100)}];
 }
 
 @end

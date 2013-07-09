@@ -28,20 +28,60 @@
 		7E6115141783926B00433603 /* RaiseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6115131783926B00433603 /* RaiseTests.m */; };
 		7E611530178396A900433603 /* libBirdKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E61152F178396A900433603 /* libBirdKit.a */; };
 		7E611532178396B200433603 /* libBirdKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E611531178396B200433603 /* libBirdKit.a */; };
-		7E8D50FC178429C900701897 /* JobDetailPivotSimilarPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8D50FA178429C900701897 /* JobDetailPivotSimilarPage.m */; };
-		7E8D50FD178429C900701897 /* JobDetailPivotSimilarPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E8D50FB178429C900701897 /* JobDetailPivotSimilarPage.xib */; };
-		7ED63D3517840C4700295D48 /* following.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED63D3317840C4700295D48 /* following.png */; };
-		7ED63D3617840C4700295D48 /* following@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED63D3417840C4700295D48 /* following@2x.png */; };
+		7EB19AE5178B93DE0014ED51 /* fake_facebook_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19AC7178B93DE0014ED51 /* fake_facebook_background.png */; };
+		7EB19AE6178B93DE0014ED51 /* fake_facebook_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19AC8178B93DE0014ED51 /* fake_facebook_background@2x.png */; };
+		7EB19AE7178B93DE0014ED51 /* following.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19AC9178B93DE0014ED51 /* following.png */; };
+		7EB19AE8178B93DE0014ED51 /* following@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19ACA178B93DE0014ED51 /* following@2x.png */; };
+		7EB19AE9178B93DE0014ED51 /* funnel_done.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19ACB178B93DE0014ED51 /* funnel_done.png */; };
+		7EB19AEA178B93DE0014ED51 /* funnel_done@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19ACC178B93DE0014ED51 /* funnel_done@2x.png */; };
+		7EB19AEB178B93DE0014ED51 /* funnel_dream_job.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19ACD178B93DE0014ED51 /* funnel_dream_job.png */; };
+		7EB19AEC178B93DE0014ED51 /* funnel_dream_job@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19ACE178B93DE0014ED51 /* funnel_dream_job@2x.png */; };
+		7EB19AED178B93DE0014ED51 /* funnel_location.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19ACF178B93DE0014ED51 /* funnel_location.png */; };
+		7EB19AEE178B93DE0014ED51 /* funnel_location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19AD0178B93DE0014ED51 /* funnel_location@2x.png */; };
+		7EB19AEF178B93DE0014ED51 /* funnel_location_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19AD1178B93DE0014ED51 /* funnel_location_2.png */; };
+		7EB19AF0178B93DE0014ED51 /* funnel_location_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19AD2178B93DE0014ED51 /* funnel_location_2@2x.png */; };
+		7EB19AF1178B93DE0014ED51 /* funnel_name.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19AD3178B93DE0014ED51 /* funnel_name.png */; };
+		7EB19AF2178B93DE0014ED51 /* funnel_name@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19AD4178B93DE0014ED51 /* funnel_name@2x.png */; };
+		7EB19AF3178B93DE0014ED51 /* funnel_salary.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19AD5178B93DE0014ED51 /* funnel_salary.png */; };
+		7EB19AF4178B93DE0014ED51 /* funnel_salary@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19AD6178B93DE0014ED51 /* funnel_salary@2x.png */; };
+		7EB19AF5178B93DE0014ED51 /* funnel_years.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19AD7178B93DE0014ED51 /* funnel_years.png */; };
+		7EB19AF6178B93DE0014ED51 /* funnel_years@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19AD8178B93DE0014ED51 /* funnel_years@2x.png */; };
+		7EB19AF7178B93DE0014ED51 /* job_card.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19AD9178B93DE0014ED51 /* job_card.png */; };
+		7EB19AF8178B93DE0014ED51 /* job_card@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19ADA178B93DE0014ED51 /* job_card@2x.png */; };
+		7EB19AF9178B93DE0014ED51 /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19ADB178B93DE0014ED51 /* login.png */; };
+		7EB19AFA178B93DE0014ED51 /* login@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19ADC178B93DE0014ED51 /* login@2x.png */; };
+		7EB19AFB178B93DE0014ED51 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19ADD178B93DE0014ED51 /* menu.png */; };
+		7EB19AFC178B93DE0014ED51 /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19ADE178B93DE0014ED51 /* menu@2x.png */; };
+		7EB19AFD178B93DE0014ED51 /* pivot_company.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19ADF178B93DE0014ED51 /* pivot_company.png */; };
+		7EB19AFE178B93DE0014ED51 /* pivot_company@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19AE0178B93DE0014ED51 /* pivot_company@2x.png */; };
+		7EB19AFF178B93DE0014ED51 /* pivot_jobs.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19AE1178B93DE0014ED51 /* pivot_jobs.png */; };
+		7EB19B00178B93DE0014ED51 /* pivot_jobs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19AE2178B93DE0014ED51 /* pivot_jobs@2x.png */; };
+		7EB19B01178B93DE0014ED51 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19AE3178B93DE0014ED51 /* profile.png */; };
+		7EB19B02178B93DE0014ED51 /* profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19AE4178B93DE0014ED51 /* profile@2x.png */; };
+		7EB19B06178B940A0014ED51 /* JobDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB19B04178B940A0014ED51 /* JobDetailViewController.m */; };
+		7EB19B07178B940A0014ED51 /* JobDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19B05178B940A0014ED51 /* JobDetailViewController.xib */; };
+		7EB19B0C178B95F90014ED51 /* FunnelNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB19B0A178B95F90014ED51 /* FunnelNameViewController.m */; };
+		7EB19B0D178B95F90014ED51 /* FunnelNameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19B0B178B95F90014ED51 /* FunnelNameViewController.xib */; };
+		7EB19B11178B96250014ED51 /* FunnelLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB19B0F178B96250014ED51 /* FunnelLocationViewController.m */; };
+		7EB19B12178B96250014ED51 /* FunnelLocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19B10178B96250014ED51 /* FunnelLocationViewController.xib */; };
+		7EB19B16178B96490014ED51 /* FunnelSalaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB19B14178B96490014ED51 /* FunnelSalaryViewController.m */; };
+		7EB19B17178B96490014ED51 /* FunnelSalaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19B15178B96490014ED51 /* FunnelSalaryViewController.xib */; };
+		7EB19B1B178B96690014ED51 /* FunnelYearsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB19B19178B96690014ED51 /* FunnelYearsViewController.m */; };
+		7EB19B1C178B96690014ED51 /* FunnelYearsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19B1A178B96690014ED51 /* FunnelYearsViewController.xib */; };
+		7EB19B20178B96A50014ED51 /* FunnelDreamJobViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB19B1E178B96A50014ED51 /* FunnelDreamJobViewController.m */; };
+		7EB19B21178B96A50014ED51 /* FunnelDreamJobViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19B1F178B96A50014ED51 /* FunnelDreamJobViewController.xib */; };
+		7EB19B25178B96C70014ED51 /* FunnelDoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB19B23178B96C70014ED51 /* FunnelDoneViewController.m */; };
+		7EB19B26178B96C70014ED51 /* FunnelDoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19B24178B96C70014ED51 /* FunnelDoneViewController.xib */; };
+		7EB19B29178B9AE10014ED51 /* bg_navbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19B27178B9AE10014ED51 /* bg_navbar.png */; };
+		7EB19B2A178B9AE10014ED51 /* bg_navbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19B28178B9AE10014ED51 /* bg_navbar@2x.png */; };
+		7EB19B2E178B9B6A0014ED51 /* CompanyDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB19B2C178B9B6A0014ED51 /* CompanyDetailViewController.m */; };
+		7EB19B2F178B9B6A0014ED51 /* CompanyDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19B2D178B9B6A0014ED51 /* CompanyDetailViewController.xib */; };
+		7EBFF7DF178B4E6600423373 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EBFF7DD178B4E6600423373 /* ProfileViewController.m */; };
+		7EBFF7E0178B4E6600423373 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EBFF7DE178B4E6600423373 /* ProfileViewController.xib */; };
 		7ED63D3A17840C5A00295D48 /* FollowingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED63D3817840C5A00295D48 /* FollowingViewController.m */; };
 		7ED63D3B17840C5A00295D48 /* FollowingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ED63D3917840C5A00295D48 /* FollowingViewController.xib */; };
 		7ED63D41178413E100295D48 /* UIBarButtonItem+RaiseButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED63D40178413E100295D48 /* UIBarButtonItem+RaiseButtons.m */; };
 		7ED63D44178414B700295D48 /* UIImageView+RaiseImages.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED63D43178414B700295D48 /* UIImageView+RaiseImages.m */; };
-		7ED63D471784173500295D48 /* job_card.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED63D451784173500295D48 /* job_card.png */; };
-		7ED63D481784173500295D48 /* job_card@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED63D461784173500295D48 /* job_card@2x.png */; };
-		7ED63D4C1784191100295D48 /* JobDetailPivotCompanyPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED63D4A1784191100295D48 /* JobDetailPivotCompanyPage.m */; };
-		7ED63D4D1784191100295D48 /* JobDetailPivotCompanyPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ED63D4B1784191100295D48 /* JobDetailPivotCompanyPage.xib */; };
-		7ED63D511784192600295D48 /* JobDetailPivotLocationPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED63D4F1784192600295D48 /* JobDetailPivotLocationPage.m */; };
-		7ED63D521784192600295D48 /* JobDetailPivotLocationPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ED63D501784192600295D48 /* JobDetailPivotLocationPage.xib */; };
 		7ED63D591784266900295D48 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED63D581784266900295D48 /* QuartzCore.framework */; };
 		7ED63D5B1784266F00295D48 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED63D5A1784266F00295D48 /* MapKit.framework */; };
 		7ED63D5D1784267400295D48 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED63D5C1784267400295D48 /* CoreLocation.framework */; };
@@ -68,23 +108,14 @@
 		7EFCD7501783BD270067C395 /* button_side_menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EFCD73A1783BD270067C395 /* button_side_menu@2x.png */; };
 		7EFCD7511783BD270067C395 /* logo_navbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EFCD73C1783BD270067C395 /* logo_navbar.png */; };
 		7EFCD7521783BD270067C395 /* logo_navbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EFCD73D1783BD270067C395 /* logo_navbar@2x.png */; };
-		7EFCD7551783BD270067C395 /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EFCD7411783BD270067C395 /* login.png */; };
-		7EFCD7561783BD270067C395 /* login@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EFCD7421783BD270067C395 /* login@2x.png */; };
 		7EFCD7571783BD270067C395 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EFCD7431783BD270067C395 /* Images.xcassets */; };
 		7EFCD75A1783BD570067C395 /* UIFont+RaiseFonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCD7591783BD570067C395 /* UIFont+RaiseFonts.m */; };
 		7EFCD75B1783BD570067C395 /* UIFont+RaiseFonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCD7591783BD570067C395 /* UIFont+RaiseFonts.m */; };
-		7EFCD76B1783E4A10067C395 /* JobDetailPivotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCD7691783E4A10067C395 /* JobDetailPivotViewController.m */; };
-		7EFCD7751783E4EF0067C395 /* JobDetailPivotOverviewPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCD7731783E4EF0067C395 /* JobDetailPivotOverviewPage.m */; };
-		7EFCD7761783E4EF0067C395 /* JobDetailPivotOverviewPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EFCD7741783E4EF0067C395 /* JobDetailPivotOverviewPage.xib */; };
 		7EFCD77A1783EB5E0067C395 /* RaiseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCD7791783EB5E0067C395 /* RaiseButton.m */; };
 		7EFCD77D1783F02A0067C395 /* RaiseHeaderLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCD77C1783F02A0067C395 /* RaiseHeaderLabel.m */; };
 		7EFCD7801783F2080067C395 /* RaiseBodyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCD77F1783F2080067C395 /* RaiseBodyLabel.m */; };
-		7EFCD783178406A00067C395 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EFCD781178406A00067C395 /* menu.png */; };
-		7EFCD784178406A00067C395 /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EFCD782178406A00067C395 /* menu@2x.png */; };
 		7EFCD788178406C20067C395 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFCD786178406C20067C395 /* MenuViewController.m */; };
 		7EFCD789178406C20067C395 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EFCD787178406C20067C395 /* MenuViewController.xib */; };
-		7EFCD78C17840A250067C395 /* fake_facebook_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EFCD78A17840A250067C395 /* fake_facebook_background.png */; };
-		7EFCD78D17840A250067C395 /* fake_facebook_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EFCD78B17840A250067C395 /* fake_facebook_background@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,11 +152,65 @@
 		7E6115131783926B00433603 /* RaiseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RaiseTests.m; sourceTree = "<group>"; };
 		7E61152F178396A900433603 /* libBirdKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBirdKit.a; path = "../BirdKit/build/Debug-iphoneos/libBirdKit.a"; sourceTree = "<group>"; };
 		7E611531178396B200433603 /* libBirdKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBirdKit.a; path = "../BirdKit/build/Debug-iphoneos/libBirdKit.a"; sourceTree = "<group>"; };
-		7E8D50F9178429C900701897 /* JobDetailPivotSimilarPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobDetailPivotSimilarPage.h; sourceTree = "<group>"; };
-		7E8D50FA178429C900701897 /* JobDetailPivotSimilarPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobDetailPivotSimilarPage.m; sourceTree = "<group>"; };
-		7E8D50FB178429C900701897 /* JobDetailPivotSimilarPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobDetailPivotSimilarPage.xib; sourceTree = "<group>"; };
-		7ED63D3317840C4700295D48 /* following.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = following.png; sourceTree = "<group>"; };
-		7ED63D3417840C4700295D48 /* following@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "following@2x.png"; sourceTree = "<group>"; };
+		7EB19AC7178B93DE0014ED51 /* fake_facebook_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fake_facebook_background.png; sourceTree = "<group>"; };
+		7EB19AC8178B93DE0014ED51 /* fake_facebook_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fake_facebook_background@2x.png"; sourceTree = "<group>"; };
+		7EB19AC9178B93DE0014ED51 /* following.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = following.png; sourceTree = "<group>"; };
+		7EB19ACA178B93DE0014ED51 /* following@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "following@2x.png"; sourceTree = "<group>"; };
+		7EB19ACB178B93DE0014ED51 /* funnel_done.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = funnel_done.png; sourceTree = "<group>"; };
+		7EB19ACC178B93DE0014ED51 /* funnel_done@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "funnel_done@2x.png"; sourceTree = "<group>"; };
+		7EB19ACD178B93DE0014ED51 /* funnel_dream_job.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = funnel_dream_job.png; sourceTree = "<group>"; };
+		7EB19ACE178B93DE0014ED51 /* funnel_dream_job@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "funnel_dream_job@2x.png"; sourceTree = "<group>"; };
+		7EB19ACF178B93DE0014ED51 /* funnel_location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = funnel_location.png; sourceTree = "<group>"; };
+		7EB19AD0178B93DE0014ED51 /* funnel_location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "funnel_location@2x.png"; sourceTree = "<group>"; };
+		7EB19AD1178B93DE0014ED51 /* funnel_location_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = funnel_location_2.png; sourceTree = "<group>"; };
+		7EB19AD2178B93DE0014ED51 /* funnel_location_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "funnel_location_2@2x.png"; sourceTree = "<group>"; };
+		7EB19AD3178B93DE0014ED51 /* funnel_name.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = funnel_name.png; sourceTree = "<group>"; };
+		7EB19AD4178B93DE0014ED51 /* funnel_name@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "funnel_name@2x.png"; sourceTree = "<group>"; };
+		7EB19AD5178B93DE0014ED51 /* funnel_salary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = funnel_salary.png; sourceTree = "<group>"; };
+		7EB19AD6178B93DE0014ED51 /* funnel_salary@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "funnel_salary@2x.png"; sourceTree = "<group>"; };
+		7EB19AD7178B93DE0014ED51 /* funnel_years.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = funnel_years.png; sourceTree = "<group>"; };
+		7EB19AD8178B93DE0014ED51 /* funnel_years@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "funnel_years@2x.png"; sourceTree = "<group>"; };
+		7EB19AD9178B93DE0014ED51 /* job_card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = job_card.png; sourceTree = "<group>"; };
+		7EB19ADA178B93DE0014ED51 /* job_card@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "job_card@2x.png"; sourceTree = "<group>"; };
+		7EB19ADB178B93DE0014ED51 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
+		7EB19ADC178B93DE0014ED51 /* login@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login@2x.png"; sourceTree = "<group>"; };
+		7EB19ADD178B93DE0014ED51 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		7EB19ADE178B93DE0014ED51 /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
+		7EB19ADF178B93DE0014ED51 /* pivot_company.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pivot_company.png; sourceTree = "<group>"; };
+		7EB19AE0178B93DE0014ED51 /* pivot_company@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pivot_company@2x.png"; sourceTree = "<group>"; };
+		7EB19AE1178B93DE0014ED51 /* pivot_jobs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pivot_jobs.png; sourceTree = "<group>"; };
+		7EB19AE2178B93DE0014ED51 /* pivot_jobs@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pivot_jobs@2x.png"; sourceTree = "<group>"; };
+		7EB19AE3178B93DE0014ED51 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		7EB19AE4178B93DE0014ED51 /* profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile@2x.png"; sourceTree = "<group>"; };
+		7EB19B03178B940A0014ED51 /* JobDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobDetailViewController.h; sourceTree = "<group>"; };
+		7EB19B04178B940A0014ED51 /* JobDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobDetailViewController.m; sourceTree = "<group>"; };
+		7EB19B05178B940A0014ED51 /* JobDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobDetailViewController.xib; sourceTree = "<group>"; };
+		7EB19B09178B95F90014ED51 /* FunnelNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunnelNameViewController.h; sourceTree = "<group>"; };
+		7EB19B0A178B95F90014ED51 /* FunnelNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunnelNameViewController.m; sourceTree = "<group>"; };
+		7EB19B0B178B95F90014ED51 /* FunnelNameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FunnelNameViewController.xib; sourceTree = "<group>"; };
+		7EB19B0E178B96250014ED51 /* FunnelLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunnelLocationViewController.h; sourceTree = "<group>"; };
+		7EB19B0F178B96250014ED51 /* FunnelLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunnelLocationViewController.m; sourceTree = "<group>"; };
+		7EB19B10178B96250014ED51 /* FunnelLocationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FunnelLocationViewController.xib; sourceTree = "<group>"; };
+		7EB19B13178B96490014ED51 /* FunnelSalaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunnelSalaryViewController.h; sourceTree = "<group>"; };
+		7EB19B14178B96490014ED51 /* FunnelSalaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunnelSalaryViewController.m; sourceTree = "<group>"; };
+		7EB19B15178B96490014ED51 /* FunnelSalaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FunnelSalaryViewController.xib; sourceTree = "<group>"; };
+		7EB19B18178B96690014ED51 /* FunnelYearsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunnelYearsViewController.h; sourceTree = "<group>"; };
+		7EB19B19178B96690014ED51 /* FunnelYearsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunnelYearsViewController.m; sourceTree = "<group>"; };
+		7EB19B1A178B96690014ED51 /* FunnelYearsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FunnelYearsViewController.xib; sourceTree = "<group>"; };
+		7EB19B1D178B96A50014ED51 /* FunnelDreamJobViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunnelDreamJobViewController.h; sourceTree = "<group>"; };
+		7EB19B1E178B96A50014ED51 /* FunnelDreamJobViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunnelDreamJobViewController.m; sourceTree = "<group>"; };
+		7EB19B1F178B96A50014ED51 /* FunnelDreamJobViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FunnelDreamJobViewController.xib; sourceTree = "<group>"; };
+		7EB19B22178B96C70014ED51 /* FunnelDoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunnelDoneViewController.h; sourceTree = "<group>"; };
+		7EB19B23178B96C70014ED51 /* FunnelDoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunnelDoneViewController.m; sourceTree = "<group>"; };
+		7EB19B24178B96C70014ED51 /* FunnelDoneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FunnelDoneViewController.xib; sourceTree = "<group>"; };
+		7EB19B27178B9AE10014ED51 /* bg_navbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_navbar.png; sourceTree = "<group>"; };
+		7EB19B28178B9AE10014ED51 /* bg_navbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_navbar@2x.png"; sourceTree = "<group>"; };
+		7EB19B2B178B9B6A0014ED51 /* CompanyDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyDetailViewController.h; sourceTree = "<group>"; };
+		7EB19B2C178B9B6A0014ED51 /* CompanyDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyDetailViewController.m; sourceTree = "<group>"; };
+		7EB19B2D178B9B6A0014ED51 /* CompanyDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompanyDetailViewController.xib; sourceTree = "<group>"; };
+		7EBFF7DC178B4E6600423373 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		7EBFF7DD178B4E6600423373 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		7EBFF7DE178B4E6600423373 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		7ED63D3717840C5A00295D48 /* FollowingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowingViewController.h; sourceTree = "<group>"; };
 		7ED63D3817840C5A00295D48 /* FollowingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowingViewController.m; sourceTree = "<group>"; };
 		7ED63D3917840C5A00295D48 /* FollowingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FollowingViewController.xib; sourceTree = "<group>"; };
@@ -133,14 +218,6 @@
 		7ED63D40178413E100295D48 /* UIBarButtonItem+RaiseButtons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+RaiseButtons.m"; sourceTree = "<group>"; };
 		7ED63D42178414B700295D48 /* UIImageView+RaiseImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+RaiseImages.h"; sourceTree = "<group>"; };
 		7ED63D43178414B700295D48 /* UIImageView+RaiseImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+RaiseImages.m"; sourceTree = "<group>"; };
-		7ED63D451784173500295D48 /* job_card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = job_card.png; sourceTree = "<group>"; };
-		7ED63D461784173500295D48 /* job_card@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "job_card@2x.png"; sourceTree = "<group>"; };
-		7ED63D491784191100295D48 /* JobDetailPivotCompanyPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobDetailPivotCompanyPage.h; sourceTree = "<group>"; };
-		7ED63D4A1784191100295D48 /* JobDetailPivotCompanyPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobDetailPivotCompanyPage.m; sourceTree = "<group>"; };
-		7ED63D4B1784191100295D48 /* JobDetailPivotCompanyPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobDetailPivotCompanyPage.xib; sourceTree = "<group>"; };
-		7ED63D4E1784192600295D48 /* JobDetailPivotLocationPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobDetailPivotLocationPage.h; sourceTree = "<group>"; };
-		7ED63D4F1784192600295D48 /* JobDetailPivotLocationPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobDetailPivotLocationPage.m; sourceTree = "<group>"; };
-		7ED63D501784192600295D48 /* JobDetailPivotLocationPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobDetailPivotLocationPage.xib; sourceTree = "<group>"; };
 		7ED63D581784266900295D48 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		7ED63D5A1784266F00295D48 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		7ED63D5C1784267400295D48 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -173,30 +250,19 @@
 		7EFCD73A1783BD270067C395 /* button_side_menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_side_menu@2x.png"; sourceTree = "<group>"; };
 		7EFCD73C1783BD270067C395 /* logo_navbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_navbar.png; sourceTree = "<group>"; };
 		7EFCD73D1783BD270067C395 /* logo_navbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo_navbar@2x.png"; sourceTree = "<group>"; };
-		7EFCD7411783BD270067C395 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
-		7EFCD7421783BD270067C395 /* login@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login@2x.png"; sourceTree = "<group>"; };
 		7EFCD7431783BD270067C395 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7EFCD7581783BD570067C395 /* UIFont+RaiseFonts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+RaiseFonts.h"; sourceTree = "<group>"; };
 		7EFCD7591783BD570067C395 /* UIFont+RaiseFonts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+RaiseFonts.m"; sourceTree = "<group>"; };
 		7EFCD7661783D2240067C395 /* RaiseNavigationParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaiseNavigationParams.h; sourceTree = "<group>"; };
-		7EFCD7681783E4A10067C395 /* JobDetailPivotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobDetailPivotViewController.h; sourceTree = "<group>"; };
-		7EFCD7691783E4A10067C395 /* JobDetailPivotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobDetailPivotViewController.m; sourceTree = "<group>"; };
-		7EFCD7721783E4EF0067C395 /* JobDetailPivotOverviewPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobDetailPivotOverviewPage.h; sourceTree = "<group>"; };
-		7EFCD7731783E4EF0067C395 /* JobDetailPivotOverviewPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobDetailPivotOverviewPage.m; sourceTree = "<group>"; };
-		7EFCD7741783E4EF0067C395 /* JobDetailPivotOverviewPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobDetailPivotOverviewPage.xib; sourceTree = "<group>"; };
 		7EFCD7781783EB5E0067C395 /* RaiseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaiseButton.h; sourceTree = "<group>"; };
 		7EFCD7791783EB5E0067C395 /* RaiseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RaiseButton.m; sourceTree = "<group>"; };
 		7EFCD77B1783F02A0067C395 /* RaiseHeaderLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaiseHeaderLabel.h; sourceTree = "<group>"; };
 		7EFCD77C1783F02A0067C395 /* RaiseHeaderLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RaiseHeaderLabel.m; sourceTree = "<group>"; };
 		7EFCD77E1783F2080067C395 /* RaiseBodyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaiseBodyLabel.h; sourceTree = "<group>"; };
 		7EFCD77F1783F2080067C395 /* RaiseBodyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RaiseBodyLabel.m; sourceTree = "<group>"; };
-		7EFCD781178406A00067C395 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
-		7EFCD782178406A00067C395 /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
 		7EFCD785178406C20067C395 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		7EFCD786178406C20067C395 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		7EFCD787178406C20067C395 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
-		7EFCD78A17840A250067C395 /* fake_facebook_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fake_facebook_background.png; sourceTree = "<group>"; };
-		7EFCD78B17840A250067C395 /* fake_facebook_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fake_facebook_background@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,6 +366,68 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7EB19AC6178B93DE0014ED51 /* Mockups */ = {
+			isa = PBXGroup;
+			children = (
+				7EB19AC7178B93DE0014ED51 /* fake_facebook_background.png */,
+				7EB19AC8178B93DE0014ED51 /* fake_facebook_background@2x.png */,
+				7EB19AC9178B93DE0014ED51 /* following.png */,
+				7EB19ACA178B93DE0014ED51 /* following@2x.png */,
+				7EB19ACB178B93DE0014ED51 /* funnel_done.png */,
+				7EB19ACC178B93DE0014ED51 /* funnel_done@2x.png */,
+				7EB19ACD178B93DE0014ED51 /* funnel_dream_job.png */,
+				7EB19ACE178B93DE0014ED51 /* funnel_dream_job@2x.png */,
+				7EB19ACF178B93DE0014ED51 /* funnel_location.png */,
+				7EB19AD0178B93DE0014ED51 /* funnel_location@2x.png */,
+				7EB19AD1178B93DE0014ED51 /* funnel_location_2.png */,
+				7EB19AD2178B93DE0014ED51 /* funnel_location_2@2x.png */,
+				7EB19AD3178B93DE0014ED51 /* funnel_name.png */,
+				7EB19AD4178B93DE0014ED51 /* funnel_name@2x.png */,
+				7EB19AD5178B93DE0014ED51 /* funnel_salary.png */,
+				7EB19AD6178B93DE0014ED51 /* funnel_salary@2x.png */,
+				7EB19AD7178B93DE0014ED51 /* funnel_years.png */,
+				7EB19AD8178B93DE0014ED51 /* funnel_years@2x.png */,
+				7EB19AD9178B93DE0014ED51 /* job_card.png */,
+				7EB19ADA178B93DE0014ED51 /* job_card@2x.png */,
+				7EB19ADB178B93DE0014ED51 /* login.png */,
+				7EB19ADC178B93DE0014ED51 /* login@2x.png */,
+				7EB19ADD178B93DE0014ED51 /* menu.png */,
+				7EB19ADE178B93DE0014ED51 /* menu@2x.png */,
+				7EB19ADF178B93DE0014ED51 /* pivot_company.png */,
+				7EB19AE0178B93DE0014ED51 /* pivot_company@2x.png */,
+				7EB19AE1178B93DE0014ED51 /* pivot_jobs.png */,
+				7EB19AE2178B93DE0014ED51 /* pivot_jobs@2x.png */,
+				7EB19AE3178B93DE0014ED51 /* profile.png */,
+				7EB19AE4178B93DE0014ED51 /* profile@2x.png */,
+			);
+			path = Mockups;
+			sourceTree = "<group>";
+		};
+		7EB19B08178B95D40014ED51 /* Funnel */ = {
+			isa = PBXGroup;
+			children = (
+				7EB19B09178B95F90014ED51 /* FunnelNameViewController.h */,
+				7EB19B0A178B95F90014ED51 /* FunnelNameViewController.m */,
+				7EB19B0B178B95F90014ED51 /* FunnelNameViewController.xib */,
+				7EB19B0E178B96250014ED51 /* FunnelLocationViewController.h */,
+				7EB19B0F178B96250014ED51 /* FunnelLocationViewController.m */,
+				7EB19B10178B96250014ED51 /* FunnelLocationViewController.xib */,
+				7EB19B13178B96490014ED51 /* FunnelSalaryViewController.h */,
+				7EB19B14178B96490014ED51 /* FunnelSalaryViewController.m */,
+				7EB19B15178B96490014ED51 /* FunnelSalaryViewController.xib */,
+				7EB19B18178B96690014ED51 /* FunnelYearsViewController.h */,
+				7EB19B19178B96690014ED51 /* FunnelYearsViewController.m */,
+				7EB19B1A178B96690014ED51 /* FunnelYearsViewController.xib */,
+				7EB19B1D178B96A50014ED51 /* FunnelDreamJobViewController.h */,
+				7EB19B1E178B96A50014ED51 /* FunnelDreamJobViewController.m */,
+				7EB19B1F178B96A50014ED51 /* FunnelDreamJobViewController.xib */,
+				7EB19B22178B96C70014ED51 /* FunnelDoneViewController.h */,
+				7EB19B23178B96C70014ED51 /* FunnelDoneViewController.m */,
+				7EB19B24178B96C70014ED51 /* FunnelDoneViewController.xib */,
+			);
+			path = Funnel;
+			sourceTree = "<group>";
+		};
 		7EFCD6E417839B570067C395 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -332,7 +460,7 @@
 			isa = PBXGroup;
 			children = (
 				7EFCD7771783EB4D0067C395 /* UI */,
-				7EFCD7671783E4A10067C395 /* JobDetailPivot */,
+				7EB19B08178B95D40014ED51 /* Funnel */,
 				7EFCD6F917839C160067C395 /* RootViewController.h */,
 				7EFCD6FA17839C160067C395 /* RootViewController.m */,
 				7EFCD7021783AC5F0067C395 /* JobDiscoveryViewController.h */,
@@ -347,6 +475,15 @@
 				7E218AA6178503EE00EAFE65 /* LoginViewController.h */,
 				7E218AA7178503EE00EAFE65 /* LoginViewController.m */,
 				7E218AA8178503EE00EAFE65 /* LoginViewController.xib */,
+				7EBFF7DC178B4E6600423373 /* ProfileViewController.h */,
+				7EBFF7DD178B4E6600423373 /* ProfileViewController.m */,
+				7EBFF7DE178B4E6600423373 /* ProfileViewController.xib */,
+				7EB19B03178B940A0014ED51 /* JobDetailViewController.h */,
+				7EB19B04178B940A0014ED51 /* JobDetailViewController.m */,
+				7EB19B05178B940A0014ED51 /* JobDetailViewController.xib */,
+				7EB19B2B178B9B6A0014ED51 /* CompanyDetailViewController.h */,
+				7EB19B2C178B9B6A0014ED51 /* CompanyDetailViewController.m */,
+				7EB19B2D178B9B6A0014ED51 /* CompanyDetailViewController.xib */,
 			);
 			path = "Views+ViewControllers";
 			sourceTree = "<group>";
@@ -396,10 +533,10 @@
 		7EFCD7341783BD270067C395 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				7EB19AC6178B93DE0014ED51 /* Mockups */,
 				7EFCD7351783BD270067C395 /* Backgrounds */,
 				7EFCD7381783BD270067C395 /* Buttons */,
 				7EFCD73B1783BD270067C395 /* Logo */,
-				7EFCD73E1783BD270067C395 /* Mockups */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -407,6 +544,8 @@
 		7EFCD7351783BD270067C395 /* Backgrounds */ = {
 			isa = PBXGroup;
 			children = (
+				7EB19B27178B9AE10014ED51 /* bg_navbar.png */,
+				7EB19B28178B9AE10014ED51 /* bg_navbar@2x.png */,
 				7EFCD7361783BD270067C395 /* subtle_stripes.png */,
 				7EFCD7371783BD270067C395 /* subtle_stripes_@2X.png */,
 			);
@@ -435,44 +574,6 @@
 				7EFCD73D1783BD270067C395 /* logo_navbar@2x.png */,
 			);
 			path = Logo;
-			sourceTree = "<group>";
-		};
-		7EFCD73E1783BD270067C395 /* Mockups */ = {
-			isa = PBXGroup;
-			children = (
-				7ED63D451784173500295D48 /* job_card.png */,
-				7ED63D461784173500295D48 /* job_card@2x.png */,
-				7ED63D3317840C4700295D48 /* following.png */,
-				7ED63D3417840C4700295D48 /* following@2x.png */,
-				7EFCD78A17840A250067C395 /* fake_facebook_background.png */,
-				7EFCD78B17840A250067C395 /* fake_facebook_background@2x.png */,
-				7EFCD781178406A00067C395 /* menu.png */,
-				7EFCD782178406A00067C395 /* menu@2x.png */,
-				7EFCD7411783BD270067C395 /* login.png */,
-				7EFCD7421783BD270067C395 /* login@2x.png */,
-			);
-			path = Mockups;
-			sourceTree = "<group>";
-		};
-		7EFCD7671783E4A10067C395 /* JobDetailPivot */ = {
-			isa = PBXGroup;
-			children = (
-				7EFCD7681783E4A10067C395 /* JobDetailPivotViewController.h */,
-				7EFCD7691783E4A10067C395 /* JobDetailPivotViewController.m */,
-				7EFCD7721783E4EF0067C395 /* JobDetailPivotOverviewPage.h */,
-				7EFCD7731783E4EF0067C395 /* JobDetailPivotOverviewPage.m */,
-				7EFCD7741783E4EF0067C395 /* JobDetailPivotOverviewPage.xib */,
-				7ED63D491784191100295D48 /* JobDetailPivotCompanyPage.h */,
-				7ED63D4A1784191100295D48 /* JobDetailPivotCompanyPage.m */,
-				7ED63D4B1784191100295D48 /* JobDetailPivotCompanyPage.xib */,
-				7ED63D4E1784192600295D48 /* JobDetailPivotLocationPage.h */,
-				7ED63D4F1784192600295D48 /* JobDetailPivotLocationPage.m */,
-				7ED63D501784192600295D48 /* JobDetailPivotLocationPage.xib */,
-				7E8D50F9178429C900701897 /* JobDetailPivotSimilarPage.h */,
-				7E8D50FA178429C900701897 /* JobDetailPivotSimilarPage.m */,
-				7E8D50FB178429C900701897 /* JobDetailPivotSimilarPage.xib */,
-			);
-			path = JobDetailPivot;
 			sourceTree = "<group>";
 		};
 		7EFCD7771783EB4D0067C395 /* UI */ = {
@@ -565,45 +666,72 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7ED63D521784192600295D48 /* JobDetailPivotLocationPage.xib in Resources */,
-				7ED63D481784173500295D48 /* job_card@2x.png in Resources */,
-				7E8D50FD178429C900701897 /* JobDetailPivotSimilarPage.xib in Resources */,
+				7EB19AFB178B93DE0014ED51 /* menu.png in Resources */,
+				7EB19AFE178B93DE0014ED51 /* pivot_company@2x.png in Resources */,
 				7EFCD7501783BD270067C395 /* button_side_menu@2x.png in Resources */,
 				7E218AB117850BCD00EAFE65 /* button_check_80.png in Resources */,
 				7EFCD74B1783BD270067C395 /* Cabin-SemiBold.otf in Resources */,
 				7EFCD789178406C20067C395 /* MenuViewController.xib in Resources */,
-				7ED63D471784173500295D48 /* job_card.png in Resources */,
-				7EFCD783178406A00067C395 /* menu.png in Resources */,
 				7E218AAA178503EE00EAFE65 /* LoginViewController.xib in Resources */,
 				7EFCD7461783BD270067C395 /* Cabin-BoldItalic.otf in Resources */,
 				7E218AB217850BCD00EAFE65 /* button_check_80@2x.png in Resources */,
-				7EFCD78C17840A250067C395 /* fake_facebook_background.png in Resources */,
-				7EFCD7761783E4EF0067C395 /* JobDetailPivotOverviewPage.xib in Resources */,
+				7EB19B21178B96A50014ED51 /* FunnelDreamJobViewController.xib in Resources */,
+				7EB19AEB178B93DE0014ED51 /* funnel_dream_job.png in Resources */,
+				7EB19B2F178B9B6A0014ED51 /* CompanyDetailViewController.xib in Resources */,
+				7EB19AE8178B93DE0014ED51 /* following@2x.png in Resources */,
+				7EB19AEF178B93DE0014ED51 /* funnel_location_2.png in Resources */,
+				7EB19AFF178B93DE0014ED51 /* pivot_jobs.png in Resources */,
 				7E218AB617850BCD00EAFE65 /* button_info_60@2x.png in Resources */,
+				7EB19AF1178B93DE0014ED51 /* funnel_name.png in Resources */,
+				7EB19B1C178B96690014ED51 /* FunnelYearsViewController.xib in Resources */,
+				7EB19AF4178B93DE0014ED51 /* funnel_salary@2x.png in Resources */,
 				7ED63D3B17840C5A00295D48 /* FollowingViewController.xib in Resources */,
 				7EFCD7451783BD270067C395 /* Cabin-Bold.otf in Resources */,
-				7ED63D3517840C4700295D48 /* following.png in Resources */,
+				7EB19AF8178B93DE0014ED51 /* job_card@2x.png in Resources */,
 				7EFCD7481783BD270067C395 /* Cabin-Medium.otf in Resources */,
-				7ED63D4D1784191100295D48 /* JobDetailPivotCompanyPage.xib in Resources */,
+				7EB19AE9178B93DE0014ED51 /* funnel_done.png in Resources */,
+				7EB19B29178B9AE10014ED51 /* bg_navbar.png in Resources */,
+				7EB19AFC178B93DE0014ED51 /* menu@2x.png in Resources */,
 				7E218AB317850BCD00EAFE65 /* button_close_80.png in Resources */,
-				7EFCD7561783BD270067C395 /* login@2x.png in Resources */,
-				7EFCD7551783BD270067C395 /* login.png in Resources */,
-				7EFCD78D17840A250067C395 /* fake_facebook_background@2x.png in Resources */,
+				7EB19AEA178B93DE0014ED51 /* funnel_done@2x.png in Resources */,
 				7EFCD7571783BD270067C395 /* Images.xcassets in Resources */,
 				7EFCD74C1783BD270067C395 /* Cabin-SemiBoldItalic.otf in Resources */,
+				7EB19B12178B96250014ED51 /* FunnelLocationViewController.xib in Resources */,
 				7E218AB417850BCD00EAFE65 /* button_close_80@2x.png in Resources */,
-				7EFCD784178406A00067C395 /* menu@2x.png in Resources */,
+				7EB19AE7178B93DE0014ED51 /* following.png in Resources */,
 				7EFCD7491783BD270067C395 /* Cabin-MediumItalic.otf in Resources */,
+				7EB19B2A178B9AE10014ED51 /* bg_navbar@2x.png in Resources */,
 				7E218AB517850BCD00EAFE65 /* button_info_60.png in Resources */,
 				7EFCD74E1783BD270067C395 /* subtle_stripes_@2X.png in Resources */,
-				7ED63D3617840C4700295D48 /* following@2x.png in Resources */,
+				7EB19AF5178B93DE0014ED51 /* funnel_years.png in Resources */,
 				7EFCD7511783BD270067C395 /* logo_navbar.png in Resources */,
+				7EB19AEE178B93DE0014ED51 /* funnel_location@2x.png in Resources */,
+				7EB19B0D178B95F90014ED51 /* FunnelNameViewController.xib in Resources */,
+				7EB19AFD178B93DE0014ED51 /* pivot_company.png in Resources */,
 				7EFCD7521783BD270067C395 /* logo_navbar@2x.png in Resources */,
 				7EFCD74D1783BD270067C395 /* subtle_stripes.png in Resources */,
+				7EB19AED178B93DE0014ED51 /* funnel_location.png in Resources */,
+				7EB19AE6178B93DE0014ED51 /* fake_facebook_background@2x.png in Resources */,
+				7EB19B01178B93DE0014ED51 /* profile.png in Resources */,
+				7EB19B17178B96490014ED51 /* FunnelSalaryViewController.xib in Resources */,
+				7EB19AF7178B93DE0014ED51 /* job_card.png in Resources */,
+				7EB19B07178B940A0014ED51 /* JobDetailViewController.xib in Resources */,
+				7EB19B02178B93DE0014ED51 /* profile@2x.png in Resources */,
+				7EBFF7E0178B4E6600423373 /* ProfileViewController.xib in Resources */,
+				7EB19B00178B93DE0014ED51 /* pivot_jobs@2x.png in Resources */,
 				7EFCD74F1783BD270067C395 /* button_side_menu.png in Resources */,
+				7EB19AF3178B93DE0014ED51 /* funnel_salary.png in Resources */,
+				7EB19AEC178B93DE0014ED51 /* funnel_dream_job@2x.png in Resources */,
+				7EB19AF6178B93DE0014ED51 /* funnel_years@2x.png in Resources */,
+				7EB19AF2178B93DE0014ED51 /* funnel_name@2x.png in Resources */,
+				7EB19AFA178B93DE0014ED51 /* login@2x.png in Resources */,
 				7EFCD74A1783BD270067C395 /* Cabin-Regular.otf in Resources */,
 				7EFCD7061783AC5F0067C395 /* JobDiscoveryViewController.xib in Resources */,
+				7EB19B26178B96C70014ED51 /* FunnelDoneViewController.xib in Resources */,
+				7EB19AF0178B93DE0014ED51 /* funnel_location_2@2x.png in Resources */,
 				7EFCD7441783BD270067C395 /* InfoPlist.strings in Resources */,
+				7EB19AF9178B93DE0014ED51 /* login.png in Resources */,
+				7EB19AE5178B93DE0014ED51 /* fake_facebook_background.png in Resources */,
 				7EFCD7471783BD270067C395 /* Cabin-Italic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -655,23 +783,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EFCD77A1783EB5E0067C395 /* RaiseButton.m in Sources */,
+				7EB19B2E178B9B6A0014ED51 /* CompanyDetailViewController.m in Sources */,
+				7EB19B1B178B96690014ED51 /* FunnelYearsViewController.m in Sources */,
 				7EFCD7801783F2080067C395 /* RaiseBodyLabel.m in Sources */,
-				7EFCD7751783E4EF0067C395 /* JobDetailPivotOverviewPage.m in Sources */,
+				7EB19B06178B940A0014ED51 /* JobDetailViewController.m in Sources */,
 				7EFCD7051783AC5F0067C395 /* JobDiscoveryViewController.m in Sources */,
+				7EBFF7DF178B4E6600423373 /* ProfileViewController.m in Sources */,
 				7E218AA9178503EE00EAFE65 /* LoginViewController.m in Sources */,
 				7EFCD788178406C20067C395 /* MenuViewController.m in Sources */,
+				7EB19B20178B96A50014ED51 /* FunnelDreamJobViewController.m in Sources */,
+				7EB19B11178B96250014ED51 /* FunnelLocationViewController.m in Sources */,
 				7ED63D44178414B700295D48 /* UIImageView+RaiseImages.m in Sources */,
 				7EFCD6F417839B570067C395 /* Raise.xcdatamodeld in Sources */,
-				7ED63D4C1784191100295D48 /* JobDetailPivotCompanyPage.m in Sources */,
+				7EB19B16178B96490014ED51 /* FunnelSalaryViewController.m in Sources */,
 				7EFCD6F717839B570067C395 /* main.m in Sources */,
 				7EFCD6FB17839C160067C395 /* RootViewController.m in Sources */,
-				7ED63D511784192600295D48 /* JobDetailPivotLocationPage.m in Sources */,
+				7EB19B25178B96C70014ED51 /* FunnelDoneViewController.m in Sources */,
 				7ED63D41178413E100295D48 /* UIBarButtonItem+RaiseButtons.m in Sources */,
 				7ED63D3A17840C5A00295D48 /* FollowingViewController.m in Sources */,
 				7EFCD77D1783F02A0067C395 /* RaiseHeaderLabel.m in Sources */,
-				7E8D50FC178429C900701897 /* JobDetailPivotSimilarPage.m in Sources */,
 				7EFCD6F317839B570067C395 /* AppDelegate.m in Sources */,
-				7EFCD76B1783E4A10067C395 /* JobDetailPivotViewController.m in Sources */,
+				7EB19B0C178B95F90014ED51 /* FunnelNameViewController.m in Sources */,
 				7EFCD71A1783B0B20067C395 /* UIColor+RaiseColors.m in Sources */,
 				7EFCD75A1783BD570067C395 /* UIFont+RaiseFonts.m in Sources */,
 			);

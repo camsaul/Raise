@@ -11,6 +11,7 @@
 #import "JobDiscoveryViewController.h"
 #import "FollowingViewController.h"
 #import "LoginViewController.h"
+#import "ProfileViewController.h"
 
 static const CGFloat AnimationDuration = 0.3;
 
@@ -68,13 +69,18 @@ PROP_STRONG UINavigationController *navigationController;
 	}
 		
 	self.navigationController = [[UINavigationController alloc] initWithRootViewController:rootVC];
-	self.navigationController.navigationBar.tintColor = [UIColor raiseLightGrayColor];
+	self.navigationController.navigationBar.tintColor = [UIColor raiseLightBlueColor];
+	[self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"bg_navbar.png"] forBarMetrics:UIBarMetricsDefault];
 	[NavigationService setNavigationController:self.navigationController];
 	
 	UIView *navControllerView = self.navigationController.view;
 	navControllerView.frame = self.navViewWrapper.bounds;
 	[navControllerView layoutSubviews];
 	navControllerView.backgroundColor = [UIColor raiseLightGrayColor];
+	self.navigationController.navigationBar.titleTextAttributes = @{UITextAttributeFont: [UIFont fontWithName:@"Cabin-Bold" size:20.0],
+																	UITextAttributeTextColor: [UIColor raiseDarkBlueColor],
+																	UITextAttributeTextShadowColor: [UIColor clearColor]};
+
 	[self.navViewWrapper addSubview:navControllerView];
 
 	navControllerView.autoresizingMask = UIViewAutoresizingFlexibleSize;
@@ -120,7 +126,7 @@ PROP_STRONG UINavigationController *navigationController;
 		case MenuButtonFollowing:	[self setNavControllerRootVC:[FollowingViewController class]]; break;
 		case MenuButtonSearch:		TODO_ALERT(@"Show the search page."); break;
 		case MenuButtonDismiss:		break;
-		case MenuButtonProfile:		[self setNavControllerRootVC:[LoginViewController class]]; break;
+		case MenuButtonProfile:		[self setNavControllerRootVC:[ProfileViewController class]]; break;
 	}
 	[self hideMenu];
 }
