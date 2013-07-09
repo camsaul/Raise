@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FunnelDreamJobViewController : UIViewController
+@interface FunnelDreamJobViewController : RaiseViewController
 
 @end
