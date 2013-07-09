@@ -7,6 +7,7 @@
 //
 
 #import "RootViewController.h"
+#import "User.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -17,6 +18,8 @@ PROP_STRONG UIWindow *window;
 - (NSPersistentStoreCoordinator *)persistentStoreCoordinator;
 
 - (RootViewController *)rootViewController;
+
+- (User *)currentUser;
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;

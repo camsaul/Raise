@@ -10,12 +10,14 @@
 #import "FunnelGaugeView.h"
 
 @interface FunnelYearsViewController () <FunnelGaugeViewDelegate>
+PROP int originalYears;
 PROP_STRONG FunnelGaugeView *view;
 @end
 
 @implementation FunnelYearsViewController
 
 - (void)loadView {
+	self.originalYears = APP_DELEGATE.currentUser.yearsExperience.intValue;
 	self.view = [[FunnelGaugeView alloc] init];
 	self.view.delegate = self;
 	self.view.titleLabel.text = @"I have this many years of job experience:";
@@ -24,10 +26,13 @@ PROP_STRONG FunnelGaugeView *view;
 	self.view.minValueLabel.text = @"0 years";
 	self.view.gauge.maxValue = 20;
 	self.view.maxValueLabel.text = @"20+ years";
-	self.view.valueLabel.text = @"2 years";
+	self.view.valueLabel.text = [NSString stringWithFormat:@"%d%@ years", self.originalYears, (self.originalYears == 20 ? @"+" : @"")];
 	dispatch_next_run_loop(^{
-		[self.view.gauge setValue:2.0f animated:YES];
+		[self.view.gauge setValue:self.originalYears animated:YES];
+		[self updateButtonEnabled:self.originalYears];
 	});
+	
+	[self.view.continueButton addTarget:self action:@selector(continueButtonPressed)];
 }
 
 - (void)viewDidLoad {
@@ -36,8 +41,15 @@ PROP_STRONG FunnelGaugeView *view;
 }
 
 - (void)continueButtonPressed {
-	float value = roundf(self.view.gauge.value);
-	TODO_ALERT(@"save the user's years of experience: %.0f years", value);
+	int v = (int)roundf(self.view.gauge.value);
+	
+	APP_DELEGATE.currentUser.yearsExperience = @(v);
+	self.originalYears = v;
+	[self updateButtonEnabled:v];
+}
+
+- (void)updateButtonEnabled:(int)newValue {
+	self.view.continueButton.enabled = newValue != self.originalYears;
 }
 
 
@@ -45,6 +57,7 @@ PROP_STRONG FunnelGaugeView *view;
 
 - (NSString *)funnelGaugeViewStringForValue:(float)value {
 	value = roundf(self.view.gauge.value); // round value to the nearest year
+	[self updateButtonEnabled:(int)value];
 	return [NSString stringWithFormat:@"%.0f%@ years", value, (value == 20.0f ? @"+" : @"")];
 }
 

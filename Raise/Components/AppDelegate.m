@@ -57,6 +57,18 @@ PROP_STRONG RootViewController *rootViewController;
 	[self saveContext];
 }
 
+- (User *)currentUser {
+	NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"User"];
+	NSError *error = nil;
+	NSArray *results = [self.managedObjectContext executeFetchRequest:request error:&error];
+	if (!results.count || error) {
+		// create a new user
+		return [NSEntityDescription insertNewObjectForEntityForName:@"User" inManagedObjectContext:self.managedObjectContext];
+	} else {
+		return [results firstObject];
+	}
+}
+
 - (void)saveContext
 {
     NSError *error = nil;
