@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FunnelLocationViewController : UIViewController
+@interface FunnelLocationViewController : RaiseViewController
 
 @end

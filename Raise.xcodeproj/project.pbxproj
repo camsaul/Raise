@@ -53,8 +53,6 @@
 		7EB19AEA178B93DE0014ED51 /* funnel_done@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19ACC178B93DE0014ED51 /* funnel_done@2x.png */; };
 		7EB19AEB178B93DE0014ED51 /* funnel_dream_job.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19ACD178B93DE0014ED51 /* funnel_dream_job.png */; };
 		7EB19AEC178B93DE0014ED51 /* funnel_dream_job@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19ACE178B93DE0014ED51 /* funnel_dream_job@2x.png */; };
-		7EB19AED178B93DE0014ED51 /* funnel_location.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19ACF178B93DE0014ED51 /* funnel_location.png */; };
-		7EB19AEE178B93DE0014ED51 /* funnel_location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19AD0178B93DE0014ED51 /* funnel_location@2x.png */; };
 		7EB19AEF178B93DE0014ED51 /* funnel_location_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19AD1178B93DE0014ED51 /* funnel_location_2.png */; };
 		7EB19AF0178B93DE0014ED51 /* funnel_location_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19AD2178B93DE0014ED51 /* funnel_location_2@2x.png */; };
 		7EB19AF1178B93DE0014ED51 /* funnel_name.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EB19AD3178B93DE0014ED51 /* funnel_name.png */; };
@@ -189,8 +187,6 @@
 		7EB19ACC178B93DE0014ED51 /* funnel_done@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "funnel_done@2x.png"; sourceTree = "<group>"; };
 		7EB19ACD178B93DE0014ED51 /* funnel_dream_job.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = funnel_dream_job.png; sourceTree = "<group>"; };
 		7EB19ACE178B93DE0014ED51 /* funnel_dream_job@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "funnel_dream_job@2x.png"; sourceTree = "<group>"; };
-		7EB19ACF178B93DE0014ED51 /* funnel_location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = funnel_location.png; sourceTree = "<group>"; };
-		7EB19AD0178B93DE0014ED51 /* funnel_location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "funnel_location@2x.png"; sourceTree = "<group>"; };
 		7EB19AD1178B93DE0014ED51 /* funnel_location_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = funnel_location_2.png; sourceTree = "<group>"; };
 		7EB19AD2178B93DE0014ED51 /* funnel_location_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "funnel_location_2@2x.png"; sourceTree = "<group>"; };
 		7EB19AD3178B93DE0014ED51 /* funnel_name.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = funnel_name.png; sourceTree = "<group>"; };
@@ -404,8 +400,6 @@
 				7EB19ACC178B93DE0014ED51 /* funnel_done@2x.png */,
 				7EB19ACD178B93DE0014ED51 /* funnel_dream_job.png */,
 				7EB19ACE178B93DE0014ED51 /* funnel_dream_job@2x.png */,
-				7EB19ACF178B93DE0014ED51 /* funnel_location.png */,
-				7EB19AD0178B93DE0014ED51 /* funnel_location@2x.png */,
 				7EB19AD1178B93DE0014ED51 /* funnel_location_2.png */,
 				7EB19AD2178B93DE0014ED51 /* funnel_location_2@2x.png */,
 				7EB19AD3178B93DE0014ED51 /* funnel_name.png */,
@@ -744,12 +738,10 @@
 				7E218AB517850BCD00EAFE65 /* button_info_60.png in Resources */,
 				7EFCD74E1783BD270067C395 /* subtle_stripes_@2X.png in Resources */,
 				7EFCD7511783BD270067C395 /* logo_navbar.png in Resources */,
-				7EB19AEE178B93DE0014ED51 /* funnel_location@2x.png in Resources */,
 				7EB19B0D178B95F90014ED51 /* FunnelNameViewController.xib in Resources */,
 				7EB19AFD178B93DE0014ED51 /* pivot_company.png in Resources */,
 				7EFCD7521783BD270067C395 /* logo_navbar@2x.png in Resources */,
 				7EFCD74D1783BD270067C395 /* subtle_stripes.png in Resources */,
-				7EB19AED178B93DE0014ED51 /* funnel_location.png in Resources */,
 				7EB19AE6178B93DE0014ED51 /* fake_facebook_background@2x.png in Resources */,
 				7EB19AF7178B93DE0014ED51 /* job_card.png in Resources */,
 				7EB19B07178B940A0014ED51 /* JobDetailViewController.xib in Resources */,
