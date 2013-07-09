@@ -52,6 +52,11 @@ static const int CellImageViewTag = 2010;
 	}];
 }
 
+- (BOOL)becomeFirstResponder {
+	[self.textField becomeFirstResponder];
+	return YES;
+}
+
 #pragma mark - Text Field Delegate
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField {

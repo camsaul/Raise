@@ -6,4 +6,4 @@
 //  Copyright (c) 2013 LuckyBird, Inc. All rights reserved.
 //
 
-static NSString *ParamJobID = @"Job ID";
+static NSString *ParamJobIDInt = @"Job ID";

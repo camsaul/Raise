@@ -15,6 +15,10 @@
 
 static const CGFloat AnimationDuration = 0.3;
 
+typedef enum : int {
+	NavRootOptionStartFocused = 1 << 0
+} NavRootOptions;
+
 @interface RootViewController () <MenuViewControllerDelegate>
 PROP_STRONG MenuViewController *menuViewController;
 PROP_STRONG UIView *navViewWrapper; // this does all the actual sliding
@@ -49,13 +53,21 @@ PROP_STRONG UINavigationController *navigationController;
 
 	[self.view addSubview:self.navViewWrapper];
 	
-	[self setNavControllerRootVC:[JobDiscoveryViewController class]];
+	[self setNavControllerRootVC:[JobDiscoveryViewController class] options:0];
 }
 
-- (void)setNavControllerRootVC:(Class)class {
+- (void)setNavControllerRootVC:(Class)class options:(NavRootOptions)options {
 	BOOL existing = self.navigationController != nil;
 	
-	if ([self.navigationController.viewControllers[0] isKindOfClass:class]) return; // nothing to do
+	if ([self.navigationController.viewControllers[0] isKindOfClass:class]) {
+		if (options | NavRootOptionStartFocused) {
+			UIViewController *vc = self.navigationController.viewControllers[0];
+			if ([vc respondsToSelector:@selector(becomeFirstResponder)]) {
+				[(id)vc becomeFirstResponder];
+			}
+		}
+		return;
+	}
 	
 	UIViewController *rootVC = [[class alloc] init];
 	
@@ -89,6 +101,12 @@ PROP_STRONG UINavigationController *navigationController;
 		navControllerView.alpha = 0;
 		[UIView animateWithDuration:AnimationDuration animations:^{
 			navControllerView.alpha = 1;
+			
+			if (options | NavRootOptionStartFocused) {
+				if ([rootVC respondsToSelector:@selector(becomeFirstResponder)]) {
+					[(id)rootVC becomeFirstResponder];
+				}
+			}
 		}];
 	}
 }
@@ -122,11 +140,11 @@ PROP_STRONG UINavigationController *navigationController;
 
 - (void)menuViewControllerButtonPressed:(MenuButton)button {
 	switch (button) {
-		case MenuButtonDiscover:	[self setNavControllerRootVC:[JobDiscoveryViewController class]]; break;
-		case MenuButtonFollowing:	[self setNavControllerRootVC:[FollowingViewController class]]; break;
-		case MenuButtonSearch:		TODO_ALERT(@"Show the search page."); break;
+		case MenuButtonDiscover:	[self setNavControllerRootVC:[JobDiscoveryViewController class] options:0]; break;
+		case MenuButtonFollowing:	[self setNavControllerRootVC:[FollowingViewController class] options:0]; break;
+		case MenuButtonSearch:		[self setNavControllerRootVC:[FollowingViewController class] options:NavRootOptionStartFocused]; break;
 		case MenuButtonDismiss:		break;
-		case MenuButtonProfile:		[self setNavControllerRootVC:[ProfileViewController class]]; break;
+		case MenuButtonProfile:		[self setNavControllerRootVC:[ProfileViewController class] options:0]; break;
 	}
 	[self hideMenu];
 }
