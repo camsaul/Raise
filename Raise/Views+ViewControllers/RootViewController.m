@@ -12,12 +12,9 @@
 #import "FollowingViewController.h"
 #import "LoginViewController.h"
 #import "ProfileViewController.h"
+#import "RaiseNavigationController.h"
 
 static const CGFloat AnimationDuration = 0.3;
-
-typedef enum : int {
-	NavRootOptionStartFocused = 1 << 0
-} NavRootOptions;
 
 @interface RootViewController () <MenuViewControllerDelegate>
 PROP_STRONG MenuViewController *menuViewController;
@@ -80,18 +77,11 @@ PROP_STRONG UINavigationController *navigationController;
 		}];
 	}
 		
-	self.navigationController = [[UINavigationController alloc] initWithRootViewController:rootVC];
-	self.navigationController.navigationBar.tintColor = [UIColor raiseLightBlueColor];
-	[self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"bg_navbar.png"] forBarMetrics:UIBarMetricsDefault];
-	[NavigationService setNavigationController:self.navigationController];
+	self.navigationController = [[RaiseNavigationController alloc] initWithRootViewController:rootVC];
 	
 	UIView *navControllerView = self.navigationController.view;
 	navControllerView.frame = self.navViewWrapper.bounds;
 	[navControllerView layoutSubviews];
-	navControllerView.backgroundColor = [UIColor raiseLightGrayColor];
-	self.navigationController.navigationBar.titleTextAttributes = @{UITextAttributeFont: [UIFont fontWithName:@"Cabin-Bold" size:20.0],
-																	UITextAttributeTextColor: [UIColor raiseDarkBlueColor],
-																	UITextAttributeTextShadowColor: [UIColor clearColor]};
 
 	[self.navViewWrapper addSubview:navControllerView];
 

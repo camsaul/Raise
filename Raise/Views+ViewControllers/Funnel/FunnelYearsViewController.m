@@ -17,7 +17,7 @@ PROP_STRONG FunnelGaugeView *view;
 @implementation FunnelYearsViewController
 
 - (void)loadView {
-	self.originalYears = APP_DELEGATE.currentUser.yearsExperience.intValue;
+	self.originalYears = APP_DELEGATE.currentUser ? APP_DELEGATE.currentUser.yearsExperience.intValue : 2;
 	self.view = [[FunnelGaugeView alloc] init];
 	self.view.delegate = self;
 	self.view.titleLabel.text = @"I have this many years of job experience:";
@@ -46,10 +46,12 @@ PROP_STRONG FunnelGaugeView *view;
 	APP_DELEGATE.currentUser.yearsExperience = @(v);
 	self.originalYears = v;
 	[self updateButtonEnabled:v];
+
+	[self.delegate funnelViewControllerDidFinish];
 }
 
 - (void)updateButtonEnabled:(int)newValue {
-	self.view.continueButton.enabled = newValue != self.originalYears;
+	self.view.continueButton.enabled = !APP_DELEGATE.currentUser || newValue != self.originalYears;
 }
 
 

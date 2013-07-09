@@ -7,32 +7,40 @@
 //
 
 #import "LoginViewController.h"
-
-@interface LoginViewController ()
-
-@end
+#import "FunnelNavigationController.h"
 
 @implementation LoginViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+- (void)dismiss {
+	APP_DELEGATE.userLoggedIn = YES;
+	[ROOT_VIEW_CONTROLLER dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+- (IBAction)loginLinkedInButtonPressed:(id)sender {
+	[self dismiss];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)loginFacebookButtonPressed:(id)sender {
+	[self dismiss];
+}
+
+- (IBAction)loginLaterButtonPressed:(id)sender {
+	FunnelNavigationController *funnelNavigationController = [[FunnelNavigationController alloc] init];
+	[self presentViewController:funnelNavigationController animated:YES completion:nil];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+	[super viewWillAppear:animated];
+	APP_DELEGATE.userLoggedIn = NO;
+}
+
+- (void)dismissViewControllerAnimated:(BOOL)flag completion:(void (^)(void))completion {
+	[super dismissViewControllerAnimated:YES completion:^{
+		if (completion) completion();
+		if (flag == FunnelNavigationControllerFlagFinished) {
+			[self dismiss];
+		}
+	}];
 }
 
 @end

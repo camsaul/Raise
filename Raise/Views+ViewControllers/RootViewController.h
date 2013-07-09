@@ -8,11 +8,15 @@
 
 #import "MenuViewController.h"
 
+typedef enum : int {
+	NavRootOptionStartFocused = 1 << 0
+} NavRootOptions;
+
 @interface RootViewController : UIViewController
 
 - (MenuViewController *)menuViewController;
 - (UINavigationController *)navigationController;
-
+- (void)setNavControllerRootVC:(Class)class options:(NavRootOptions)options;
 - (void)menuButtonPressed;
 
 @end

@@ -26,6 +26,9 @@ PROP_STRONG RootViewController *rootViewController;
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+	
+	self.userLoggedIn = YES;
+	
     return YES;
 }
 
@@ -58,6 +61,10 @@ PROP_STRONG RootViewController *rootViewController;
 }
 
 - (User *)currentUser {
+	if (!self.userLoggedIn) {
+		return nil;
+	}
+	
 	NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"User"];
 	NSError *error = nil;
 	NSArray *results = [self.managedObjectContext executeFetchRequest:request error:&error];

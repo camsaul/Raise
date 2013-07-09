@@ -24,15 +24,6 @@ PROP BOOL specifyPosition;
 
 @implementation FunnelDreamJobViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -43,13 +34,10 @@ PROP BOOL specifyPosition;
 	self.specifyPosition = NO;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 - (IBAction)continueButtonPressed:(id)sender {
+	[self.delegate funnelViewControllerDidFinish];
 }
+
 - (IBAction)figuringItOutButtonPressed:(id)sender {
 	[self.figuringItOutButton setImage:[UIImage imageNamed:@"button_check_80.png"] forState:UIControlStateNormal];
 	[self.yesIWantToButton setImage:[UIImage imageNamed:@"button_close_80.png"] forState:UIControlStateNormal];

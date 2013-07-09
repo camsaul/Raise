@@ -57,6 +57,9 @@ in...</string>
                     <state key="highlighted">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="completionButtonPressed:" destination="-1" eventType="touchUpInside" id="QJv-EP-xSC"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRv-RR-DLg" userLabel="anywhere button">
                     <rect key="frame" x="20" y="140" width="20" height="20"/>

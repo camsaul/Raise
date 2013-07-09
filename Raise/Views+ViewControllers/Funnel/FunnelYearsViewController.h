@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 LuckyBird, Inc. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "FunnelViewController.h"
 
-@interface FunnelYearsViewController : UIViewController
+@interface FunnelYearsViewController : FunnelViewController
 
 @end

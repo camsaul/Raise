@@ -20,6 +20,7 @@ PROP_STRONG UIWindow *window;
 - (RootViewController *)rootViewController;
 
 - (User *)currentUser;
+PROP BOOL userLoggedIn;
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;

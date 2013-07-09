@@ -17,7 +17,7 @@ PROP_STRONG FunnelGaugeView *view;
 @implementation FunnelSalaryViewController
 
 - (void)loadView {
-	self.originalSalary = APP_DELEGATE.currentUser.salary.intValue;
+	self.originalSalary = APP_DELEGATE.currentUser ? APP_DELEGATE.currentUser.salary.intValue : 60;
 	self.view = [[FunnelGaugeView alloc] init];
 	self.view.delegate = self;
 	self.view.titleLabel.text = @"I'm looking for a job that will pay at least:";
@@ -48,10 +48,12 @@ PROP_STRONG FunnelGaugeView *view;
 	APP_DELEGATE.currentUser.salary = @(v);
 	self.originalSalary = v;
 	[self updateButtonEnabled:v];
+	
+	[self.delegate funnelViewControllerDidFinish];
 }
 
 - (void)updateButtonEnabled:(int)newValue {
-	self.view.continueButton.enabled = newValue != self.originalSalary;
+	self.view.continueButton.enabled = !APP_DELEGATE.currentUser || newValue != self.originalSalary;
 }
 
 

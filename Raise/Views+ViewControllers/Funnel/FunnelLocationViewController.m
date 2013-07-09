@@ -42,6 +42,9 @@
 
 }
 
+- (IBAction)completionButtonPressed:(id)sender {
+	[self.delegate funnelViewControllerDidFinish];
+}
 
 - (IBAction)searchButtonPressed:(id)sender {
 	[self.textField becomeFirstResponder];

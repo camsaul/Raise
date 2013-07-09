@@ -9,31 +9,18 @@
 #import "FunnelDoneViewController.h"
 
 @interface FunnelDoneViewController ()
-
+@property (strong, nonatomic) IBOutlet UIButton *continueButton;
 @end
 
 @implementation FunnelDoneViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+- (IBAction)continueButtonPressed:(id)sender {
+	[self.delegate funnelViewControllerDidFinish];
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
+- (void)viewDidLoad {
+	[super viewDidLoad];
 	self.navigationItem.titleView = [UIImageView raiseNavBarLogoImageView];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

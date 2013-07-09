@@ -7,6 +7,8 @@
 //
 
 #import "ProfileViewController.h"
+#import "LoginViewController.h"
+#import "JobDiscoveryViewController.h"
 
 @interface ProfileViewController ()
 @property (strong, nonatomic) IBOutlet UILabel *nameLabel;
@@ -75,7 +77,10 @@
 }
 
 - (IBAction)logoutPressed:(id)sender {
-	TODO_ALERT(@"log the user out.");
+	LoginViewController *loginVC = [[LoginViewController alloc] init];
+	[ROOT_VIEW_CONTROLLER presentViewController:loginVC animated:YES completion:nil];
+	
+	[ROOT_VIEW_CONTROLLER setNavControllerRootVC:[JobDiscoveryViewController class] options:0];
 }
 
 @end
