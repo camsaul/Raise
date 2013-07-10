@@ -21,6 +21,8 @@
 @property (nonatomic, retain) NSSet *industries;
 @property (nonatomic, retain) Location *location;
 @property (nonatomic, retain) NSSet *jobs;
+
+- (UIImage *)image;
 @end
 
 @interface Company (CoreDataGeneratedAccessors)

@@ -20,13 +20,13 @@ PROP_STRONG FunnelGaugeView *view;
 	self.originalYears = APP_DELEGATE.currentUser ? APP_DELEGATE.currentUser.yearsExperience.intValue : 2;
 	self.view = [[FunnelGaugeView alloc] init];
 	self.view.delegate = self;
-	self.view.titleLabel.text = @"I have this many years of job experience:";
+	[self.view.titleLabel setTextPreservingExistingAttributes:@"I have this many years of job experience:"];
 	
 	self.view.gauge.minValue = 0;
-	self.view.minValueLabel.text = @"0 years";
+	[self.view.minValueLabel setTextPreservingExistingAttributes:@"0 years"];
 	self.view.gauge.maxValue = 20;
-	self.view.maxValueLabel.text = @"20+ years";
-	self.view.valueLabel.text = [NSString stringWithFormat:@"%d%@ years", self.originalYears, (self.originalYears == 20 ? @"+" : @"")];
+	[self.view.maxValueLabel setTextPreservingExistingAttributes:@"20+ years"];
+	[self.view.valueLabel setTextPreservingExistingAttributes:[NSString stringWithFormat:@"%d%@ years", self.originalYears, (self.originalYears == 20 ? @"+" : @"")]];
 	dispatch_next_run_loop(^{
 		[self.view.gauge setValue:self.originalYears animated:YES];
 		[self updateButtonEnabled:self.originalYears];

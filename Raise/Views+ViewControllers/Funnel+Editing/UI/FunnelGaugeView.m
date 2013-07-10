@@ -79,7 +79,7 @@ PROP_STRONG UIPanGestureRecognizer *gestureRecoginzer;
 		float minValue = self.gauge.minValue;
 		float maxValue = self.gauge.maxValue;
 		self.gauge.value = roundf(minValue + (amount * (maxValue - minValue)));
-		self.valueLabel.text = [self.delegate funnelGaugeViewStringForValue:self.gauge.value];
+		[self.valueLabel setTextPreservingExistingAttributes:[self.delegate funnelGaugeViewStringForValue:self.gauge.value]];
 		
 	} else if (self.gestureRecoginzer.state == UIGestureRecognizerStateEnded || self.gestureRecoginzer.state == UIGestureRecognizerStateCancelled) {
 		

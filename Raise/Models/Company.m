@@ -24,4 +24,17 @@
 @dynamic location;
 @dynamic jobs;
 
+- (UIImage *)image {
+	UIImage *img = nil;
+	
+	img = [UIImage imageNamed:[NSString stringWithFormat:@"company_%@.jpg", self.id]];
+	if (img) return img;
+	
+	img = [UIImage imageNamed:[NSString stringWithFormat:@"company_%@.png", self.id]];
+	if (img) return img;
+	
+	img = [UIImage imageNamed:[NSString stringWithFormat:@"company_%@.jpeg", self.id]];
+	return img;
+}
+
 @end

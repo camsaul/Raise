@@ -8,12 +8,13 @@
 
 #import "JobDiscoveryViewController.h"
 #import "JobCardViewController.h"
+#import "DataManager.h"
 
 static const CGFloat PanCompleteThreshold = 50.0;
 
 @interface JobDiscoveryViewController ()
 PROP_STRONG IBOutlet UIView *jobCardPlaceholderView; // for layout purposes only.
-PROP_STRONG JobCardViewController *jobCardViewController;
+PROP_STRONG JobCardViewController *jobCard;
 @property (strong, nonatomic) IBOutlet UIButton *noButton;
 @property (strong, nonatomic) IBOutlet UIButton *yesButton;
 @property (strong, nonatomic) IBOutlet UIButton *infoButton;
@@ -33,11 +34,9 @@ PROP_STRONG UIPanGestureRecognizer *gestureRecognizer;
 	self.gestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan)];
 	self.jobCardPlaceholderView.alpha = 0;
 	
-	[self addNewJobCard];
-}
-
-- (UIView *)jobCardView {
-	return self.jobCardViewController.view;
+	dispatch_next_run_loop(^{
+		[self addNewJobCard];
+	});
 }
 
 - (void)pan {
@@ -52,7 +51,7 @@ PROP_STRONG UIPanGestureRecognizer *gestureRecognizer;
 			[self panLeft:xDelta/-160.0];
 		}
 		
-		self.jobCardView.centerX =  location.x;
+		self.jobCard.view.centerX =  location.x;
 		
 	} else if (self.gestureRecognizer.state == UIGestureRecognizerStateEnded || self.gestureRecognizer.state == UIGestureRecognizerStateCancelled) {
 		CGPoint location = [self.gestureRecognizer locationInView:self.view];
@@ -61,21 +60,22 @@ PROP_STRONG UIPanGestureRecognizer *gestureRecognizer;
 		if (ABS(xDelta) > PanCompleteThreshold) {
 			BOOL left = xDelta < 0;
 			
-			UIView *oldJobCard = self.jobCardView;
-			[oldJobCard removeGestureRecognizer:self.gestureRecognizer];
+			JobCardViewController *oldJobCard = self.jobCard;
+			self.jobCard = nil;
+			[oldJobCard.view removeGestureRecognizer:self.gestureRecognizer];
 			[self addNewJobCard];
 			
-			self.jobCardView.centerX += left ? 320 : -320;
+			self.jobCard.view.centerX += left ? 320 : -320;
 			
 			[UIView animateWithDuration:0.4 animations:^{
-				oldJobCard.centerX = self.jobCardPlaceholderView.centerX - (left ? 320 : -320);
-				self.jobCardView.center = self.jobCardPlaceholderView.center;
+				oldJobCard.view.centerX = self.jobCardPlaceholderView.centerX - (left ? 320 : -320);
+				self.jobCard.view.center = self.jobCardPlaceholderView.center;
 				
 				self.noButton.alpha = 1.0;
 				self.yesButton.alpha = 1.0;
 				self.infoButton.alpha = 1.0;
 			} completion:^(BOOL finished) {
-				[oldJobCard removeFromSuperview];
+				[oldJobCard.view removeFromSuperview];
 				
 				// TODO - Show the little "explanations" for the first time someone does it
 				
@@ -88,7 +88,7 @@ PROP_STRONG UIPanGestureRecognizer *gestureRecognizer;
 			
 		} else {
 			[UIView animateWithDuration:0.4 animations:^{
-				self.jobCardView.center = self.jobCardPlaceholderView.center;
+				self.jobCard.view.center = self.jobCardPlaceholderView.center;
 				
 				self.noButton.alpha = 1.0;
 				self.yesButton.alpha = 1.0;
@@ -99,13 +99,18 @@ PROP_STRONG UIPanGestureRecognizer *gestureRecognizer;
 }
 
 - (void)addNewJobCard {
-	self.jobCardViewController = [[JobCardViewController alloc] init];
-	self.jobCardView.frame = self.jobCardPlaceholderView.frame;
-	self.jobCardView.userInteractionEnabled = YES;
-	[self.view addSubview:self.jobCardView];
-	[self.jobCardView addGestureRecognizer:self.gestureRecognizer];
+	// select a random job
+	NSArray *allJobs = [DataManager allObjectsOfType:DataTypeJob];
+	Job *job = allJobs[rand() % allJobs.count];
 	
-	// TODO - Load correct job data!
+	JobCardViewController *jobCard = [[JobCardViewController alloc] init];
+	jobCard.view.frame = self.jobCardPlaceholderView.frame;
+	jobCard.view.userInteractionEnabled = YES;
+
+	[self.view addSubview:jobCard.view];
+	[jobCard.view addGestureRecognizer:self.gestureRecognizer];
+	self.jobCard = jobCard;
+	jobCard.job = job;
 }
 
 - (void)panLeft:(CGFloat)amount {

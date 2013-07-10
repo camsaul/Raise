@@ -22,22 +22,28 @@
             <rect key="frame" x="0.0" y="0.0" width="260" height="260"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fake_facebook_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="ymB-UN-kLe">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fake_facebook_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="ymB-UN-kLe">
                     <rect key="frame" x="0.0" y="0.0" width="260" height="260"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="260" id="ho4-KJ-kvf"/>
+                        <constraint firstAttribute="height" constant="260" id="lFK-Bb-XCW"/>
+                    </constraints>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="maC-sN-baW">
                     <rect key="frame" x="0.0" y="190" width="260" height="70"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Lead" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1g-Bo-wRO">
-                            <rect key="frame" x="10" y="5" width="150" height="30"/>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="150" translatesAutoresizingMaskIntoConstraints="NO" id="p1g-Bo-wRO">
+                            <rect key="frame" x="10" y="0.0" width="150" height="40"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="30" id="b4W-Lf-jHw"/>
+                                <constraint firstAttribute="height" constant="40" id="RNU-gX-rn6"/>
                                 <constraint firstAttribute="width" constant="150" id="iBN-17-2ON"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <string key="text">Product Lead,
+Creative Solutions</string>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -64,10 +70,10 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4j-9p-knM">
-                            <rect key="frame" x="180" y="5" width="30" height="30"/>
+                            <rect key="frame" x="185" y="5" width="25" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="30" id="5Jv-7h-dcA"/>
+                                <constraint firstAttribute="width" constant="25" id="W1U-eP-e5T"/>
                                 <constraint firstAttribute="height" constant="30" id="ck5-sz-bMw"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
@@ -86,7 +92,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="glyph_friends_15.png" translatesAutoresizingMaskIntoConstraints="NO" id="fyc-Y2-b7a">
-                            <rect key="frame" x="160" y="12" width="15" height="15"/>
+                            <rect key="frame" x="165" y="12" width="15" height="15"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="15" id="N39-B1-aEz"/>
@@ -109,10 +115,10 @@
                         <constraint firstAttribute="bottom" secondItem="eSr-8w-2CX" secondAttribute="bottom" constant="5" id="PWy-Yz-d0E"/>
                         <constraint firstItem="WfO-li-Pkb" firstAttribute="leading" secondItem="OxR-8F-YOf" secondAttribute="trailing" constant="2" id="QGL-Yx-RXm"/>
                         <constraint firstAttribute="trailing" secondItem="eSr-8w-2CX" secondAttribute="trailing" constant="10" id="RzA-Eg-u3b"/>
-                        <constraint firstItem="p1g-Bo-wRO" firstAttribute="top" secondItem="maC-sN-baW" secondAttribute="top" constant="5" id="TmZ-Lh-S5o"/>
                         <constraint firstItem="p4j-9p-knM" firstAttribute="top" secondItem="maC-sN-baW" secondAttribute="top" constant="5" id="WYQ-sJ-8QJ"/>
-                        <constraint firstItem="fyc-Y2-b7a" firstAttribute="leading" secondItem="p1g-Bo-wRO" secondAttribute="trailing" id="Y1G-WY-fP9"/>
+                        <constraint firstItem="fyc-Y2-b7a" firstAttribute="leading" secondItem="p1g-Bo-wRO" secondAttribute="trailing" constant="5" id="Y1G-WY-fP9"/>
                         <constraint firstAttribute="bottom" secondItem="zRZ-3n-fQV" secondAttribute="bottom" constant="5" id="ZpT-Vo-LYM"/>
+                        <constraint firstItem="p1g-Bo-wRO" firstAttribute="top" secondItem="maC-sN-baW" secondAttribute="top" id="a2u-Oq-5mq"/>
                         <constraint firstItem="WfO-li-Pkb" firstAttribute="top" secondItem="maC-sN-baW" secondAttribute="top" constant="5" id="bVJ-ag-3ZU"/>
                         <constraint firstAttribute="height" constant="70" id="fAE-bl-G8b"/>
                         <constraint firstItem="p4j-9p-knM" firstAttribute="leading" secondItem="fyc-Y2-b7a" secondAttribute="trailing" constant="5" id="fB0-04-bRE"/>
@@ -125,8 +131,12 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="maC-sN-baW" firstAttribute="trailing" secondItem="kPy-LD-FtJ" secondAttribute="trailing" id="BCl-Rd-sjA"/>
+                <constraint firstItem="ymB-UN-kLe" firstAttribute="bottom" secondItem="kPy-LD-FtJ" secondAttribute="bottom" id="SPk-p3-Z68"/>
                 <constraint firstItem="maC-sN-baW" firstAttribute="leading" secondItem="kPy-LD-FtJ" secondAttribute="leading" id="SoT-5g-QL0"/>
+                <constraint firstItem="ymB-UN-kLe" firstAttribute="leading" secondItem="kPy-LD-FtJ" secondAttribute="leading" id="YiF-Qq-dTs"/>
+                <constraint firstItem="ymB-UN-kLe" firstAttribute="trailing" secondItem="kPy-LD-FtJ" secondAttribute="trailing" id="drs-AE-yMK"/>
                 <constraint firstItem="maC-sN-baW" firstAttribute="bottom" secondItem="kPy-LD-FtJ" secondAttribute="bottom" id="olm-od-wLH"/>
+                <constraint firstItem="ymB-UN-kLe" firstAttribute="top" secondItem="kPy-LD-FtJ" secondAttribute="top" id="zw4-SQ-pCt"/>
             </constraints>
         </view>
     </objects>
@@ -135,4 +145,21 @@
         <image name="glyph_friends_15.png" width="15" height="15"/>
         <image name="glyph_money_15.png" width="15" height="15"/>
     </resources>
+    <classes>
+        <class className="JobCardViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/JobCardViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="companyLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="friendsLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="infoView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="locationLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="salaryLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
 </document>

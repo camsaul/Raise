@@ -7,6 +7,7 @@
 //
 
 #import "JobCardViewController.h"
+#import "DataManager.h"
 
 @interface JobCardViewController ()
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
@@ -29,7 +30,15 @@
 
 - (void)setJob:(Job *)job {
 	_job = job;
-	self.titleLabel.text = job.title;
+	
+	NSAssert(self.titleLabel, @"View isn't loaded yet. Do that first before setting job!");
+	self.imageView.image = job.company.image;
+	[self.titleLabel setTextPreservingExistingAttributes:job.title];
+	[self.titleLabel sizeToFit];
+	[self.companyLabel setTextPreservingExistingAttributes:job.company.name];
+	[self.locationLabel setTextPreservingExistingAttributes:job.company.location.name];
+	[self.friendsLabel setTextPreservingExistingAttributes:[NSString stringWithFormat:@"%d", job.company.friends.count]];
+	[self.salaryLabel setTextPreservingExistingAttributes:[NSString stringWithFormat:@"%@k", job.salary]];
 }
 
 @end

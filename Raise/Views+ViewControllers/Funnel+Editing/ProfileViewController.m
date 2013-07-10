@@ -27,8 +27,6 @@
     self.navigationItem.titleView = [UIImageView raiseNavBarLogoImageView];
 	self.navigationItem.leftBarButtonItem = [UIBarButtonItem raiseMenuBarButtonItem];
 	
-	self.nameLabel.textColor = [UIColor raiseDarkBlueColor]; // for some reason nib is being ignored
-	
 	// fix the buttons
 	for (UIButton *button in @[self.salaryButton, self.yearsButton, self.citiesButton, self.dreamJobButton]) {
 		button.titleLabel.font = [UIFont fontWithName:@"Cabin-Regular" size:button.titleLabel.font.pointSize];
@@ -40,7 +38,7 @@
 - (void)viewWillAppear:(BOOL)animated {
 	self.view.backgroundColor = [UIColor raiseBackgroundPattern];
 	
-	self.nameLabel.text = APP_DELEGATE.currentUser.name;
+	[self.nameLabel setTextPreservingExistingAttributes:APP_DELEGATE.currentUser.name];
 	
 	int value = APP_DELEGATE.currentUser.salary.intValue;
 	[self.salaryButton setTitle:[NSString stringWithFormat:@"$%dk%@", value, (value == 250 ? @"+" : @"")] forState:UIControlStateNormal];

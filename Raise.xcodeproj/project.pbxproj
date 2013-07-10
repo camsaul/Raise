@@ -72,6 +72,18 @@
 		7E604EE0178D2423009B9CAD /* RaiseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E604EBD178D2423009B9CAD /* RaiseViewController.m */; };
 		7E604EE3178D28D4009B9CAD /* UIView+RaiseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E604EE2178D28D4009B9CAD /* UIView+RaiseAdditions.m */; };
 		7E604EE4178D28D4009B9CAD /* UIView+RaiseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E604EE2178D28D4009B9CAD /* UIView+RaiseAdditions.m */; };
+		7E604EE7178D2ACE009B9CAD /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E604EE6178D2ACE009B9CAD /* DataManager.m */; };
+		7E604EF7178D3793009B9CAD /* company_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E604EEC178D3793009B9CAD /* company_1.jpg */; };
+		7E604EF8178D3793009B9CAD /* company_10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E604EED178D3793009B9CAD /* company_10.jpg */; };
+		7E604EF9178D3793009B9CAD /* company_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E604EEE178D3793009B9CAD /* company_11.png */; };
+		7E604EFA178D3793009B9CAD /* company_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E604EEF178D3793009B9CAD /* company_2.jpg */; };
+		7E604EFB178D3793009B9CAD /* company_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E604EF0178D3793009B9CAD /* company_3.jpg */; };
+		7E604EFC178D3793009B9CAD /* company_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E604EF1178D3793009B9CAD /* company_4.jpg */; };
+		7E604EFD178D3793009B9CAD /* company_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E604EF2178D3793009B9CAD /* company_5.png */; };
+		7E604EFE178D3793009B9CAD /* company_6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E604EF3178D3793009B9CAD /* company_6.jpg */; };
+		7E604EFF178D3793009B9CAD /* company_7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E604EF4178D3793009B9CAD /* company_7.jpg */; };
+		7E604F00178D3793009B9CAD /* company_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E604EF5178D3793009B9CAD /* company_8.png */; };
+		7E604F01178D3793009B9CAD /* company_9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E604EF6178D3793009B9CAD /* company_9.jpg */; };
 		7E6114E91783926B00433603 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E6114E81783926B00433603 /* Foundation.framework */; };
 		7E6114EB1783926B00433603 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E6114EA1783926B00433603 /* CoreGraphics.framework */; };
 		7E6114ED1783926B00433603 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E6114EC1783926B00433603 /* UIKit.framework */; };
@@ -269,6 +281,19 @@
 		7E604EBD178D2423009B9CAD /* RaiseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RaiseViewController.m; sourceTree = "<group>"; };
 		7E604EE1178D28D4009B9CAD /* UIView+RaiseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RaiseAdditions.h"; sourceTree = "<group>"; };
 		7E604EE2178D28D4009B9CAD /* UIView+RaiseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RaiseAdditions.m"; sourceTree = "<group>"; };
+		7E604EE5178D2ACE009B9CAD /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		7E604EE6178D2ACE009B9CAD /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		7E604EEC178D3793009B9CAD /* company_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = company_1.jpg; sourceTree = "<group>"; };
+		7E604EED178D3793009B9CAD /* company_10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = company_10.jpg; sourceTree = "<group>"; };
+		7E604EEE178D3793009B9CAD /* company_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = company_11.png; sourceTree = "<group>"; };
+		7E604EEF178D3793009B9CAD /* company_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = company_2.jpg; sourceTree = "<group>"; };
+		7E604EF0178D3793009B9CAD /* company_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = company_3.jpg; sourceTree = "<group>"; };
+		7E604EF1178D3793009B9CAD /* company_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = company_4.jpg; sourceTree = "<group>"; };
+		7E604EF2178D3793009B9CAD /* company_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = company_5.png; sourceTree = "<group>"; };
+		7E604EF3178D3793009B9CAD /* company_6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = company_6.jpg; sourceTree = "<group>"; };
+		7E604EF4178D3793009B9CAD /* company_7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = company_7.jpg; sourceTree = "<group>"; };
+		7E604EF5178D3793009B9CAD /* company_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = company_8.png; sourceTree = "<group>"; };
+		7E604EF6178D3793009B9CAD /* company_9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = company_9.jpg; sourceTree = "<group>"; };
 		7E6114E51783926B00433603 /* Raise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Raise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6114E81783926B00433603 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7E6114EA1783926B00433603 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -324,8 +349,8 @@
 		7E711091178BF3AE0039186F /* funnel_done@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "funnel_done@2x.png"; path = "Mockups/funnel_done@2x.png"; sourceTree = "<group>"; };
 		7E711092178BF3AE0039186F /* funnel_location_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = funnel_location_2.png; sourceTree = "<group>"; };
 		7E711093178BF3AE0039186F /* funnel_location_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "funnel_location_2@2x.png"; sourceTree = "<group>"; };
-		7E711096178BF3AE0039186F /* job_card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = job_card.png; sourceTree = "<group>"; };
-		7E711097178BF3AE0039186F /* job_card@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "job_card@2x.png"; sourceTree = "<group>"; };
+		7E711096178BF3AE0039186F /* job_card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = job_card.png; path = Mockups/job_card.png; sourceTree = "<group>"; };
+		7E711097178BF3AE0039186F /* job_card@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "job_card@2x.png"; path = "Mockups/job_card@2x.png"; sourceTree = "<group>"; };
 		7E71109A178BF3AE0039186F /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		7E71109B178BF3AE0039186F /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
 		7E71109C178BF3AE0039186F /* pivot_company.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pivot_company.png; sourceTree = "<group>"; };
@@ -548,6 +573,24 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		7E604EEB178D3793009B9CAD /* CompanyImages */ = {
+			isa = PBXGroup;
+			children = (
+				7E604EEC178D3793009B9CAD /* company_1.jpg */,
+				7E604EED178D3793009B9CAD /* company_10.jpg */,
+				7E604EEE178D3793009B9CAD /* company_11.png */,
+				7E604EEF178D3793009B9CAD /* company_2.jpg */,
+				7E604EF0178D3793009B9CAD /* company_3.jpg */,
+				7E604EF1178D3793009B9CAD /* company_4.jpg */,
+				7E604EF2178D3793009B9CAD /* company_5.png */,
+				7E604EF3178D3793009B9CAD /* company_6.jpg */,
+				7E604EF4178D3793009B9CAD /* company_7.jpg */,
+				7E604EF5178D3793009B9CAD /* company_8.png */,
+				7E604EF6178D3793009B9CAD /* company_9.jpg */,
+			);
+			path = CompanyImages;
+			sourceTree = "<group>";
+		};
 		7E6114DC1783926B00433603 = {
 			isa = PBXGroup;
 			children = (
@@ -633,6 +676,7 @@
 		7E711065178BF3AE0039186F /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				7E604EEB178D3793009B9CAD /* CompanyImages */,
 				7E604E5F178D1E1B009B9CAD /* Glyphs */,
 				7E4891F6178C0E8B008BA105 /* Splashscreens */,
 				7E4891E7178C0C14008BA105 /* Icons */,
@@ -709,8 +753,6 @@
 				7E71108F178BF3AE0039186F /* following_search@2x.png */,
 				7E711092178BF3AE0039186F /* funnel_location_2.png */,
 				7E711093178BF3AE0039186F /* funnel_location_2@2x.png */,
-				7E711096178BF3AE0039186F /* job_card.png */,
-				7E711097178BF3AE0039186F /* job_card@2x.png */,
 				7E71109A178BF3AE0039186F /* menu.png */,
 				7E71109B178BF3AE0039186F /* menu@2x.png */,
 				7E71109C178BF3AE0039186F /* pivot_company.png */,
@@ -724,6 +766,8 @@
 		7E7110E3178C03D90039186F /* Mockups_OK */ = {
 			isa = PBXGroup;
 			children = (
+				7E711096178BF3AE0039186F /* job_card.png */,
+				7E711097178BF3AE0039186F /* job_card@2x.png */,
 				7E7110A0178BF3AE0039186F /* profile_pic.png */,
 				7E7110A1178BF3AE0039186F /* profile_pic@2x.png */,
 				7E711090178BF3AE0039186F /* funnel_done.png */,
@@ -739,6 +783,8 @@
 				7EFCD6E617839B570067C395 /* AppDelegate.m */,
 				7E604E51178CFF2C009B9CAD /* DataImporter.h */,
 				7E604E52178CFF2C009B9CAD /* DataImporter.m */,
+				7E604EE5178D2ACE009B9CAD /* DataManager.h */,
+				7E604EE6178D2ACE009B9CAD /* DataManager.m */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -810,11 +856,11 @@
 		7EFCD7281783BD270067C395 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7E711065178BF3AE0039186F /* Images */,
 				7E70A510178CE6A8003AABBB /* CSV */,
-				7EFCD7291783BD270067C395 /* InfoPlist.strings */,
 				7EFCD72B1783BD270067C395 /* Fonts */,
 				7EFCD7431783BD270067C395 /* Images.xcassets */,
-				7E711065178BF3AE0039186F /* Images */,
+				7EFCD7291783BD270067C395 /* InfoPlist.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -915,14 +961,17 @@
 				7E4891F2178C0C14008BA105 /* icon_iphone@2x.png in Resources */,
 				7E7110B9178BF3AE0039186F /* button_search_30@2x.png in Resources */,
 				7E7110BD178BF3AE0039186F /* logo_280_120@2x.png in Resources */,
+				7E604EFA178D3793009B9CAD /* company_2.jpg in Resources */,
 				7E7110B5178BF3AE0039186F /* button_login_later@2x.png in Resources */,
 				7E7110AC178BF3AE0039186F /* button_connect_linkedin.png in Resources */,
 				7EFCD74B1783BD270067C395 /* Cabin-SemiBold.otf in Resources */,
 				7E604EC3178D2423009B9CAD /* JobCardViewController.xib in Resources */,
+				7E604EF9178D3793009B9CAD /* company_11.png in Resources */,
 				7E7110C9178BF3AE0039186F /* funnel_done@2x.png in Resources */,
 				7E7110C0178BF3AE0039186F /* fake_facebook_background.png in Resources */,
 				7E604E4C178CFF10009B9CAD /* friends.csv in Resources */,
 				7E7110B1178BF3AE0039186F /* button_info_60@2x.png in Resources */,
+				7E604EFF178D3793009B9CAD /* company_7.jpg in Resources */,
 				7E7110B4178BF3AE0039186F /* button_login_later.png in Resources */,
 				7E4891F0178C0C14008BA105 /* icon_ipad@2x.png in Resources */,
 				7E7110A7178BF3AE0039186F /* button_check_80@2x.png in Resources */,
@@ -931,6 +980,7 @@
 				7E7110C4178BF3AE0039186F /* following_cell_2.png in Resources */,
 				7E7110B2178BF3AE0039186F /* button_login_facebook.png in Resources */,
 				7EFCD7481783BD270067C395 /* Cabin-Medium.otf in Resources */,
+				7E604EF8178D3793009B9CAD /* company_10.jpg in Resources */,
 				7E4891FC178C0E8B008BA105 /* slash_iphone@2x.png in Resources */,
 				7EFCD7571783BD270067C395 /* Images.xcassets in Resources */,
 				7EFCD74C1783BD270067C395 /* Cabin-SemiBoldItalic.otf in Resources */,
@@ -947,12 +997,15 @@
 				7E7110B0178BF3AE0039186F /* button_info_60.png in Resources */,
 				7E7110AA178BF3AE0039186F /* button_connect_facebook.png in Resources */,
 				7EFCD7491783BD270067C395 /* Cabin-MediumItalic.otf in Resources */,
+				7E604EFB178D3793009B9CAD /* company_3.jpg in Resources */,
 				7E7110BF178BF3AE0039186F /* logo_navbar@2x.png in Resources */,
 				7E604E4F178CFF10009B9CAD /* jobs.csv in Resources */,
 				7E7110A4178BF3AE0039186F /* subtle_stripes.png in Resources */,
 				7E7110D5178BF3AE0039186F /* pivot_company@2x.png in Resources */,
 				7E7110AD178BF3AE0039186F /* button_connect_linkedin@2x.png in Resources */,
 				7E604E66178D1E1B009B9CAD /* glyph_money_15.png in Resources */,
+				7E604EFC178D3793009B9CAD /* company_4.jpg in Resources */,
+				7E604EF7178D3793009B9CAD /* company_1.jpg in Resources */,
 				7E7110A2178BF3AE0039186F /* bg_navbar.png in Resources */,
 				7E7110CE178BF3AE0039186F /* job_card.png in Resources */,
 				7E7110B3178BF3AE0039186F /* button_login_facebook@2x.png in Resources */,
@@ -985,16 +1038,20 @@
 				7EFCD7441783BD270067C395 /* InfoPlist.strings in Resources */,
 				7E7110D9178BF3AE0039186F /* profile_pic@2x.png in Resources */,
 				7EFCD7471783BD270067C395 /* Cabin-Italic.otf in Resources */,
+				7E604F01178D3793009B9CAD /* company_9.jpg in Resources */,
 				7E7110C8178BF3AE0039186F /* funnel_done.png in Resources */,
 				7E7110C2178BF3AE0039186F /* following_cell_1.png in Resources */,
 				7E4891FA178C0E8B008BA105 /* slash_iphone.png in Resources */,
 				7E604ED0178D2423009B9CAD /* FunnelNameViewController.xib in Resources */,
+				7E604EFE178D3793009B9CAD /* company_6.jpg in Resources */,
+				7E604F00178D3793009B9CAD /* company_8.png in Resources */,
 				7E604E65178D1E1B009B9CAD /* glyph_friends_15@2x.png in Resources */,
 				7E604ECA178D2423009B9CAD /* FunnelDoneViewController.xib in Resources */,
 				7E7110AF178BF3AE0039186F /* button_connect_logout@2x.png in Resources */,
 				7E604EBF178D2423009B9CAD /* CompanyDetailViewController.xib in Resources */,
 				7E7110AB178BF3AE0039186F /* button_connect_facebook@2x.png in Resources */,
 				7E604E50178CFF10009B9CAD /* locations.csv in Resources */,
+				7E604EFD178D3793009B9CAD /* company_5.png in Resources */,
 				7E7110C6178BF3AE0039186F /* following_search.png in Resources */,
 				7E7110CA178BF3AE0039186F /* funnel_location_2.png in Resources */,
 				7E604ED4178D2423009B9CAD /* LoginViewController.xib in Resources */,
@@ -1075,6 +1132,7 @@
 				7E604ED8178D2423009B9CAD /* FunnelViewController.m in Sources */,
 				7ED63D44178414B700295D48 /* UIImageView+RaiseImages.m in Sources */,
 				7E604E59178D0BE3009B9CAD /* Job.m in Sources */,
+				7E604EE7178D2ACE009B9CAD /* DataManager.m in Sources */,
 				7EFCD6F417839B570067C395 /* Raise.xcdatamodeld in Sources */,
 				7EFCD6F717839B570067C395 /* main.m in Sources */,
 				7E604ED2178D2423009B9CAD /* FunnelYearsViewController.m in Sources */,

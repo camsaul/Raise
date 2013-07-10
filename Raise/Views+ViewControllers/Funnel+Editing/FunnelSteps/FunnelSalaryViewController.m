@@ -20,13 +20,13 @@ PROP_STRONG FunnelGaugeView *view;
 	self.originalSalary = APP_DELEGATE.currentUser ? APP_DELEGATE.currentUser.salary.intValue : 60;
 	self.view = [[FunnelGaugeView alloc] init];
 	self.view.delegate = self;
-	self.view.titleLabel.text = @"I'm looking for a job that will pay at least:";
+	[self.view.titleLabel setTextPreservingExistingAttributes:@"I'm looking for a job that will pay at least:"];
 	
 	self.view.gauge.minValue = 20;
-	self.view.minValueLabel.text = @"$20k";
+	[self.view.minValueLabel setTextPreservingExistingAttributes:@"$20k"];
 	self.view.gauge.maxValue = 250;
-	self.view.maxValueLabel.text = @"$250k+";
-	self.view.valueLabel.text = [NSString stringWithFormat:@"$%dk%@", self.originalSalary, (self.originalSalary == 250 ? @"+" : @"")];
+	[self.view.maxValueLabel setTextPreservingExistingAttributes:@"$250k+"];
+	[self.view.valueLabel setTextPreservingExistingAttributes:[NSString stringWithFormat:@"$%dk%@", self.originalSalary, (self.originalSalary == 250 ? @"+" : @"")]];
 	dispatch_next_run_loop(^{
 		[self.view.gauge setValue:self.originalSalary animated:YES];
 		[self updateButtonEnabled:self.originalSalary];
