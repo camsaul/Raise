@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4457.6" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3682.6"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JobCardViewController">
+            <connections>
+                <outlet property="companyLabel" destination="zRZ-3n-fQV" id="kyM-UC-w8a"/>
+                <outlet property="friendsLabel" destination="p4j-9p-knM" id="Hsf-dY-LVr"/>
+                <outlet property="imageView" destination="ymB-UN-kLe" id="rJk-sK-aNg"/>
+                <outlet property="infoView" destination="maC-sN-baW" id="msH-nd-MX3"/>
+                <outlet property="locationLabel" destination="eSr-8w-2CX" id="52P-Vk-dC6"/>
+                <outlet property="salaryLabel" destination="WfO-li-Pkb" id="3WH-sG-3I3"/>
+                <outlet property="titleLabel" destination="p1g-Bo-wRO" id="b2g-Oy-f9q"/>
+                <outlet property="view" destination="kPy-LD-FtJ" id="7HF-hD-9Xy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="kPy-LD-FtJ">
+            <rect key="frame" x="0.0" y="0.0" width="260" height="260"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fake_facebook_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="ymB-UN-kLe">
+                    <rect key="frame" x="0.0" y="0.0" width="260" height="260"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="maC-sN-baW">
+                    <rect key="frame" x="0.0" y="190" width="260" height="70"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Lead" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1g-Bo-wRO">
+                            <rect key="frame" x="10" y="5" width="150" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="b4W-Lf-jHw"/>
+                                <constraint firstAttribute="width" constant="150" id="iBN-17-2ON"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Facebook" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRZ-3n-fQV">
+                            <rect key="frame" x="10" y="35" width="110" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="f0M-3I-UbR"/>
+                                <constraint firstAttribute="width" constant="110" id="qIY-Nz-xkO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mountain View, CA" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSr-8w-2CX">
+                            <rect key="frame" x="125" y="35" width="125" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="125" id="1FS-5W-Jis"/>
+                                <constraint firstAttribute="height" constant="30" id="Lre-75-ftY"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4j-9p-knM">
+                            <rect key="frame" x="180" y="5" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="5Jv-7h-dcA"/>
+                                <constraint firstAttribute="height" constant="30" id="ck5-sz-bMw"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80k" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WfO-li-Pkb">
+                            <rect key="frame" x="225" y="5" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="RBM-Gb-WVm"/>
+                                <constraint firstAttribute="height" constant="30" id="Wrt-HT-QHO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="glyph_friends_15.png" translatesAutoresizingMaskIntoConstraints="NO" id="fyc-Y2-b7a">
+                            <rect key="frame" x="160" y="12" width="15" height="15"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="15" id="N39-B1-aEz"/>
+                                <constraint firstAttribute="height" constant="15" id="qpM-6B-emm"/>
+                            </constraints>
+                        </imageView>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="glyph_money_15.png" translatesAutoresizingMaskIntoConstraints="NO" id="OxR-8F-YOf">
+                            <rect key="frame" x="208" y="12" width="15" height="15"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="uOA-eh-G9C"/>
+                                <constraint firstAttribute="width" constant="15" id="zbi-AX-v1g"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999998807907104" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="WfO-li-Pkb" secondAttribute="trailing" constant="5" id="2m4-ho-DVG"/>
+                        <constraint firstItem="p1g-Bo-wRO" firstAttribute="leading" secondItem="maC-sN-baW" secondAttribute="leading" constant="10" id="Haf-Et-RJN"/>
+                        <constraint firstAttribute="bottom" secondItem="eSr-8w-2CX" secondAttribute="bottom" constant="5" id="PWy-Yz-d0E"/>
+                        <constraint firstItem="WfO-li-Pkb" firstAttribute="leading" secondItem="OxR-8F-YOf" secondAttribute="trailing" constant="2" id="QGL-Yx-RXm"/>
+                        <constraint firstAttribute="trailing" secondItem="eSr-8w-2CX" secondAttribute="trailing" constant="10" id="RzA-Eg-u3b"/>
+                        <constraint firstItem="p1g-Bo-wRO" firstAttribute="top" secondItem="maC-sN-baW" secondAttribute="top" constant="5" id="TmZ-Lh-S5o"/>
+                        <constraint firstItem="p4j-9p-knM" firstAttribute="top" secondItem="maC-sN-baW" secondAttribute="top" constant="5" id="WYQ-sJ-8QJ"/>
+                        <constraint firstItem="fyc-Y2-b7a" firstAttribute="leading" secondItem="p1g-Bo-wRO" secondAttribute="trailing" id="Y1G-WY-fP9"/>
+                        <constraint firstAttribute="bottom" secondItem="zRZ-3n-fQV" secondAttribute="bottom" constant="5" id="ZpT-Vo-LYM"/>
+                        <constraint firstItem="WfO-li-Pkb" firstAttribute="top" secondItem="maC-sN-baW" secondAttribute="top" constant="5" id="bVJ-ag-3ZU"/>
+                        <constraint firstAttribute="height" constant="70" id="fAE-bl-G8b"/>
+                        <constraint firstItem="p4j-9p-knM" firstAttribute="leading" secondItem="fyc-Y2-b7a" secondAttribute="trailing" constant="5" id="fB0-04-bRE"/>
+                        <constraint firstItem="zRZ-3n-fQV" firstAttribute="leading" secondItem="maC-sN-baW" secondAttribute="leading" constant="10" id="mq6-6t-w77"/>
+                        <constraint firstItem="p4j-9p-knM" firstAttribute="centerY" secondItem="fyc-Y2-b7a" secondAttribute="centerY" id="nU9-ny-fIe"/>
+                        <constraint firstItem="WfO-li-Pkb" firstAttribute="centerY" secondItem="OxR-8F-YOf" secondAttribute="centerY" id="nhO-er-BlG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="maC-sN-baW" firstAttribute="trailing" secondItem="kPy-LD-FtJ" secondAttribute="trailing" id="BCl-Rd-sjA"/>
+                <constraint firstItem="maC-sN-baW" firstAttribute="leading" secondItem="kPy-LD-FtJ" secondAttribute="leading" id="SoT-5g-QL0"/>
+                <constraint firstItem="maC-sN-baW" firstAttribute="bottom" secondItem="kPy-LD-FtJ" secondAttribute="bottom" id="olm-od-wLH"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="fake_facebook_background.png" width="320" height="416"/>
+        <image name="glyph_friends_15.png" width="15" height="15"/>
+        <image name="glyph_money_15.png" width="15" height="15"/>
+    </resources>
+</document>

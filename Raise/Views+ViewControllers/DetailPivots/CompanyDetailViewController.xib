@@ -42,4 +42,16 @@
     <resources>
         <image name="pivot_company.png" width="1220" height="416"/>
     </resources>
+    <classes>
+        <class className="CompanyDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CompanyDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="contentView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
 </document>

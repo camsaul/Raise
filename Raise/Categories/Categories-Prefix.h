@@ -10,3 +10,4 @@
 #import "UIFont+RaiseFonts.h"
 #import "UIBarButtonItem+RaiseButtons.h"
 #import "UIImageView+RaiseImages.h"
+#import "UIView+RaiseAdditions.h"

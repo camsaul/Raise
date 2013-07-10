@@ -6,6 +6,12 @@
 // project.
 
 
+// CHCSVParser
+#define COCOAPODS_POD_AVAILABLE_CHCSVParser
+#define COCOAPODS_VERSION_MAJOR_CHCSVParser 2
+#define COCOAPODS_VERSION_MINOR_CHCSVParser 0
+#define COCOAPODS_VERSION_PATCH_CHCSVParser 7
+
 // JSONKit
 #define COCOAPODS_POD_AVAILABLE_JSONKit
 // This library does not follow semantic-versioning,
