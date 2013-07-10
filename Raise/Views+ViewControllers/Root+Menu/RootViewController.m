@@ -107,6 +107,7 @@ PROP_STRONG UINavigationController *navigationController;
 	
 	[self.navViewWrapper addHiddenButton];
 	[self.navViewWrapper.hiddenButton addTarget:self action:@selector(navHiddenButtonPressed)];
+	[self.menuViewController viewWillAppear:YES];
 	[UIView animateWithDuration:AnimationDuration animations:^{
 		self.navViewWrapper.xOrigin = 120;
 		self.navViewWrapper.alpha = 0.6;
@@ -119,6 +120,7 @@ PROP_STRONG UINavigationController *navigationController;
 
 - (void)hideMenu {
 	[self.navViewWrapper removeHiddenButton];
+	[self.menuViewController viewWillDisappear:YES];
 	[UIView animateWithDuration:AnimationDuration animations:^{
 		self.navViewWrapper.xOrigin = 0;
 		self.navViewWrapper.alpha = 1;

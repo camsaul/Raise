@@ -7,6 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController">
             <connections>
+                <outlet property="nameLabel" destination="FbK-Zo-RAR" id="7HG-a2-oJu"/>
+                <outlet property="profileButton" destination="Ps5-KX-AWK" id="zf1-XX-ddj"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -15,57 +17,8 @@
             <rect key="frame" x="0.0" y="0.0" width="120" height="460"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="menu.png" translatesAutoresizingMaskIntoConstraints="NO" id="T6Q-oH-S0f">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUK-52-WEV" userLabel="hidden button">
                     <rect key="frame" x="0.0" y="0.0" width="120" height="460"/>
-                    <autoresizingMask key="autoresizingMask"/>
-                </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0SR-gS-dd1">
-                    <rect key="frame" x="0.0" y="0.0" width="120" height="60"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                    <state key="normal">
-                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <state key="highlighted">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="discoverButtonPressed:" destination="-1" eventType="touchUpInside" id="sxk-Q1-BLO"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaJ-nq-daW">
-                    <rect key="frame" x="0.0" y="60" width="120" height="50"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                    <state key="normal">
-                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <state key="highlighted">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="searchButtonPressed:" destination="-1" eventType="touchUpInside" id="rrQ-y8-seV"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMz-Nx-uuf">
-                    <rect key="frame" x="0.0" y="110" width="120" height="70"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                    <state key="normal">
-                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <state key="highlighted">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="followingButtonPressed:" destination="-1" eventType="touchUpInside" id="Vfb-sf-mIo"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUK-52-WEV">
-                    <rect key="frame" x="0.0" y="180" width="120" height="140"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                     <state key="normal">
@@ -79,11 +32,73 @@
                         <action selector="dismissButtonPressed:" destination="-1" eventType="touchUpInside" id="rsi-5O-b5S"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ps5-KX-AWK">
-                    <rect key="frame" x="0.0" y="320" width="120" height="146"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0SR-gS-dd1">
+                    <rect key="frame" x="0.0" y="5" width="120" height="55"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="zYe-Tr-PaD"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                    <state key="normal">
+                    <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="DISCOVER">
+                        <color key="titleColor" red="0.37647059559822083" green="0.47058823704719543" blue="0.56470590829849243" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="discoverButtonPressed:" destination="-1" eventType="touchUpInside" id="sxk-Q1-BLO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaJ-nq-daW">
+                    <rect key="frame" x="0.0" y="60" width="120" height="55"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="dxW-tT-reJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="SEARCH">
+                        <color key="titleColor" red="0.37647059559822083" green="0.47058823704719543" blue="0.56470590829849243" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="searchButtonPressed:" destination="-1" eventType="touchUpInside" id="rrQ-y8-seV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMz-Nx-uuf">
+                    <rect key="frame" x="0.0" y="115" width="120" height="55"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="yGZ-1p-qqz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="FOLLOWING">
+                        <color key="titleColor" red="0.37647059559822083" green="0.47058823704719543" blue="0.56470590829849243" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="followingButtonPressed:" destination="-1" eventType="touchUpInside" id="Vfb-sf-mIo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ps5-KX-AWK">
+                    <rect key="frame" x="20" y="342" width="80" height="80"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="KLR-oL-IlW"/>
+                        <constraint firstAttribute="width" constant="80" id="vSx-0Q-1lW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="profile_pic.png">
                         <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -94,17 +109,57 @@
                         <action selector="profileButtonPressed:" destination="-1" eventType="touchUpInside" id="BMW-9e-0Tm"/>
                     </connections>
                 </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cam Saul" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="80" translatesAutoresizingMaskIntoConstraints="NO" id="FbK-Zo-RAR">
+                    <rect key="frame" x="20" y="432" width="80" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <color key="textColor" red="0.37647059560000001" green="0.47058823700000002" blue="0.5647059083" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.88627450980392153" green="0.93725490196078431" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstAttribute="centerX" secondItem="T6Q-oH-S0f" secondAttribute="centerX" id="bQs-3S-aFz"/>
-                <constraint firstAttribute="centerY" secondItem="T6Q-oH-S0f" secondAttribute="centerY" id="lTw-i2-c6Y"/>
+                <constraint firstItem="rUK-52-WEV" firstAttribute="top" secondItem="1" secondAttribute="top" id="1d9-vi-kjp"/>
+                <constraint firstItem="TMz-Nx-uuf" firstAttribute="top" secondItem="FaJ-nq-daW" secondAttribute="bottom" id="2BU-we-LUW"/>
+                <constraint firstItem="0SR-gS-dd1" firstAttribute="top" secondItem="1" secondAttribute="top" constant="5" id="2Yh-OR-3Ru"/>
+                <constraint firstItem="0SR-gS-dd1" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="4aq-eF-Zvr"/>
+                <constraint firstAttribute="bottom" secondItem="FbK-Zo-RAR" secondAttribute="bottom" constant="10" id="7rI-AT-JqB"/>
+                <constraint firstItem="FbK-Zo-RAR" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="8OW-g5-6FG"/>
+                <constraint firstAttribute="trailing" secondItem="FbK-Zo-RAR" secondAttribute="trailing" constant="20" id="AW6-Gm-Pxr"/>
+                <constraint firstItem="rUK-52-WEV" firstAttribute="bottom" secondItem="1" secondAttribute="bottom" id="IVX-kE-1eG"/>
+                <constraint firstItem="TMz-Nx-uuf" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="KsI-xG-A7l"/>
+                <constraint firstItem="0SR-gS-dd1" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="Pph-PI-f7F"/>
+                <constraint firstAttribute="centerX" secondItem="Ps5-KX-AWK" secondAttribute="centerX" id="V2d-Ln-YKE"/>
+                <constraint firstItem="TMz-Nx-uuf" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="Yzx-Ve-tTl"/>
+                <constraint firstItem="FaJ-nq-daW" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="cLq-iU-OhR"/>
+                <constraint firstItem="FaJ-nq-daW" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="icU-kx-8GS"/>
+                <constraint firstItem="FbK-Zo-RAR" firstAttribute="top" secondItem="Ps5-KX-AWK" secondAttribute="bottom" constant="10" id="k1n-Tj-aq8"/>
+                <constraint firstItem="rUK-52-WEV" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="mt4-eJ-xtG"/>
+                <constraint firstItem="rUK-52-WEV" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="tSW-TX-egX"/>
+                <constraint firstItem="FaJ-nq-daW" firstAttribute="top" secondItem="0SR-gS-dd1" secondAttribute="bottom" id="vqc-RQ-DmN"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
     <resources>
-        <image name="menu.png" width="120" height="460"/>
+        <image name="profile_pic.png" width="70" height="70"/>
     </resources>
+    <classes>
+        <class className="MenuViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MenuViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="discoverButtonPressed:"/>
+                <relationship kind="action" name="dismissButtonPressed:"/>
+                <relationship kind="action" name="followingButtonPressed:"/>
+                <relationship kind="action" name="profileButtonPressed:"/>
+                <relationship kind="action" name="searchButtonPressed:"/>
+                <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="profileButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
 </document>

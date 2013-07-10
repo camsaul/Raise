@@ -33,7 +33,7 @@ static const int CellImageViewTag = 2010;
     [super viewDidLoad];
 	self.navigationItem.leftBarButtonItem = [UIBarButtonItem raiseMenuBarButtonItem];
 	
-	self.textField.font = [UIFont fontWithName:@"Cabin-Bold" size:16.0];
+	self.textField.font = [UIFont fontWithName:@"Cabin" size:16.0];
 }
 
 - (void)hideKeyboard {
