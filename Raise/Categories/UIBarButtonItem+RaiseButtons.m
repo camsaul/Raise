@@ -14,7 +14,11 @@
 	UIButton *menuButton = [UIButton buttonWithType:UIButtonTypeCustom];
 	UIImage *menuButtonImage = [UIImage imageNamed:@"button_side_menu.png"];
 	[menuButton setImage:menuButtonImage forState:UIControlStateNormal];
-	menuButton.frame = CGRectMake(0, 0, menuButtonImage.size.width, menuButtonImage.size.height);
+	menuButton.frame = CGRectMake(0, 0, menuButtonImage.size.width + 5, menuButtonImage.size.height);
+//	menuButton.imageView.contentMode = UIViewContentModeScaleAspectFill;
+	menuButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
+	menuButton.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
+	menuButton.clipsToBounds = YES;
 	[menuButton addTarget:ROOT_VIEW_CONTROLLER action:@selector(menuButtonPressed)];
 	UIBarButtonItem *menuButtonItem = [[UIBarButtonItem alloc] initWithCustomView:menuButton];
 	return menuButtonItem;
