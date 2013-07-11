@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4457.6" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4471.1" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment defaultVersion="1536" identifier="iOS"/>
         <development version="5000" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3682.6"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3697.3"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CompanyDetailViewController">
@@ -25,28 +25,30 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dgt-SS-EHo" userLabel="company BG image view">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dgt-SS-EHo" userLabel="company BG image view">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
                 <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Mh-S8-MCW">
                     <rect key="frame" x="0.0" y="0.0" width="300" height="548"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="300" id="UfG-zW-rpF"/>
-                    </constraints>
                 </scrollView>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="8Mh-S8-MCW" firstAttribute="bottom" secondItem="1" secondAttribute="bottom" id="I7D-Ns-pWR"/>
                 <constraint firstItem="8Mh-S8-MCW" firstAttribute="top" secondItem="1" secondAttribute="top" id="Kfk-SV-egq"/>
+                <constraint firstItem="Dgt-SS-EHo" firstAttribute="bottom" secondItem="1" secondAttribute="bottom" id="OSa-QT-uAh"/>
+                <constraint firstItem="Dgt-SS-EHo" firstAttribute="top" secondItem="1" secondAttribute="top" id="PIG-5e-ywV"/>
+                <constraint firstAttribute="trailing" secondItem="8Mh-S8-MCW" secondAttribute="trailing" constant="20" id="UeS-3S-Mnb"/>
                 <constraint firstItem="8Mh-S8-MCW" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="bcu-cy-nk1"/>
+                <constraint firstItem="Dgt-SS-EHo" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="ebi-CG-5HT"/>
+                <constraint firstItem="Dgt-SS-EHo" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="fc7-Xg-yLe"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
-        <view contentMode="scaleToFill" id="Lmv-lW-Vkq" userLabel="Content View">
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="Lmv-lW-Vkq" userLabel="Content View">
             <rect key="frame" x="0.0" y="0.0" width="1220" height="416"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
@@ -130,6 +132,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="286" id="LSR-38-H0G"/>
                         <constraint firstAttribute="width" constant="280" id="YO3-xV-8Jv"/>
                     </constraints>
                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -222,36 +225,4 @@
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
-    <classes>
-        <class className="CompanyDetailViewController" superclassName="ParamsViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CompanyDetailViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="followButtonPressed:"/>
-                <relationship kind="outlet" name="backgroundImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="companyDescriptionTextView" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="companyNameLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="contentView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="followButton" candidateClass="RaiseButton"/>
-                <relationship kind="outlet" name="friendsCollectionView" candidateClass="UICollectionView"/>
-                <relationship kind="outlet" name="jobsCollectionView" candidateClass="UICollectionView"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-                <relationship kind="outlet" name="similarCompaniesCollectionView" candidateClass="UICollectionView"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="ParamsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ParamsViewController.h"/>
-        </class>
-        <class className="RaiseButton" superclassName="UIButton">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/RaiseButton.h"/>
-        </class>
-        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
-        </class>
-        <class className="UICollectionViewLayout" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
-        </class>
-    </classes>
 </document>

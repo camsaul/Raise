@@ -40,8 +40,8 @@ PROP_STRONG NSArray *similarCompanies;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	[self.scrollView addSubview:self.contentView];
-	self.scrollView.contentSize = self.contentView.bounds.size;
+	self.contentView.translatesAutoresizingMaskIntoConstraints = NO;
+	
 	[self.contentView correctFonts];
 	
 	self.company = [DataManager objectOfType:DataTypeCompany withID:self.params[ParamCompanyIDInt]];
@@ -52,21 +52,33 @@ PROP_STRONG NSArray *similarCompanies;
 	
 	[self.companyNameLabel setTextPreservingExistingAttributes:self.company.name];
 	[self.companyDescriptionTextView setTextPreservingExistingAttributes:self.company.info];
+	self.backgroundImageView.image = self.company.image;
 	[self.followButton setTitle:[NSString stringWithFormat:@"follow %@", self.company.name] forState:UIControlStateNormal];
 	
-	if (self.company.following) {
+	if (self.company.following.boolValue) {
 		[self.followButton setTitle:@"followed" forState:UIControlStateNormal];
 		self.followButton.enabled = NO;
 	}
+	
+	[self.scrollView addSubview:self.contentView];
+	self.scrollView.contentSize = self.contentView.bounds.size;
 
 	[self.friendsCollectionView registerNib:[UINib nibWithNibName:@"FriendCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:FriendCellID];
 	[self.jobsCollectionView registerNib:[UINib nibWithNibName:@"JobCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:JobCellID];
 	[self.similarCompaniesCollectionView registerNib:[UINib nibWithNibName:@"CompanyCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:CompanyCellID];
+	
+	[self.scrollView addConstraints:@[@"|[_contentView]|", @"V:|[_contentView]|"] views:NSDictionaryOfVariableBindings(_contentView)];
+	[self.view layoutIfNeeded];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+	[super viewWillDisappear:animated];
+	[self.scrollView setContentOffset:CGPointMake(0, 0) animated:NO];
 }
 
 - (IBAction)followButtonPressed:(id)sender {
 	[UIAlertView showAlertWithTitle:@"Followed" message:[NSString stringWithFormat:@"You are now following %@.", self.company.name] cancelButtonTitle:@"Done"];
-	self.company.following = YES;
+	self.company.following = @(YES);
 	[self.followButton setTitle:@"followed" forState:UIControlStateNormal];
 	self.followButton.enabled = NO;
 }

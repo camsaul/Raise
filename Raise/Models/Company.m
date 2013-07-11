@@ -2,7 +2,7 @@
 //  Company.m
 //  Raise
 //
-//  Created by Cameron Saul on 7/9/13.
+//  Created by Cameron Saul on 7/11/13.
 //  Copyright (c) 2013 LuckyBird, Inc. All rights reserved.
 //
 
@@ -19,11 +19,11 @@
 @dynamic info;
 @dynamic name;
 @dynamic numberOfEmployees;
+@dynamic following;
 @dynamic friends;
 @dynamic industries;
-@dynamic location;
 @dynamic jobs;
-@synthesize following;
+@dynamic location;
 
 - (UIImage *)image {
 	UIImage *img = nil;
@@ -40,6 +40,10 @@
 
 - (NSArray *)similarCompanies {
 	return [DataManager objectsOfType:DataTypeCompany withPredicate:[NSPredicate predicateWithFormat:@"ALL industries IN %@", self.industries]];
+}
+
++ (NSArray *)followedCompanies {
+	return [DataManager objectsOfType:DataTypeCompany withPredicate:[NSPredicate predicateWithFormat:@"following == TRUE"]];
 }
 
 @end

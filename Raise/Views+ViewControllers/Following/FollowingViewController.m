@@ -7,6 +7,7 @@
 //
 
 #import "FollowingViewController.h"
+#import "FollowingTableViewCell.h"
 
 static NSString *CellID = @"FollowingCompanyCell";
 static const int CellImageViewTag = 2010;
@@ -20,20 +21,14 @@ static const int CellImageViewTag = 2010;
 
 @implementation FollowingViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 	self.navigationItem.leftBarButtonItem = [UIBarButtonItem raiseMenuBarButtonItem];
 	
 	self.textField.font = [UIFont fontWithName:@"Cabin" size:16.0];
+	
+	[self.tableView registerNib:[UINib nibWithNibName:@"FollowingTableViewCell" bundle:nil] forCellReuseIdentifier:CellID];
 }
 
 - (void)hideKeyboard {
@@ -97,7 +92,7 @@ static const int CellImageViewTag = 2010;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	return 10;
+	return [Company followedCompanies].count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -105,26 +100,19 @@ static const int CellImageViewTag = 2010;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-	UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellID];
+	FollowingTableViewCell *cell = (FollowingTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellID forIndexPath:indexPath];
 	
-	if (!cell) {
-		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellID];
-		cell.backgroundColor = [UIColor clearColor];
-		cell.contentView.backgroundColor = [UIColor clearColor];
-		UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 280, 140)];
-		imageView.tag = CellImageViewTag;
-		[cell addSubview:imageView];
-	}
-	
-	UIImageView *imageView = (UIImageView *)[cell viewWithTag:CellImageViewTag];
-	imageView.image = [UIImage imageNamed:(indexPath.row % 2 ? @"following_cell_1.png" : @"following_cell_2.png")];
+	cell.company = [Company followedCompanies][indexPath.row];
 	
 	return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	Company *c = [Company followedCompanies][indexPath.row];
+	
 	[tableView deselectRowAtIndexPath:indexPath animated:NO];
-	[NavigationService navigateTo:@"CompanyDetailViewController" params:nil];
+	
+	[NavigationService navigateTo:@"CompanyDetailViewController" params:@{ParamCompanyIDInt: c.id}];
 }
 
 @end

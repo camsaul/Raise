@@ -53,6 +53,7 @@ PROP_STRONG NSArray *similarJobs;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+	self.contentView.translatesAutoresizingMaskIntoConstraints = NO;
 	
 	[self.contentView correctFonts];
 	
@@ -84,10 +85,18 @@ PROP_STRONG NSArray *similarJobs;
 		[self.saveForLaterButton setTitle:@"saved" forState:UIControlStateNormal];
 		self.saveForLaterButton.enabled = NO;
 	}
-	if (job.company.following) {
+	if (job.company.following.boolValue) {
 		[self.companyFollowButton setTitle:@"followed" forState:UIControlStateNormal];
 		self.companyFollowButton.enabled = NO;
 	}
+	
+	[self.scrollView addConstraints:@[@"|[_contentView]|", @"V:|[_contentView]|"] views:NSDictionaryOfVariableBindings(_contentView)];
+	[self.view layoutIfNeeded];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+	[super viewWillDisappear:animated];
+	[self.scrollView setContentOffset:CGPointMake(0, 0) animated:NO];
 }
 
 - (IBAction)companyInfoButtonPressed:(id)sender {
@@ -116,7 +125,7 @@ PROP_STRONG NSArray *similarJobs;
 
 - (IBAction)companyFollowButtonPressed:(id)sender {
 	[UIAlertView showAlertWithTitle:@"Followed" message:[NSString stringWithFormat:@"You are now following %@.", self.job.company.name] cancelButtonTitle:@"Done"];
-	self.job.company.following = YES;
+	self.job.company.following = @(YES);
 	[self.companyFollowButton setTitle:@"followed" forState:UIControlStateNormal];
 	self.companyFollowButton.enabled = NO;
 }

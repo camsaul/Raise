@@ -84,6 +84,10 @@ typedef void(^ParseBlock)(NSNumber *ID, NSArray *values);
 		[c addIndustries:[DataManager objectsOfType:DataTypeIndustry withIDs:[values[4] componentsSeparatedByString:@","]]];
 		c.info = values[5];
 		[c addFriends:[DataManager objectsOfType:DataTypeFriend withIDs:[values[6] componentsSeparatedByString:@","]]];
+		
+		if ([c.id isEqualToNumber:@(1)] || [c.id isEqualToNumber:@(2)]) {
+			c.following = @(YES); // start out following a couple of companies
+		}
 	}];
 }
 
