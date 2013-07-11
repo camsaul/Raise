@@ -102,6 +102,7 @@ PROP_STRONG UINavigationController *navigationController;
 	[self.navViewWrapper addHiddenButton];
 	[self.navViewWrapper.hiddenButton addTarget:self action:@selector(navHiddenButtonPressed)];
 	[self.menuViewController viewWillAppear:YES];
+	[[self.navigationController.viewControllers[0] view] hideKeyboard];
 	[UIView animateWithDuration:AnimationDuration animations:^{
 		self.navViewWrapper.xOrigin = 120;
 		self.navViewWrapper.alpha = 0.6;
