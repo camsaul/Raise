@@ -57,7 +57,7 @@
                         <action selector="yesButtonPressed:" destination="-1" eventType="touchUpInside" id="rD6-zu-Tfd"/>
                     </connections>
                 </button>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="job_card.png" translatesAutoresizingMaskIntoConstraints="NO" id="al5-vM-EbX">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="icon_ipad.png" translatesAutoresizingMaskIntoConstraints="NO" id="al5-vM-EbX">
                     <rect key="frame" x="30" y="30" width="260" height="260"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <constraints>
@@ -105,6 +105,6 @@
         <image name="button_check_80.png" width="80" height="80"/>
         <image name="button_close_80.png" width="80" height="80"/>
         <image name="button_info_60.png" width="60" height="60"/>
-        <image name="job_card.png" width="260" height="260"/>
+        <image name="icon_ipad.png" width="72" height="72"/>
     </resources>
 </document>
