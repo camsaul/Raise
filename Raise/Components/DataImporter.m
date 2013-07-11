@@ -71,7 +71,6 @@ typedef void(^ParseBlock)(NSNumber *ID, NSArray *values);
 	[self parseCSVFile:@"friends" withBlock:^(NSNumber *ID, NSArray *values) {
 		Friend *f = [DataManager createObjectOfType:DataTypeFriend ID:ID];
 		f.name = values[1];
-		f.position = @"Product Lead"; // !!! TODO needs real data
 	}];
 }
 
@@ -93,6 +92,8 @@ typedef void(^ParseBlock)(NSNumber *ID, NSArray *values);
 
 // id,company,title,salary,experience,job_category,description,skills,link
 + (void)importJobs {
+	NSArray *friends = [DataManager allObjectsOfType:DataTypeFriend];
+	
 	[self parseCSVFile:@"jobs" withBlock:^(NSNumber *ID, NSArray *values) {
 		Job *j = [DataManager createObjectOfType:DataTypeJob ID:ID];
 		j.company = [DataManager objectOfType:DataTypeCompany withID:@([values[1] integerValue])];
@@ -101,6 +102,12 @@ typedef void(^ParseBlock)(NSNumber *ID, NSArray *values);
 		j.experience = @([values[4] intValue]);
 		[j addCategory:[DataManager objectsOfType:DataTypeJobCategory withIDs:[values[5] componentsSeparatedByString:@","]]];
 		j.info = values[6];
+		
+		// friends don't have real (fake) positions so we'll just give the friend with the same ID the same position as this job
+		if (ID.intValue < friends.count) {
+			Friend *f = friends[ID.intValue];
+			f.position = j.title;
+		}
 	}];
 }
 
