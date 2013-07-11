@@ -71,6 +71,7 @@ typedef void(^ParseBlock)(NSNumber *ID, NSArray *values);
 	[self parseCSVFile:@"friends" withBlock:^(NSNumber *ID, NSArray *values) {
 		Friend *f = [DataManager createObjectOfType:DataTypeFriend ID:ID];
 		f.name = values[1];
+		f.position = @"Product Lead"; // !!! TODO needs real data
 	}];
 }
 

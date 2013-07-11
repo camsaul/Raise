@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4457.6" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3682.6"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FriendCell" id="rqT-Qd-LQF" customClass="FriendCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_pic.png" translatesAutoresizingMaskIntoConstraints="NO" id="BEK-oc-Y6x">
+                        <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dgm-id-L2Y">
+                        <rect key="frame" x="0.0" y="86" width="135" height="49"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cam Saul" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="125" translatesAutoresizingMaskIntoConstraints="NO" id="EgH-Or-uax">
+                                <rect key="frame" x="5" y="5" width="125" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Lead" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2M-VK-ASA">
+                                <rect key="frame" x="5" y="27" width="125" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999998809999997" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="T2M-VK-ASA" secondAttribute="bottom" constant="5" id="AUK-9w-pwy"/>
+                            <constraint firstItem="EgH-Or-uax" firstAttribute="leading" secondItem="dgm-id-L2Y" secondAttribute="leading" constant="5" id="LAY-2m-wOe"/>
+                            <constraint firstItem="EgH-Or-uax" firstAttribute="top" secondItem="dgm-id-L2Y" secondAttribute="top" constant="5" id="LVZ-fK-BMd"/>
+                            <constraint firstAttribute="trailing" secondItem="T2M-VK-ASA" secondAttribute="trailing" constant="5" id="cWU-ta-qmu"/>
+                            <constraint firstAttribute="trailing" secondItem="EgH-Or-uax" secondAttribute="trailing" constant="5" id="ubP-sN-qEl"/>
+                            <constraint firstItem="T2M-VK-ASA" firstAttribute="leading" secondItem="dgm-id-L2Y" secondAttribute="leading" constant="5" id="zhV-2o-zKW"/>
+                            <constraint firstItem="T2M-VK-ASA" firstAttribute="top" secondItem="EgH-Or-uax" secondAttribute="bottom" constant="5" id="zi7-Ac-mgG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="BEK-oc-Y6x" firstAttribute="bottom" secondItem="rqT-Qd-LQF" secondAttribute="bottom" id="4on-Nz-1TE"/>
+                <constraint firstItem="dgm-id-L2Y" firstAttribute="trailing" secondItem="rqT-Qd-LQF" secondAttribute="trailing" id="TWd-rg-Sp8"/>
+                <constraint firstItem="BEK-oc-Y6x" firstAttribute="top" secondItem="rqT-Qd-LQF" secondAttribute="top" id="eUx-zD-QlX"/>
+                <constraint firstItem="BEK-oc-Y6x" firstAttribute="trailing" secondItem="rqT-Qd-LQF" secondAttribute="trailing" id="eVW-js-2ri"/>
+                <constraint firstItem="dgm-id-L2Y" firstAttribute="leading" secondItem="rqT-Qd-LQF" secondAttribute="leading" id="fUh-UV-HAd"/>
+                <constraint firstItem="dgm-id-L2Y" firstAttribute="bottom" secondItem="rqT-Qd-LQF" secondAttribute="bottom" id="gWV-se-bC5"/>
+                <constraint firstItem="BEK-oc-Y6x" firstAttribute="leading" secondItem="rqT-Qd-LQF" secondAttribute="leading" id="vjr-aN-G5w"/>
+            </constraints>
+            <size key="customSize" width="-96" height="-65"/>
+            <connections>
+                <outlet property="imageView" destination="BEK-oc-Y6x" id="MXx-hZ-TIE"/>
+                <outlet property="labelsView" destination="dgm-id-L2Y" id="JAN-Kb-1Dh"/>
+                <outlet property="nameLabel" destination="EgH-Or-uax" id="Y5l-BG-j0a"/>
+                <outlet property="positionLabel" destination="T2M-VK-ASA" id="CfL-Pu-6c1"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="profile_pic.png" width="70" height="70"/>
+    </resources>
+</document>

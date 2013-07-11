@@ -23,6 +23,8 @@
 @property (nonatomic, retain) NSSet *jobs;
 
 PROP BOOL following;
+/// sort of expensive -- does CoreData query -- so you should cache it
+- (NSArray *)similarCompanies;
 - (UIImage *)image;
 @end
 

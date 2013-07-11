@@ -10,11 +10,10 @@
 #import "JobCollectionViewCell.h"
 #import "DataManager.h"
 
-static NSString *CollectionCellID = @"JobCell";
-
 @interface JobDetailViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 
 PROP_STRONG Job *job;
+PROP_STRONG NSArray *similarJobs;
 
 @property (strong, nonatomic) IBOutlet UIView *contentView;
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -59,6 +58,7 @@ PROP_STRONG Job *job;
 	
 	Job *job = [DataManager objectOfType:DataTypeJob withID:self.params[ParamJobIDInt]];
 	self.job = job;
+	self.similarJobs = job.similarJobs;
 	
 	self.navigationItem.title = job.title;
 	self.backgroundImageView.image = job.company.image;
@@ -71,13 +71,13 @@ PROP_STRONG Job *job;
 	[self.companyFollowButton setTitle:[NSString stringWithFormat:@"follow %@", self.job.company.name] forState:UIControlStateNormal];
 	
 	[self.locationLabel setTextPreservingExistingAttributes:job.company.location.name];
-	[self.mapView setRegion:MKCoordinateRegionMakeWithDistance(job.company.location.coordinate, 3000, 3000) animated:YES];
+	[self.mapView setRegion:MKCoordinateRegionMakeWithDistance(job.company.location.coordinate, 10000, 10000) animated:YES];
 	[self.mapView addAnnotation:job.company.location.annotation];
 	
 	[self.scrollView addSubview:self.contentView];
 	self.scrollView.contentSize = self.contentView.bounds.size;
 	
-	[self.similarJobsCollectionView registerNib:[UINib nibWithNibName:@"JobCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:CollectionCellID];
+	[self.similarJobsCollectionView registerNib:[UINib nibWithNibName:@"JobCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:JobCellID];
 	self.similarJobsCollectionView.backgroundColor = [UIColor clearColor];
 	
 	if (job.saved) {
@@ -91,7 +91,7 @@ PROP_STRONG Job *job;
 }
 
 - (IBAction)companyInfoButtonPressed:(id)sender {
-	[NavigationService navigateTo:@"CompanyDetailViewController" params:nil];
+	[NavigationService navigateTo:@"CompanyDetailViewController" params:@{ParamCompanyIDInt: self.job.company.id}];
 }
 
 - (IBAction)saveForLaterButtonPressed:(id)sender {
@@ -135,13 +135,18 @@ PROP_STRONG Job *job;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-	return self.job.similarJobs.count;
+	return self.similarJobs.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-	JobCollectionViewCell *cell = (JobCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:CollectionCellID forIndexPath:indexPath];
-	cell.job = self.job.similarJobs[indexPath.row];
+	JobCollectionViewCell *cell = (JobCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:JobCellID forIndexPath:indexPath];
+	cell.job = self.similarJobs[indexPath.row];
 	return cell;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+	Job *j = self.similarJobs[indexPath.row];
+	[NavigationService navigateTo:@"JobDetailViewController" params:@{ParamJobIDInt: j.id}];
 }
 
 @end

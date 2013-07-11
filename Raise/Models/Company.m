@@ -11,7 +11,7 @@
 #import "Industry.h"
 #import "Job.h"
 #import "Location.h"
-
+#import "DataManager.h"
 
 @implementation Company
 
@@ -36,6 +36,10 @@
 	
 	img = [UIImage imageNamed:[NSString stringWithFormat:@"company_%@.jpeg", self.id]];
 	return img;
+}
+
+- (NSArray *)similarCompanies {
+	return [DataManager objectsOfType:DataTypeCompany withPredicate:[NSPredicate predicateWithFormat:@"ALL industries IN %@", self.industries]];
 }
 
 @end

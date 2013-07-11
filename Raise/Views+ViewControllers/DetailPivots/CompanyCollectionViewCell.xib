@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4457.6" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3682.6"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CompanyCell" id="Ig8-8y-9bz" customClass="CompanyCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="company_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="O0N-bp-fih">
+                        <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZDQ-BL-B6k">
+                        <rect key="frame" x="0.0" y="86" width="135" height="49"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pintrest" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="125" translatesAutoresizingMaskIntoConstraints="NO" id="CUB-Ra-6mG">
+                                <rect key="frame" x="5" y="5" width="125" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menlo Park, CA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txo-xK-NpV">
+                                <rect key="frame" x="5" y="27" width="125" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999998809999997" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="CUB-Ra-6mG" firstAttribute="top" secondItem="ZDQ-BL-B6k" secondAttribute="top" constant="5" id="3AG-Q4-thT"/>
+                            <constraint firstAttribute="bottom" secondItem="txo-xK-NpV" secondAttribute="bottom" constant="5" id="B2S-vR-LbA"/>
+                            <constraint firstAttribute="trailing" secondItem="CUB-Ra-6mG" secondAttribute="trailing" constant="5" id="EPz-sP-wVM"/>
+                            <constraint firstItem="txo-xK-NpV" firstAttribute="top" secondItem="CUB-Ra-6mG" secondAttribute="bottom" constant="5" id="HHV-F5-Jsn"/>
+                            <constraint firstItem="txo-xK-NpV" firstAttribute="leading" secondItem="ZDQ-BL-B6k" secondAttribute="leading" constant="5" id="Lli-ez-dkx"/>
+                            <constraint firstAttribute="trailing" secondItem="txo-xK-NpV" secondAttribute="trailing" constant="5" id="SEK-8P-fxL"/>
+                            <constraint firstItem="CUB-Ra-6mG" firstAttribute="leading" secondItem="ZDQ-BL-B6k" secondAttribute="leading" constant="5" id="ShC-pq-Kva"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="O0N-bp-fih" firstAttribute="bottom" secondItem="Ig8-8y-9bz" secondAttribute="bottom" id="5JG-vj-dUy"/>
+                <constraint firstItem="O0N-bp-fih" firstAttribute="top" secondItem="Ig8-8y-9bz" secondAttribute="top" id="5nj-fN-6TP"/>
+                <constraint firstItem="ZDQ-BL-B6k" firstAttribute="bottom" secondItem="Ig8-8y-9bz" secondAttribute="bottom" id="9Kf-YG-CrR"/>
+                <constraint firstItem="ZDQ-BL-B6k" firstAttribute="leading" secondItem="Ig8-8y-9bz" secondAttribute="leading" id="BQf-CR-cMu"/>
+                <constraint firstItem="ZDQ-BL-B6k" firstAttribute="trailing" secondItem="Ig8-8y-9bz" secondAttribute="trailing" id="BUF-nX-jQ6"/>
+                <constraint firstItem="O0N-bp-fih" firstAttribute="leading" secondItem="Ig8-8y-9bz" secondAttribute="leading" id="Llr-Km-cFD"/>
+                <constraint firstItem="O0N-bp-fih" firstAttribute="trailing" secondItem="Ig8-8y-9bz" secondAttribute="trailing" id="lvW-7B-v7F"/>
+            </constraints>
+            <size key="customSize" width="-96" height="-65"/>
+            <connections>
+                <outlet property="imageView" destination="O0N-bp-fih" id="3zW-vK-hb3"/>
+                <outlet property="labelsView" destination="ZDQ-BL-B6k" id="58b-yw-bv0"/>
+                <outlet property="locationLabel" destination="txo-xK-NpV" id="zER-cj-OMr"/>
+                <outlet property="nameLabel" destination="CUB-Ra-6mG" id="PR1-k5-xpX"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="company_1.jpg" width="744" height="500"/>
+    </resources>
+</document>

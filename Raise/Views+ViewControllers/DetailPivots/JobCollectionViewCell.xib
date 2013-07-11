@@ -8,46 +8,37 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JobCollectionViewCell"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="JobCell" id="M6Q-VS-p2V" customClass="JobCollectionViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="145" height="145"/>
+            <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="145" height="145"/>
+                <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="company_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hGg-Ym-GD2">
-                        <rect key="frame" x="0.0" y="0.0" width="145" height="145"/>
+                        <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Okt-kA-eZY">
-                        <rect key="frame" x="0.0" y="74" width="145" height="71"/>
+                        <rect key="frame" x="0.0" y="64" width="135" height="71"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Manager" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="135" translatesAutoresizingMaskIntoConstraints="NO" id="OoM-yK-f57">
-                                <rect key="frame" x="5" y="5" width="135" height="17"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Manager" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="125" translatesAutoresizingMaskIntoConstraints="NO" id="OoM-yK-f57">
+                                <rect key="frame" x="5" y="5" width="125" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="135" id="94z-ik-QLa"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Facebook" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSp-FP-QE6">
-                                <rect key="frame" x="5" y="27" width="135" height="17"/>
+                                <rect key="frame" x="5" y="27" width="125" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="135" id="GSf-EU-UZd"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menlo Park, CA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6z-6k-kU7">
-                                <rect key="frame" x="5" y="49" width="135" height="17"/>
+                                <rect key="frame" x="5" y="49" width="125" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="135" id="stH-50-nuX"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -65,7 +56,6 @@
                             <constraint firstItem="OoM-yK-f57" firstAttribute="top" secondItem="Okt-kA-eZY" secondAttribute="top" constant="5" id="Reh-fw-AfQ"/>
                             <constraint firstAttribute="trailing" secondItem="ZSp-FP-QE6" secondAttribute="trailing" constant="5" id="Rzb-5U-Hi2"/>
                             <constraint firstItem="ZSp-FP-QE6" firstAttribute="leading" secondItem="Okt-kA-eZY" secondAttribute="leading" constant="5" id="Z3t-da-0Y5"/>
-                            <constraint firstAttribute="width" constant="145" id="pLf-ma-8du"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -80,6 +70,7 @@
                 <constraint firstItem="Okt-kA-eZY" firstAttribute="leading" secondItem="M6Q-VS-p2V" secondAttribute="leading" id="uUp-EK-gBn"/>
                 <constraint firstItem="Okt-kA-eZY" firstAttribute="trailing" secondItem="M6Q-VS-p2V" secondAttribute="trailing" id="uwy-P3-kFF"/>
             </constraints>
+            <size key="customSize" width="-96" height="-65"/>
             <connections>
                 <outlet property="companyLabel" destination="ZSp-FP-QE6" id="tMS-Hn-EA8"/>
                 <outlet property="imageView" destination="hGg-Ym-GD2" id="9hv-GW-ECM"/>

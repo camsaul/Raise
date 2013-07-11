@@ -7,3 +7,4 @@
 //
 
 static NSString *ParamJobIDInt = @"Job ID";
+static NSString *ParamCompanyIDInt = @"Company ID";

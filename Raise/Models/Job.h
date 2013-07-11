@@ -22,7 +22,8 @@
 @property (nonatomic, retain) NSSet *category;
 
 PROP BOOL saved;
-PROP_STRONG_RO NSArray *similarJobs;
+/// sort of expensive -- does CoreData query -- so you should cache it
+- (NSArray *)similarJobs;
 
 @end
 

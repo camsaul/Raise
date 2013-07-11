@@ -19,6 +19,10 @@
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="funnel_done.png" translatesAutoresizingMaskIntoConstraints="NO" id="adj-3J-xK6">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
                     <autoresizingMask key="autoresizingMask"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="416" id="QkV-z5-Jx5"/>
+                        <constraint firstAttribute="width" constant="320" id="wO8-EK-Vbl"/>
+                    </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqS-wL-fnO">
                     <rect key="frame" x="240" y="340" width="60" height="60"/>
@@ -38,9 +42,12 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="adj-3J-xK6" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="0cq-3D-k8H"/>
                 <constraint firstItem="adj-3J-xK6" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="4iT-c6-qS7"/>
                 <constraint firstItem="adj-3J-xK6" firstAttribute="top" secondItem="1" secondAttribute="top" id="Szk-Ti-zSG"/>
+                <constraint firstItem="adj-3J-xK6" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="agl-ZB-Ynu"/>
                 <constraint firstItem="adj-3J-xK6" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="mkD-8j-bOt"/>
+                <constraint firstItem="adj-3J-xK6" firstAttribute="top" secondItem="1" secondAttribute="top" id="sme-yX-gUF"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>

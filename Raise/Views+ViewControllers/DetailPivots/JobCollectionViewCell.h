@@ -8,6 +8,8 @@
 
 #import "Job.h"
 
+static NSString *JobCellID = @"JobCell";
+
 @interface JobCollectionViewCell : UICollectionViewCell
 
 PROP_STRONG Job *job;

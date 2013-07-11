@@ -2,13 +2,21 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4457.6" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment defaultVersion="1536" identifier="iOS"/>
+        <development version="5000" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3682.6"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CompanyDetailViewController">
             <connections>
-                <outlet property="contentView" destination="rkw-S5-tt1" id="7et-KE-Wrv"/>
+                <outlet property="backgroundImageView" destination="Dgt-SS-EHo" id="4hH-qV-Xp7"/>
+                <outlet property="companyDescriptionTextView" destination="Clc-Xs-9xF" id="a30-mz-tAV"/>
+                <outlet property="companyNameLabel" destination="CsP-xU-t5e" id="dk3-9B-pVa"/>
+                <outlet property="contentView" destination="Lmv-lW-Vkq" id="OTz-Jk-5OR"/>
+                <outlet property="followButton" destination="nIh-SC-QXx" id="b9B-MO-xoH"/>
+                <outlet property="friendsCollectionView" destination="MH4-cm-3EE" id="aKm-XK-MbN"/>
+                <outlet property="jobsCollectionView" destination="GSW-0L-quR" id="zZS-ix-bWr"/>
                 <outlet property="scrollView" destination="8Mh-S8-MCW" id="kmv-FT-ct3"/>
+                <outlet property="similarCompaniesCollectionView" destination="Fyi-Ma-HSt" id="VRa-ne-oxx"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -17,6 +25,10 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dgt-SS-EHo" userLabel="company BG image view">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
                 <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Mh-S8-MCW">
                     <rect key="frame" x="0.0" y="0.0" width="300" height="548"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,12 +46,212 @@
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
-        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="pivot_company.png" id="rkw-S5-tt1">
+        <view contentMode="scaleToFill" id="Lmv-lW-Vkq" userLabel="Content View">
             <rect key="frame" x="0.0" y="0.0" width="1220" height="416"/>
-            <autoresizingMask key="autoresizingMask"/>
-        </imageView>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friends Here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLU-dP-kFL">
+                    <rect key="frame" x="310" y="10" width="280" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="280" id="QqL-13-ZWf"/>
+                        <constraint firstAttribute="height" constant="35" id="buV-sX-hQF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Facebook" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CsP-xU-t5e">
+                    <rect key="frame" x="10" y="10" width="280" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="Cy7-yw-k3i"/>
+                        <constraint firstAttribute="width" constant="280" id="DEc-ZH-nqz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jobs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nx7-OS-LSE">
+                    <rect key="frame" x="610" y="10" width="280" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="280" id="NxN-xd-FEJ"/>
+                        <constraint firstAttribute="height" constant="35" id="v7g-sM-gqQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Similar Companies" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfp-3A-tiM">
+                    <rect key="frame" x="910" y="10" width="300" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="4j6-49-xnT"/>
+                        <constraint firstAttribute="width" constant="300" id="zIb-6k-VrS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mbY-pX-mK4">
+                    <rect key="frame" x="0.0" y="346" width="300" height="70"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIh-SC-QXx" customClass="RaiseButton">
+                            <rect key="frame" x="10" y="10" width="280" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.66274511814117432" green="0.75686275959014893" blue="0.85098040103912354" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="follow Facebook">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="followButtonPressed:" destination="-1" eventType="touchUpInside" id="F2x-gq-875"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="0.89999997615814209" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="nIh-SC-QXx" firstAttribute="top" secondItem="mbY-pX-mK4" secondAttribute="top" constant="10" id="LaQ-Eu-7zO"/>
+                        <constraint firstAttribute="bottom" secondItem="nIh-SC-QXx" secondAttribute="bottom" constant="10" id="afI-GB-7zY"/>
+                        <constraint firstAttribute="height" constant="70" id="c4e-XW-QAx"/>
+                        <constraint firstAttribute="trailing" secondItem="nIh-SC-QXx" secondAttribute="trailing" constant="10" id="fDU-Pu-CXV"/>
+                        <constraint firstAttribute="width" constant="300" id="pNn-oJ-MwB"/>
+                        <constraint firstItem="nIh-SC-QXx" firstAttribute="leading" secondItem="mbY-pX-mK4" secondAttribute="leading" constant="10" id="sg1-YG-NeH"/>
+                    </constraints>
+                </view>
+                <textView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Clc-Xs-9xF">
+                    <rect key="frame" x="10" y="60" width="280" height="286"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="280" id="YO3-xV-8Jv"/>
+                    </constraints>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="MH4-cm-3EE" userLabel="friends collection view">
+                    <rect key="frame" x="310" y="60" width="280" height="356"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="280" id="YIs-WO-Ct5"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lSx-2W-AUO">
+                        <size key="itemSize" width="135" height="135"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <cells/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="CCo-H6-q5l"/>
+                        <outlet property="delegate" destination="-1" id="gR1-lB-tLb"/>
+                    </connections>
+                </collectionView>
+                <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="GSW-0L-quR" userLabel="jobs collection view">
+                    <rect key="frame" x="610" y="60" width="280" height="356"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="280" id="QTy-ac-bv4"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LZi-zK-o29">
+                        <size key="itemSize" width="135" height="135"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <cells/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="dLi-DE-Z3o"/>
+                        <outlet property="delegate" destination="-1" id="NyI-1S-hvG"/>
+                    </connections>
+                </collectionView>
+                <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Fyi-Ma-HSt" userLabel="similar companies collection view">
+                    <rect key="frame" x="910" y="60" width="300" height="356"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="3QL-tK-3KI"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Frt-U5-vl7">
+                        <size key="itemSize" width="145" height="145"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <cells/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="1YB-f9-FiB"/>
+                        <outlet property="delegate" destination="-1" id="127-0H-71L"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999998807907104" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Nx7-OS-LSE" firstAttribute="leading" secondItem="xLU-dP-kFL" secondAttribute="trailing" constant="20" id="0kV-MC-gEl"/>
+                <constraint firstItem="mbY-pX-mK4" firstAttribute="leading" secondItem="Lmv-lW-Vkq" secondAttribute="leading" id="BLV-V9-XJg"/>
+                <constraint firstItem="GSW-0L-quR" firstAttribute="bottom" secondItem="Lmv-lW-Vkq" secondAttribute="bottom" id="BsE-6d-eQT"/>
+                <constraint firstItem="Clc-Xs-9xF" firstAttribute="leading" secondItem="Lmv-lW-Vkq" secondAttribute="leading" constant="10" id="ChA-FG-268"/>
+                <constraint firstAttribute="trailing" secondItem="Fyi-Ma-HSt" secondAttribute="trailing" constant="10" id="D3a-C3-BJI"/>
+                <constraint firstItem="MH4-cm-3EE" firstAttribute="top" secondItem="xLU-dP-kFL" secondAttribute="bottom" constant="15" id="D8T-jS-lZ1"/>
+                <constraint firstItem="Clc-Xs-9xF" firstAttribute="top" secondItem="CsP-xU-t5e" secondAttribute="bottom" constant="15" id="Dtx-8W-Ten"/>
+                <constraint firstItem="mbY-pX-mK4" firstAttribute="bottom" secondItem="Lmv-lW-Vkq" secondAttribute="bottom" id="HTW-UF-Avl"/>
+                <constraint firstItem="xLU-dP-kFL" firstAttribute="leading" secondItem="CsP-xU-t5e" secondAttribute="trailing" constant="20" id="Hds-YJ-JHL"/>
+                <constraint firstItem="Fyi-Ma-HSt" firstAttribute="top" secondItem="jfp-3A-tiM" secondAttribute="bottom" constant="15" id="IyF-2o-Dw8"/>
+                <constraint firstItem="GSW-0L-quR" firstAttribute="top" secondItem="Nx7-OS-LSE" secondAttribute="bottom" constant="15" id="KZg-dr-D8m"/>
+                <constraint firstItem="Fyi-Ma-HSt" firstAttribute="leading" secondItem="GSW-0L-quR" secondAttribute="trailing" constant="20" id="Mzn-gC-IKk"/>
+                <constraint firstItem="MH4-cm-3EE" firstAttribute="leading" secondItem="mbY-pX-mK4" secondAttribute="trailing" constant="10" id="TLE-Vy-hOJ"/>
+                <constraint firstItem="CsP-xU-t5e" firstAttribute="top" secondItem="Lmv-lW-Vkq" secondAttribute="top" constant="10" id="Tsw-S3-aAA"/>
+                <constraint firstItem="GSW-0L-quR" firstAttribute="leading" secondItem="MH4-cm-3EE" secondAttribute="trailing" constant="20" id="W9s-mQ-aqC"/>
+                <constraint firstItem="MH4-cm-3EE" firstAttribute="bottom" secondItem="Lmv-lW-Vkq" secondAttribute="bottom" id="WSS-CX-rwU"/>
+                <constraint firstItem="xLU-dP-kFL" firstAttribute="top" secondItem="Lmv-lW-Vkq" secondAttribute="top" constant="10" id="a26-pz-wdT"/>
+                <constraint firstItem="jfp-3A-tiM" firstAttribute="top" secondItem="Lmv-lW-Vkq" secondAttribute="top" constant="10" id="dNz-o7-kkV"/>
+                <constraint firstItem="Nx7-OS-LSE" firstAttribute="top" secondItem="Lmv-lW-Vkq" secondAttribute="top" constant="10" id="nRS-oI-snY"/>
+                <constraint firstAttribute="trailing" secondItem="jfp-3A-tiM" secondAttribute="trailing" constant="10" id="opH-RZ-4Uy"/>
+                <constraint firstItem="mbY-pX-mK4" firstAttribute="top" secondItem="Clc-Xs-9xF" secondAttribute="bottom" id="oq3-2D-YCd"/>
+                <constraint firstItem="CsP-xU-t5e" firstAttribute="leading" secondItem="Lmv-lW-Vkq" secondAttribute="leading" constant="10" id="u50-KR-KKj"/>
+                <constraint firstItem="Fyi-Ma-HSt" firstAttribute="bottom" secondItem="Lmv-lW-Vkq" secondAttribute="bottom" id="vax-gW-s75"/>
+                <constraint firstItem="jfp-3A-tiM" firstAttribute="leading" secondItem="Nx7-OS-LSE" secondAttribute="trailing" constant="20" id="xFI-JL-mRR"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
     </objects>
-    <resources>
-        <image name="pivot_company.png" width="1220" height="416"/>
-    </resources>
+    <classes>
+        <class className="CompanyDetailViewController" superclassName="ParamsViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CompanyDetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="followButtonPressed:"/>
+                <relationship kind="outlet" name="backgroundImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="companyDescriptionTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="companyNameLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="contentView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="followButton" candidateClass="RaiseButton"/>
+                <relationship kind="outlet" name="friendsCollectionView" candidateClass="UICollectionView"/>
+                <relationship kind="outlet" name="jobsCollectionView" candidateClass="UICollectionView"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="similarCompaniesCollectionView" candidateClass="UICollectionView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ParamsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ParamsViewController.h"/>
+        </class>
+        <class className="RaiseButton" superclassName="UIButton">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RaiseButton.h"/>
+        </class>
+        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="UICollectionViewLayout" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
+        </class>
+    </classes>
 </document>
