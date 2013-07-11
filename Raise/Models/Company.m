@@ -39,7 +39,7 @@
 }
 
 - (NSArray *)similarCompanies {
-	return [DataManager objectsOfType:DataTypeCompany withPredicate:[NSPredicate predicateWithFormat:@"ALL industries IN %@", self.industries]];
+	return [DataManager objectsOfType:DataTypeCompany withPredicate:[NSPredicate predicateWithFormat:@"ALL industries IN %@ AND SELF != %@", self.industries, self]];
 }
 
 + (NSArray *)followedCompanies {

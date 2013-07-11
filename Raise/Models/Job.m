@@ -23,7 +23,7 @@
 @synthesize saved = _saved;
 
 - (NSArray *)similarJobs {
-	return [DataManager objectsOfType:DataTypeJob withPredicate:[NSPredicate predicateWithFormat:@"ALL category IN %@", self.category]];
+	return [DataManager objectsOfType:DataTypeJob withPredicate:[NSPredicate predicateWithFormat:@"ALL category IN %@ AND SELF != %@", self.category, self]];
 }
 
 @end
