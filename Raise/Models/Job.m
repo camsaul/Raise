@@ -9,7 +9,7 @@
 #import "Job.h"
 #import "Company.h"
 #import "JobCategory.h"
-
+#import "DataManager.h"
 
 @implementation Job
 
@@ -20,5 +20,10 @@
 @dynamic id;
 @dynamic company;
 @dynamic category;
+@synthesize saved = _saved;
+
+- (NSArray *)similarJobs {
+	return [DataManager objectsOfType:DataTypeJob withPredicate:[NSPredicate predicateWithFormat:@"ALL category IN %@", self.category]];
+}
 
 @end

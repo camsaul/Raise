@@ -23,6 +23,7 @@
 @dynamic industries;
 @dynamic location;
 @dynamic jobs;
+@synthesize following;
 
 - (UIImage *)image {
 	UIImage *img = nil;

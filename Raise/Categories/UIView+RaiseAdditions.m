@@ -12,11 +12,12 @@
 
 - (void)correctFonts {
 	// loop over all the labels and correct the font
-	for (UILabel *label in self.subviews) {
-		if (![label isKindOfClass:[UILabel class]]) continue;
+	for (id subview in self.subviews) {
+		if (!([subview isKindOfClass:[UILabel class]] ||
+			  [subview isKindOfClass:[UITextView class]])) continue;
 		
-		BOOL isBold = [label.font.fontName containsString:@"Bold"];
-		BOOL isItalic = [label.font.fontName containsString:@"Italic"];
+		BOOL isBold = [[subview font].fontName containsString:@"Bold"];
+		BOOL isItalic = [[subview font].fontName containsString:@"Italic"];
 		NSString *fontName;
 		if (isBold || isItalic) {
 			fontName = [NSString stringWithFormat:@"Cabin-%@%@", (isBold ? @"Bold" : @""), (isItalic ? @"Italic" : @"")];
@@ -24,9 +25,9 @@
 			fontName = @"Cabin-Regular";
 		}
 
-		CGFloat size = label.font.pointSize;
+		CGFloat size = [subview font].pointSize;
 
-		label.font = [UIFont fontWithName:fontName size:size];
+		[subview setFont:[UIFont fontWithName:fontName size:size]];
 	}
 }
 

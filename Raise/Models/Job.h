@@ -20,6 +20,10 @@
 @property (nonatomic, retain) NSNumber * id;
 @property (nonatomic, retain) Company *company;
 @property (nonatomic, retain) NSSet *category;
+
+PROP BOOL saved;
+PROP_STRONG_RO NSArray *similarJobs;
+
 @end
 
 @interface Job (CoreDataGeneratedAccessors)

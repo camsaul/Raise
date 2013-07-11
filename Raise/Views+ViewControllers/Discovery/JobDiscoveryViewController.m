@@ -19,6 +19,7 @@ PROP_STRONG JobCardViewController *jobCard;
 @property (strong, nonatomic) IBOutlet UIButton *yesButton;
 @property (strong, nonatomic) IBOutlet UIButton *infoButton;
 PROP_STRONG UIPanGestureRecognizer *gestureRecognizer;
+PROP_STRONG NSNumber *jobID;
 @end
 
 @implementation JobDiscoveryViewController
@@ -102,6 +103,7 @@ PROP_STRONG UIPanGestureRecognizer *gestureRecognizer;
 	// select a random job
 	NSArray *allJobs = [DataManager allObjectsOfType:DataTypeJob];
 	Job *job = allJobs[rand() % allJobs.count];
+	self.jobID = job.id;
 	
 	JobCardViewController *jobCard = [[JobCardViewController alloc] init];
 	jobCard.view.frame = self.jobCardPlaceholderView.frame;
@@ -144,7 +146,7 @@ PROP_STRONG UIPanGestureRecognizer *gestureRecognizer;
 }
 
 - (void)infoAction {
-	[NavigationService navigateTo:@"JobDetailViewController" params:@{ParamJobIDInt: @(100)}];
+	[NavigationService navigateTo:@"JobDetailViewController" params:@{ParamJobIDInt: self.jobID}];
 }
 
 @end

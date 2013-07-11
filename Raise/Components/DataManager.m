@@ -58,6 +58,22 @@
 	return mA;
 }
 
++ (NSArray *)objectsOfType:(DataType)type withPredicate:(NSPredicate *)predicate {
+	NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:[self stringForDataType:type]];
+	request.predicate = predicate;
+	NSError *error = nil;
+	NSArray *results = [APP_DELEGATE.managedObjectContext executeFetchRequest:request error:&error];
+	if (error) {
+		BKLog(LogFlagError, LogCategoryEtc, @"data manager error:%@, type: %@, predicate: %@", error, [self stringForDataType:type], predicate);
+		return nil;
+	}
+	if (!results.count) {
+		BKLog(LogFlagWarn, LogCategoryEtc, @"data manager warning: no objects found for type: %@, predicate: %@", [self stringForDataType:type], predicate);
+		return nil;
+	}
+	return results;
+}
+
 + (NSArray *)allObjectsOfType:(DataType)type {
 	NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:[self stringForDataType:type]];
 	NSError *error = nil;

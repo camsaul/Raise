@@ -30,6 +30,7 @@ typedef enum : int {
 
 + (id)objectOfType:(DataType)type withID:(id)idNumberOrString;
 + (NSSet *)objectsOfType:(DataType)type withIDs:(NSArray *)IDnumbersOrStrings;
++ (NSArray *)objectsOfType:(DataType)type withPredicate:(NSPredicate *)predicate;
 + (NSArray *)allObjectsOfType:(DataType)type;
 
 @end

@@ -22,6 +22,7 @@
 @property (nonatomic, retain) Location *location;
 @property (nonatomic, retain) NSSet *jobs;
 
+PROP BOOL following;
 - (UIImage *)image;
 @end
 

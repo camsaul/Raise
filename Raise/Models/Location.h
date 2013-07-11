@@ -16,5 +16,8 @@
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSNumber * lat;
 @property (nonatomic, retain) NSNumber * lon;
+PROP_RO CLLocationCoordinate2D coordinate;
+
+PROP_STRONG_RO id<MKAnnotation> annotation;
 
 @end
