@@ -16,6 +16,10 @@
 
 static const CGFloat AnimationDuration = 0.3;
 
+@protocol StartFocused
+- (void)startFocused; // stop compiler complaining
+@end
+
 @interface RootViewController () <MenuViewControllerDelegate>
 PROP_STRONG MenuViewController *menuViewController;
 PROP_STRONG UIView *navViewWrapper; // this does all the actual sliding
@@ -55,17 +59,7 @@ PROP_STRONG UINavigationController *navigationController;
 
 - (void)setNavControllerRootVC:(Class)class options:(NavRootOptions)options {
 	BOOL existing = self.navigationController != nil;
-	
-	if ([self.navigationController.viewControllers[0] isKindOfClass:class]) {
-		if (options | NavRootOptionStartFocused) {
-			UIViewController *vc = self.navigationController.viewControllers[0];
-			if ([vc respondsToSelector:@selector(becomeFirstResponder)]) {
-				[(id)vc becomeFirstResponder];
-			}
-		}
-		return;
-	}
-	
+		
 	UIViewController *rootVC = [[class alloc] init];
 	
 	if (existing) {
@@ -91,10 +85,10 @@ PROP_STRONG UINavigationController *navigationController;
 		navControllerView.alpha = 0;
 		[UIView animateWithDuration:AnimationDuration animations:^{
 			navControllerView.alpha = 1;
-			
-			if (options | NavRootOptionStartFocused) {
-				if ([rootVC respondsToSelector:@selector(becomeFirstResponder)]) {
-					[(id)rootVC becomeFirstResponder];
+		} completion:^(BOOL finished) {
+			if (options & NavRootOptionStartFocused) {
+				if ([rootVC respondsToSelector:@selector(startFocused)]) {
+					[(id)rootVC startFocused];
 				}
 			}
 		}];

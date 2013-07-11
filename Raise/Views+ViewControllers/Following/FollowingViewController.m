@@ -8,15 +8,20 @@
 
 #import "FollowingViewController.h"
 #import "FollowingTableViewCell.h"
+#import "FollowingPopunderCell.h"
+#import "DataManager.h"
 
-static NSString *CellID = @"FollowingCompanyCell";
+static NSString *FollowingCellID = @"FollowingCompanyCell";
+static NSString *PopunderCellID = @"PopunderCell";
 static const int CellImageViewTag = 2010;
 
 @interface FollowingViewController () <UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UITextField *textField;
-@property (strong, nonatomic) IBOutlet UIImageView *searchPopunder;
+/// regular (following) tableview
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet UITableView *popunderTableView;
 
+PROP_STRONG NSArray *searchMatches;
 @end
 
 @implementation FollowingViewController
@@ -28,49 +33,53 @@ static const int CellImageViewTag = 2010;
 	
 	self.textField.font = [UIFont fontWithName:@"Cabin" size:16.0];
 	
-	[self.tableView registerNib:[UINib nibWithNibName:@"FollowingTableViewCell" bundle:nil] forCellReuseIdentifier:CellID];
+	[self.tableView registerNib:[UINib nibWithNibName:@"FollowingTableViewCell" bundle:nil] forCellReuseIdentifier:FollowingCellID];
+	[self.popunderTableView registerNib:[UINib nibWithNibName:@"FollowingPopunderCell" bundle:nil] forCellReuseIdentifier:PopunderCellID];
+	
+	self.popunderTableView.alpha = 0;
+	
+	[self updateSearchMatches];
 }
 
 - (void)hideKeyboard {
+	[self.view removeHiddenButton];
 	[self.textField resignFirstResponder];
 }
 
 - (IBAction)searchButtonPressed:(id)sender {
-	[self.textField becomeFirstResponder];
+	[self.textField becomeFirstResponder];	
 }
 
 - (void)removePopunder {
 	[UIView animateWithDuration:0.4 animations:^{
-		self.searchPopunder.alpha = 0;
-	} completion:^(BOOL finished) {
-		[self.searchPopunder removeFromSuperview];
+		self.popunderTableView.alpha = 0;
 	}];
 }
 
-- (BOOL)becomeFirstResponder {
+- (void)startFocused {
 	[self.textField becomeFirstResponder];
-	return YES;
 }
 
 #pragma mark - Text Field Delegate
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
-	[self.view addSubview:self.searchPopunder];
-	self.searchPopunder.origin = CGPointMake(10, self.textField.xOrigin + self.textField.height + 5);
-	self.searchPopunder.alpha = 0;
 	[UIView animateWithDuration:0.4 animations:^{
-		self.searchPopunder.alpha = 1;
+		self.popunderTableView.alpha = 1;
 	}];
 	
 	[self.view addHiddenButton];
 	[self.view.hiddenButton addTarget:self action:@selector(hideKeyboard)];
-
+	[self.view bringSubviewToFront:self.popunderTableView];
 }
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
 	NSString *newString = [self.textField.text stringByReplacingCharactersInRange:range withString:string];
 	
 	NSLog(@"new string: %@", newString);
+	
+	dispatch_next_run_loop(^{
+		[self updateSearchMatches];
+	});
 	
 	return YES;
 }
@@ -81,7 +90,16 @@ static const int CellImageViewTag = 2010;
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
 	[self removePopunder];
+	[self hideKeyboard];
 	return YES;
+}
+
+- (void)updateSearchMatches {
+	self.searchMatches = self.textField.text
+		? [DataManager objectsOfType:DataTypeCompany withPredicate:[NSPredicate predicateWithFormat:@"name CONTAINS[cd] %@", self.textField.text]]
+		: [DataManager allObjectsOfType:DataTypeCompany];
+
+	[self.popunderTableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
 
@@ -92,26 +110,38 @@ static const int CellImageViewTag = 2010;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	return [Company followedCompanies].count;
+	if (tableView == self.tableView) {
+		return [Company followedCompanies].count;
+	} else {
+		return MIN(self.searchMatches.count, 2);
+	}
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-	return 160;
+	if (tableView == self.tableView) {
+		return 160;
+	} else {
+		return 60;
+	}
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-	FollowingTableViewCell *cell = (FollowingTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellID forIndexPath:indexPath];
-	
-	cell.company = [Company followedCompanies][indexPath.row];
-	
-	return cell;
+	if (tableView == self.tableView) {
+		FollowingTableViewCell *cell = (FollowingTableViewCell *)[tableView dequeueReusableCellWithIdentifier:FollowingCellID forIndexPath:indexPath];
+		cell.company = [Company followedCompanies][indexPath.row];
+		return cell;
+	} else {
+		FollowingPopunderCell *cell = (FollowingPopunderCell *)[tableView dequeueReusableCellWithIdentifier:PopunderCellID forIndexPath:indexPath];
+		cell.company = self.searchMatches[indexPath.row];
+		return cell;
+	}
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	Company *c = [Company followedCompanies][indexPath.row];
+	Company *c = [(id)[tableView cellForRowAtIndexPath:indexPath] company];
 	
 	[tableView deselectRowAtIndexPath:indexPath animated:NO];
-	
+
 	[NavigationService navigateTo:@"CompanyDetailViewController" params:@{ParamCompanyIDInt: c.id}];
 }
 

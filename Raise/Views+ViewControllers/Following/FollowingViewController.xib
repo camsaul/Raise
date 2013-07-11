@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FollowingViewController">
             <connections>
-                <outlet property="searchPopunder" destination="O1S-Ic-uob" id="hWM-SV-2Cb"/>
+                <outlet property="popunderTableView" destination="WqX-sU-p63" id="rQp-Ce-07O"/>
                 <outlet property="tableView" destination="Zm8-Et-7x3" id="jLJ-A0-dMy"/>
                 <outlet property="textField" destination="inf-SB-i8f" id="kHe-LP-Tli"/>
                 <outlet property="view" destination="1" id="3"/>
@@ -43,7 +43,7 @@
                     </constraints>
                     <color key="textColor" red="0.37647058820000001" green="0.47058823529999999" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                    <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
                     <connections>
                         <outlet property="delegate" destination="-1" id="Iyd-qr-O6R"/>
                     </connections>
@@ -83,9 +83,22 @@
                         <outlet property="delegate" destination="-1" id="1cG-ec-zcA"/>
                     </connections>
                 </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="WqX-sU-p63">
+                    <rect key="frame" x="10" y="60" width="300" height="120"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="NlY-wr-1yR"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="iJc-ap-BVT"/>
+                        <outlet property="delegate" destination="-1" id="bhU-OM-SfK"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="WqX-sU-p63" firstAttribute="top" secondItem="YBT-AK-HT9" secondAttribute="bottom" id="2JQ-62-57I"/>
                 <constraint firstItem="Zm8-Et-7x3" firstAttribute="bottom" secondItem="1" secondAttribute="bottom" id="2xE-4f-u1T"/>
                 <constraint firstItem="fQK-gC-8IF" firstAttribute="top" secondItem="YBT-AK-HT9" secondAttribute="bottom" constant="20" id="58L-c5-2mg"/>
                 <constraint firstAttribute="trailing" secondItem="Zm8-Et-7x3" secondAttribute="trailing" constant="20" id="5wj-Rc-7bN"/>
@@ -95,6 +108,8 @@
                 <constraint firstItem="9v5-pb-3y0" firstAttribute="top" secondItem="1" secondAttribute="top" constant="15" id="Yv9-H0-H3s"/>
                 <constraint firstItem="fQK-gC-8IF" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="10" id="dx9-QU-G8P"/>
                 <constraint firstItem="DcH-5f-df9" firstAttribute="top" secondItem="1" secondAttribute="top" constant="10" id="eW0-vL-QlU"/>
+                <constraint firstAttribute="trailing" secondItem="WqX-sU-p63" secondAttribute="trailing" constant="10" id="ecE-dE-awg"/>
+                <constraint firstItem="WqX-sU-p63" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="10" id="eyr-pm-Ple"/>
                 <constraint firstItem="inf-SB-i8f" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="15" id="fNF-gX-hra"/>
                 <constraint firstItem="YBT-AK-HT9" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="hLI-Ij-VvM"/>
                 <constraint firstItem="YBT-AK-HT9" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="hxR-2d-1Tg"/>
@@ -107,13 +122,8 @@
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
-        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="following_search.png" id="O1S-Ic-uob">
-            <rect key="frame" x="0.0" y="0.0" width="300" height="180"/>
-            <autoresizingMask key="autoresizingMask"/>
-        </imageView>
     </objects>
     <resources>
         <image name="button_search_30.png" width="30" height="30"/>
-        <image name="following_search.png" width="300" height="180"/>
     </resources>
 </document>

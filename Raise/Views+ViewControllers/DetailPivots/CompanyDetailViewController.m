@@ -64,8 +64,13 @@ PROP_STRONG NSArray *similarCompanies;
 	self.scrollView.contentSize = self.contentView.bounds.size;
 
 	[self.friendsCollectionView registerNib:[UINib nibWithNibName:@"FriendCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:FriendCellID];
+	self.friendsCollectionView.backgroundColor = [UIColor clearColor];
+	
 	[self.jobsCollectionView registerNib:[UINib nibWithNibName:@"JobCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:JobCellID];
+	self.jobsCollectionView.backgroundColor = [UIColor clearColor];
+	
 	[self.similarCompaniesCollectionView registerNib:[UINib nibWithNibName:@"CompanyCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:CompanyCellID];
+	self.similarCompaniesCollectionView.backgroundColor = [UIColor clearColor];
 	
 	[self.scrollView addConstraints:@[@"|[_contentView]|", @"V:|[_contentView]|"] views:NSDictionaryOfVariableBindings(_contentView)];
 	[self.view layoutIfNeeded];
