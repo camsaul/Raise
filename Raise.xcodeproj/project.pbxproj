@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		540C68B5B1954585A03C0EEA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4BB796C41D4AE58B5C7F04 /* libPods.a */; };
 		7E2900F5178F2C6100BBD5AE /* SearchCity.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2900F4178F2C6100BBD5AE /* SearchCity.m */; };
+		7E2900F81794B10000BBD5AE /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2900F71794B10000BBD5AE /* User.m */; };
+		7E2900F91794B10000BBD5AE /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2900F71794B10000BBD5AE /* User.m */; };
 		7E4891EF178C0C14008BA105 /* icon_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4891E8178C0C14008BA105 /* icon_ipad.png */; };
 		7E4891F0178C0C14008BA105 /* icon_ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4891E9178C0C14008BA105 /* icon_ipad@2x.png */; };
 		7E4891F1178C0C14008BA105 /* icon_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4891EA178C0C14008BA105 /* icon_iphone.png */; };
@@ -19,7 +21,6 @@
 		7E4891FA178C0E8B008BA105 /* slash_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4891F7178C0E8B008BA105 /* slash_iphone.png */; };
 		7E4891FB178C0E8B008BA105 /* slash_iphone5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4891F8178C0E8B008BA105 /* slash_iphone5@2x.png */; };
 		7E4891FC178C0E8B008BA105 /* slash_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4891F9178C0E8B008BA105 /* slash_iphone@2x.png */; };
-		7E604E34178CFF02009B9CAD /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E604E33178CFF02009B9CAD /* User.m */; };
 		7E604E3A178CFF03009B9CAD /* JobCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E604E39178CFF03009B9CAD /* JobCategory.m */; };
 		7E604E3D178CFF03009B9CAD /* Industry.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E604E3C178CFF03009B9CAD /* Industry.m */; };
 		7E604E43178CFF03009B9CAD /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E604E42178CFF03009B9CAD /* Location.m */; };
@@ -219,6 +220,8 @@
 		5F4BB796C41D4AE58B5C7F04 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E2900F3178F2C6100BBD5AE /* SearchCity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCity.h; sourceTree = "<group>"; };
 		7E2900F4178F2C6100BBD5AE /* SearchCity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCity.m; sourceTree = "<group>"; };
+		7E2900F61794B10000BBD5AE /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		7E2900F71794B10000BBD5AE /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		7E4891E8178C0C14008BA105 /* icon_ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_ipad.png; sourceTree = "<group>"; };
 		7E4891E9178C0C14008BA105 /* icon_ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_ipad@2x.png"; sourceTree = "<group>"; };
 		7E4891EA178C0C14008BA105 /* icon_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_iphone.png; sourceTree = "<group>"; };
@@ -229,8 +232,6 @@
 		7E4891F7178C0E8B008BA105 /* slash_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slash_iphone.png; sourceTree = "<group>"; };
 		7E4891F8178C0E8B008BA105 /* slash_iphone5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slash_iphone5@2x.png"; sourceTree = "<group>"; };
 		7E4891F9178C0E8B008BA105 /* slash_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slash_iphone@2x.png"; sourceTree = "<group>"; };
-		7E604E32178CFF02009B9CAD /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		7E604E33178CFF02009B9CAD /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		7E604E38178CFF03009B9CAD /* JobCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobCategory.h; sourceTree = "<group>"; };
 		7E604E39178CFF03009B9CAD /* JobCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobCategory.m; sourceTree = "<group>"; };
 		7E604E3B178CFF03009B9CAD /* Industry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Industry.h; sourceTree = "<group>"; };
@@ -909,8 +910,6 @@
 				7E604E3C178CFF03009B9CAD /* Industry.m */,
 				7E604E38178CFF03009B9CAD /* JobCategory.h */,
 				7E604E39178CFF03009B9CAD /* JobCategory.m */,
-				7E604E32178CFF02009B9CAD /* User.h */,
-				7E604E33178CFF02009B9CAD /* User.m */,
 				7E604E57178D0BE3009B9CAD /* Job.h */,
 				7E604E58178D0BE3009B9CAD /* Job.m */,
 				7EEF4CC9178E86270085BF5B /* Friend.h */,
@@ -919,6 +918,8 @@
 				7EBE52B2178ECCE000B92960 /* Company.m */,
 				7E2900F3178F2C6100BBD5AE /* SearchCity.h */,
 				7E2900F4178F2C6100BBD5AE /* SearchCity.m */,
+				7E2900F61794B10000BBD5AE /* User.h */,
+				7E2900F71794B10000BBD5AE /* User.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1252,6 +1253,7 @@
 				7E604EC2178D2423009B9CAD /* JobCardViewController.m in Sources */,
 				7E604ED3178D2423009B9CAD /* LoginViewController.m in Sources */,
 				7E604EC0178D2423009B9CAD /* JobDetailViewController.m in Sources */,
+				7E2900F81794B10000BBD5AE /* User.m in Sources */,
 				7E604ED7178D2423009B9CAD /* FunnelGaugeView.m in Sources */,
 				7E604E3A178CFF03009B9CAD /* JobCategory.m in Sources */,
 				7E604EDC178D2423009B9CAD /* RaiseBodyLabel.m in Sources */,
@@ -1278,7 +1280,6 @@
 				7E604ECB178D2423009B9CAD /* FunnelDreamJobViewController.m in Sources */,
 				7E604EE0178D2423009B9CAD /* RaiseViewController.m in Sources */,
 				7E604ED5178D2423009B9CAD /* ProfileViewController.m in Sources */,
-				7E604E34178CFF02009B9CAD /* User.m in Sources */,
 				7ED63D41178413E100295D48 /* UIBarButtonItem+RaiseButtons.m in Sources */,
 				7EFCD6F317839B570067C395 /* AppDelegate.m in Sources */,
 				7E604EC6178D2423009B9CAD /* FollowingViewController.m in Sources */,
@@ -1299,6 +1300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EFCD71B1783B0B20067C395 /* UIColor+RaiseColors.m in Sources */,
+				7E2900F91794B10000BBD5AE /* User.m in Sources */,
 				7EBE52B4178ECCE000B92960 /* Company.m in Sources */,
 				7EEF4CCC178E86270085BF5B /* Friend.m in Sources */,
 				7E604EE4178D28D4009B9CAD /* UIView+RaiseAdditions.m in Sources */,

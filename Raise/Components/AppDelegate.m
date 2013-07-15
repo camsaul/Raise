@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "DataImporter.h"
+#import "DataManager.h"
 
 @interface AppDelegate ()
 PROP_STRONG NSManagedObjectContext *managedObjectContext;
@@ -73,7 +74,10 @@ PROP_STRONG RootViewController *rootViewController;
 	NSArray *results = [self.managedObjectContext executeFetchRequest:request error:&error];
 	if (!results.count || error) {
 		// create a new user
-		return [NSEntityDescription insertNewObjectForEntityForName:@"User" inManagedObjectContext:self.managedObjectContext];
+		User *newUser = [NSEntityDescription insertNewObjectForEntityForName:@"User" inManagedObjectContext:self.managedObjectContext];
+		newUser.dreamJob = [DataManager objectOfType:DataTypeJob withID:@(5)]; // add some fake defaults
+		newUser.dreamCompany = [DataManager objectOfType:DataTypeCompany withID:@(1)];
+		return newUser;
 	} else {
 		return [results firstObject];
 	}

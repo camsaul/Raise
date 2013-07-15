@@ -10,7 +10,7 @@
 #import "FunnelViewController.h"
 #import "LoginViewController.h"
 #import "JobDiscoveryViewController.h"
-#import "SearchCity.h"
+#import "DataManager.h"
 
 @interface ProfileViewController () <FunnelViewControllerDelegate>
 @property (strong, nonatomic) IBOutlet UILabel *nameLabel;
@@ -45,7 +45,7 @@
 	[self.salaryButton setTitle:[NSString stringWithFormat:@"$%dk%@", value, (value == 250 ? @"+" : @"")] forState:UIControlStateNormal];
 	
 	value = APP_DELEGATE.currentUser.yearsExperience.intValue;
-	[self.yearsButton setTitle:[NSString stringWithFormat:@"%d%@ Years", value, (value == 20 ? @"+" : @"")] forState:UIControlStateNormal];
+	[self.yearsButton setTitle:[NSString stringWithFormat:@"%d%@ years", value, (value == 20 ? @"+" : @"")] forState:UIControlStateNormal];
 	
 	NSString *locationsStr = nil;
 	NSArray *selectedCities = [SearchCity selectedLocations];
@@ -61,6 +61,20 @@
 		}
 	}
 	[self.citiesButton setTitle:locationsStr forState:UIControlStateNormal];
+	
+	NSString *dream = @"Still figuring it out";
+	Job *dreamJob = APP_DELEGATE.currentUser.dreamJob;
+	Company *dreamCompany = APP_DELEGATE.currentUser.dreamCompany;
+	if (dreamJob || dreamCompany) {
+		if (dreamJob && dreamCompany) {
+			dream = [NSString stringWithFormat:@"%@ at %@", dreamJob.title, dreamCompany.name];
+		} else if (dreamJob) {
+			dream = dreamJob.title;
+		} else {
+			dream = [NSString stringWithFormat:@"Any job at %@", dreamCompany.name];
+		}
+	}
+	[self.dreamJobButton setTitle:dream forState:UIControlStateNormal];
 }
 
 - (IBAction)salaryButtonPressed:(id)sender {
@@ -84,11 +98,11 @@
 }
 
 - (IBAction)connectWithFacebookPressed:(id)sender {
-	TODO_ALERT(@"connect with the user's Facebook accout.");
+	TODO_ALERT(@"connect with the user's Facebook account.");
 }
 
 - (IBAction)connectWithLinkedInPressed:(id)sender {
-	TODO_ALERT(@"connect with the user's LinkedIn accout.");
+	TODO_ALERT(@"connect with the user's LinkedIn account.");
 }
 
 - (IBAction)logoutPressed:(id)sender {

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4457.6" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4471.1" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment defaultVersion="1536" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3682.6"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3697.3"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FunnelDreamJobViewController">
@@ -11,6 +11,7 @@
                 <outlet property="continueButton" destination="tVc-Jb-S5f" id="d6I-XK-f9T"/>
                 <outlet property="figuringItOutButton" destination="3qv-4v-avp" id="mEG-jQ-n2S"/>
                 <outlet property="positionTextField" destination="lyV-7a-6UW" id="f4Z-2m-OqI"/>
+                <outlet property="searchPopover" destination="4DY-vF-i0V" id="1rk-v4-PlP"/>
                 <outlet property="specifiyCompanyButton" destination="phy-Fy-EXb" id="cRM-7b-ay7"/>
                 <outlet property="specifyPositionButton" destination="xFf-NT-6jJ" id="RJz-eB-i8V"/>
                 <outlet property="view" destination="1" id="3"/>
@@ -80,7 +81,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phy-Fy-EXb" userLabel="company button">
-                    <rect key="frame" x="60" y="140" width="20" height="20"/>
+                    <rect key="frame" x="60" y="141" width="20" height="20"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="20" id="6FT-72-eWp"/>
@@ -99,7 +100,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFf-NT-6jJ" userLabel="position button">
-                    <rect key="frame" x="60" y="171" width="20" height="20"/>
+                    <rect key="frame" x="60" y="172" width="20" height="20"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="20" id="14E-o9-77T"/>
@@ -118,7 +119,7 @@
                     </connections>
                 </button>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No, I'm still figuring it out" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W55-h5-6xo">
-                    <rect key="frame" x="60" y="76" width="158" height="17"/>
+                    <rect key="frame" x="60" y="77" width="158" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="158" id="dpI-HJ-Cdl"/>
@@ -128,7 +129,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes, I want to..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDW-Rg-1w0">
-                    <rect key="frame" x="60" y="116" width="97" height="17"/>
+                    <rect key="frame" x="60" y="117" width="97" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="97" id="Ucs-o2-4fe"/>
@@ -138,7 +139,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="work somewhere like" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8D4-N0-A6L">
-                    <rect key="frame" x="88" y="141" width="133" height="17"/>
+                    <rect key="frame" x="88" y="142" width="133" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="133" id="sg5-4h-w5Y"/>
@@ -148,7 +149,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="have a position like" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhh-YX-FJ4">
-                    <rect key="frame" x="88" y="172" width="121" height="17"/>
+                    <rect key="frame" x="88" y="173" width="121" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="121" id="jac-sh-GEi"/>
@@ -171,10 +172,11 @@ dream job is?</string>
                     <color key="textColor" red="0.37647058820000001" green="0.47058823529999999" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Facebook" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DDZ-Fg-cIF">
-                    <rect key="frame" x="220" y="140" width="90" height="20"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Facebook" placeholder="where?" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DDZ-Fg-cIF">
+                    <rect key="frame" x="220" y="141" width="90" height="20"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" red="0.37647059560000001" green="0.47058823700000002" blue="0.5647059083" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="20" id="cod-BE-Osn"/>
                         <constraint firstAttribute="width" constant="90" id="zqi-5F-ZL1"/>
@@ -186,10 +188,11 @@ dream job is?</string>
                         <outlet property="delegate" destination="-1" id="gyI-sy-9r3"/>
                     </connections>
                 </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Recruiter" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lyV-7a-6UW">
-                    <rect key="frame" x="220" y="171" width="90" height="20"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Recruiter" placeholder="which job?" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lyV-7a-6UW">
+                    <rect key="frame" x="220" y="172" width="90" height="20"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" red="0.37647059560000001" green="0.47058823700000002" blue="0.5647059083" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="90" id="GYv-Iv-ni7"/>
                         <constraint firstAttribute="height" constant="20" id="xAP-4d-ISm"/>
@@ -201,8 +204,20 @@ dream job is?</string>
                         <outlet property="delegate" destination="-1" id="2QX-Qn-iwf"/>
                     </connections>
                 </textField>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="25" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4DY-vF-i0V">
+                    <rect key="frame" x="60" y="110" width="160" height="82"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="gkw-wD-yiH"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="TWe-j0-3zt"/>
+                        <outlet property="delegate" destination="-1" id="ZIs-vs-PS9"/>
+                    </connections>
+                </tableView>
             </subviews>
-            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="JDW-Rg-1w0" firstAttribute="centerY" secondItem="mLn-E0-yLx" secondAttribute="centerY" id="1WY-xE-qlb"/>
                 <constraint firstItem="JDW-Rg-1w0" firstAttribute="leading" secondItem="mLn-E0-yLx" secondAttribute="trailing" constant="10" id="1uY-Lm-hUU"/>
@@ -212,10 +227,13 @@ dream job is?</string>
                 <constraint firstItem="3qv-4v-avp" firstAttribute="top" secondItem="MS0-3I-SO1" secondAttribute="bottom" constant="5" id="3jc-qx-YKe"/>
                 <constraint firstItem="W55-h5-6xo" firstAttribute="leading" secondItem="3qv-4v-avp" secondAttribute="trailing" constant="10" id="HuO-mQ-ebr"/>
                 <constraint firstAttribute="trailing" secondItem="tVc-Jb-S5f" secondAttribute="trailing" constant="25" id="NSi-qo-qzK"/>
+                <constraint firstItem="4DY-vF-i0V" firstAttribute="top" secondItem="mLn-E0-yLx" secondAttribute="top" id="R6X-o9-iJN"/>
                 <constraint firstItem="tVc-Jb-S5f" firstAttribute="top" secondItem="1" secondAttribute="top" constant="25" id="SNY-EQ-1fd"/>
                 <constraint firstAttribute="trailing" secondItem="lyV-7a-6UW" secondAttribute="trailing" constant="10" id="XmU-2N-8Ei"/>
                 <constraint firstItem="mLn-E0-yLx" firstAttribute="top" secondItem="3qv-4v-avp" secondAttribute="bottom" constant="10" id="YOD-kd-O9j"/>
+                <constraint firstItem="4DY-vF-i0V" firstAttribute="bottom" secondItem="lyV-7a-6UW" secondAttribute="bottom" id="cpe-It-jmw"/>
                 <constraint firstItem="mLn-E0-yLx" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="ebV-dh-dgn"/>
+                <constraint firstItem="lyV-7a-6UW" firstAttribute="leading" secondItem="4DY-vF-i0V" secondAttribute="trailing" id="gl7-En-odC"/>
                 <constraint firstItem="xFf-NT-6jJ" firstAttribute="top" secondItem="phy-Fy-EXb" secondAttribute="bottom" constant="11" id="hB5-rm-Ml0"/>
                 <constraint firstAttribute="trailing" secondItem="DDZ-Fg-cIF" secondAttribute="trailing" constant="10" id="ij8-bL-YOp"/>
                 <constraint firstItem="DDZ-Fg-cIF" firstAttribute="centerY" secondItem="phy-Fy-EXb" secondAttribute="centerY" id="jRY-qV-ti5"/>
