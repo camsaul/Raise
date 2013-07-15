@@ -20,7 +20,6 @@ static const int CellImageViewTag = 2010;
 /// regular (following) tableview
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) IBOutlet UITableView *popunderTableView;
-
 PROP_STRONG NSArray *searchMatches;
 @end
 

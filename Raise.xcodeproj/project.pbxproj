@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		540C68B5B1954585A03C0EEA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4BB796C41D4AE58B5C7F04 /* libPods.a */; };
+		7E2900F5178F2C6100BBD5AE /* SearchCity.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2900F4178F2C6100BBD5AE /* SearchCity.m */; };
 		7E4891EF178C0C14008BA105 /* icon_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4891E8178C0C14008BA105 /* icon_ipad.png */; };
 		7E4891F0178C0C14008BA105 /* icon_ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4891E9178C0C14008BA105 /* icon_ipad@2x.png */; };
 		7E4891F1178C0C14008BA105 /* icon_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4891EA178C0C14008BA105 /* icon_iphone.png */; };
@@ -139,6 +140,8 @@
 		7EC1D8F3178F12B000773C60 /* glyph_employee_15@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC1D8EF178F12B000773C60 /* glyph_employee_15@2x.png */; };
 		7EC1D8F4178F12B000773C60 /* glyph_industry_15.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC1D8F0178F12B000773C60 /* glyph_industry_15.png */; };
 		7EC1D8F5178F12B000773C60 /* glyph_industry_15@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC1D8F1178F12B000773C60 /* glyph_industry_15@2x.png */; };
+		7EC1D8F7178F244500773C60 /* LocationResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EC1D8F6178F244500773C60 /* LocationResultCell.xib */; };
+		7EC1D8FA178F246300773C60 /* LocationResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC1D8F9178F246300773C60 /* LocationResultCell.m */; };
 		7ED63D41178413E100295D48 /* UIBarButtonItem+RaiseButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED63D40178413E100295D48 /* UIBarButtonItem+RaiseButtons.m */; };
 		7ED63D44178414B700295D48 /* UIImageView+RaiseImages.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED63D43178414B700295D48 /* UIImageView+RaiseImages.m */; };
 		7ED63D591784266900295D48 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED63D581784266900295D48 /* QuartzCore.framework */; };
@@ -214,6 +217,8 @@
 /* Begin PBXFileReference section */
 		453A707A4B2240CF9E663E90 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		5F4BB796C41D4AE58B5C7F04 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E2900F3178F2C6100BBD5AE /* SearchCity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCity.h; sourceTree = "<group>"; };
+		7E2900F4178F2C6100BBD5AE /* SearchCity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCity.m; sourceTree = "<group>"; };
 		7E4891E8178C0C14008BA105 /* icon_ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_ipad.png; sourceTree = "<group>"; };
 		7E4891E9178C0C14008BA105 /* icon_ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_ipad@2x.png"; sourceTree = "<group>"; };
 		7E4891EA178C0C14008BA105 /* icon_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_iphone.png; sourceTree = "<group>"; };
@@ -376,6 +381,9 @@
 		7EC1D8EF178F12B000773C60 /* glyph_employee_15@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyph_employee_15@2x.png"; sourceTree = "<group>"; };
 		7EC1D8F0178F12B000773C60 /* glyph_industry_15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glyph_industry_15.png; sourceTree = "<group>"; };
 		7EC1D8F1178F12B000773C60 /* glyph_industry_15@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyph_industry_15@2x.png"; sourceTree = "<group>"; };
+		7EC1D8F6178F244500773C60 /* LocationResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationResultCell.xib; sourceTree = "<group>"; };
+		7EC1D8F8178F246300773C60 /* LocationResultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationResultCell.h; sourceTree = "<group>"; };
+		7EC1D8F9178F246300773C60 /* LocationResultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationResultCell.m; sourceTree = "<group>"; };
 		7ED63D3F178413E100295D48 /* UIBarButtonItem+RaiseButtons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+RaiseButtons.h"; sourceTree = "<group>"; };
 		7ED63D40178413E100295D48 /* UIBarButtonItem+RaiseButtons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+RaiseButtons.m"; sourceTree = "<group>"; };
 		7ED63D42178414B700295D48 /* UIImageView+RaiseImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+RaiseImages.h"; sourceTree = "<group>"; };
@@ -618,6 +626,9 @@
 				7E604EAA178D2423009B9CAD /* FunnelGaugeView.m */,
 				7E604EAB178D2423009B9CAD /* FunnelViewController.h */,
 				7E604EAC178D2423009B9CAD /* FunnelViewController.m */,
+				7EC1D8F6178F244500773C60 /* LocationResultCell.xib */,
+				7EC1D8F8178F246300773C60 /* LocationResultCell.h */,
+				7EC1D8F9178F246300773C60 /* LocationResultCell.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -906,6 +917,8 @@
 				7EEF4CCA178E86270085BF5B /* Friend.m */,
 				7EBE52B1178ECCE000B92960 /* Company.h */,
 				7EBE52B2178ECCE000B92960 /* Company.m */,
+				7E2900F3178F2C6100BBD5AE /* SearchCity.h */,
+				7E2900F4178F2C6100BBD5AE /* SearchCity.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1129,6 +1142,7 @@
 				7E4891F3178C0C14008BA105 /* icon_iphone_ios7@2x.png in Resources */,
 				7E7110AE178BF3AE0039186F /* button_connect_logout.png in Resources */,
 				7E604ECC178D2423009B9CAD /* FunnelDreamJobViewController.xib in Resources */,
+				7EC1D8F7178F244500773C60 /* LocationResultCell.xib in Resources */,
 				7E7110B7178BF3AE0039186F /* button_login_linkedin@2x.png in Resources */,
 				7E604EC1178D2423009B9CAD /* JobDetailViewController.xib in Resources */,
 				7E604EC5178D2423009B9CAD /* JobDiscoveryViewController.xib in Resources */,
@@ -1246,6 +1260,7 @@
 				7E604ED1178D2423009B9CAD /* FunnelSalaryViewController.m in Sources */,
 				7E604ECF178D2423009B9CAD /* FunnelNameViewController.m in Sources */,
 				7E604EC4178D2423009B9CAD /* JobDiscoveryViewController.m in Sources */,
+				7E2900F5178F2C6100BBD5AE /* SearchCity.m in Sources */,
 				7E604E3D178CFF03009B9CAD /* Industry.m in Sources */,
 				7EEF4CC1178E83DA0085BF5B /* CompanyCollectionViewCell.m in Sources */,
 				7E604ED8178D2423009B9CAD /* FunnelViewController.m in Sources */,
@@ -1267,6 +1282,7 @@
 				7ED63D41178413E100295D48 /* UIBarButtonItem+RaiseButtons.m in Sources */,
 				7EFCD6F317839B570067C395 /* AppDelegate.m in Sources */,
 				7E604EC6178D2423009B9CAD /* FollowingViewController.m in Sources */,
+				7EC1D8FA178F246300773C60 /* LocationResultCell.m in Sources */,
 				7E604EC9178D2423009B9CAD /* FunnelDoneViewController.m in Sources */,
 				7E604EDB178D2423009B9CAD /* RootViewController.m in Sources */,
 				7EFCD71A1783B0B20067C395 /* UIColor+RaiseColors.m in Sources */,

@@ -15,5 +15,6 @@
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSNumber * salary;
 @property (nonatomic, retain) NSNumber * yearsExperience;
+@property (nonatomic, retain) NSNumber * searchAnywhere;
 
 @end

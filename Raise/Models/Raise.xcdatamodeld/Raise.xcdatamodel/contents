@@ -43,18 +43,25 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="company" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Company" inverseName="location" inverseEntity="Company" syncable="YES"/>
     </entity>
+    <entity name="SearchCity" representedClassName="SearchCity" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="selected" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+    </entity>
     <entity name="User" representedClassName="User" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" defaultValueString="Cam Saül" syncable="YES"/>
         <attribute name="salary" optional="YES" attributeType="Integer 16" minValueString="20" maxValueString="250" defaultValueString="60" syncable="YES"/>
+        <attribute name="searchAnywhere" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
         <attribute name="yearsExperience" optional="YES" attributeType="Integer 16" minValueString="0" maxValueString="20" defaultValueString="2" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Company" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="Friend" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="Industry" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="Job" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="JobCategory" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="Location" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="User" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Company" positionX="0" positionY="0" width="128" height="180"/>
+        <element name="Friend" positionX="0" positionY="0" width="128" height="105"/>
+        <element name="Industry" positionX="0" positionY="0" width="128" height="90"/>
+        <element name="Job" positionX="0" positionY="0" width="128" height="150"/>
+        <element name="JobCategory" positionX="0" positionY="0" width="128" height="90"/>
+        <element name="Location" positionX="0" positionY="0" width="128" height="120"/>
+        <element name="User" positionX="0" positionY="0" width="128" height="90"/>
+        <element name="SearchCity" positionX="-180" positionY="-178" width="128" height="73"/>
     </elements>
 </model>

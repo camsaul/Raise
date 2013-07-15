@@ -14,5 +14,6 @@
 @dynamic name;
 @dynamic salary;
 @dynamic yearsExperience;
+@dynamic searchAnywhere;
 
 @end

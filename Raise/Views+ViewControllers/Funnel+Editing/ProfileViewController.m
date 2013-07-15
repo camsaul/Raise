@@ -10,6 +10,7 @@
 #import "FunnelViewController.h"
 #import "LoginViewController.h"
 #import "JobDiscoveryViewController.h"
+#import "SearchCity.h"
 
 @interface ProfileViewController () <FunnelViewControllerDelegate>
 @property (strong, nonatomic) IBOutlet UILabel *nameLabel;
@@ -45,6 +46,21 @@
 	
 	value = APP_DELEGATE.currentUser.yearsExperience.intValue;
 	[self.yearsButton setTitle:[NSString stringWithFormat:@"%d%@ Years", value, (value == 20 ? @"+" : @"")] forState:UIControlStateNormal];
+	
+	NSString *locationsStr = nil;
+	NSArray *selectedCities = [SearchCity selectedLocations];
+	if (APP_DELEGATE.currentUser.searchAnywhere.boolValue || !selectedCities.count) {
+		locationsStr = @"Anywhere";
+	} else {
+		if (selectedCities.count == 1) {
+			locationsStr = [selectedCities[0] name];
+		} else if (selectedCities.count == 2) {
+			locationsStr = [NSString stringWithFormat:@"%@ and %@", [selectedCities[0] name], [selectedCities[1] name]];
+		} else {
+			locationsStr = [NSString stringWithFormat:@"%@, %@, and %d more", [selectedCities[0] name], [selectedCities[1] name], selectedCities.count - 2];
+		}
+	}
+	[self.citiesButton setTitle:locationsStr forState:UIControlStateNormal];
 }
 
 - (IBAction)salaryButtonPressed:(id)sender {

@@ -18,6 +18,7 @@
 		case DataTypeJobCategory:	return @"JobCategory";
 		case DataTypeFriend:		return @"Friend";
 		case DataTypeJob:			return @"Job";
+		case DataTypeSearchCity:	return @"SearchCity";
 	}
 	NSAssert(NO, @"invalid enum: %d", type);
 	return nil;

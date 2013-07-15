@@ -12,6 +12,7 @@
 #import "Industry.h"
 #import "JobCategory.h"
 #import "Friend.h"
+#import "SearchCity.h"
 
 typedef enum : int {
 	DataTypeCompany,
@@ -19,7 +20,8 @@ typedef enum : int {
 	DataTypeIndustry,
 	DataTypeJobCategory,
 	DataTypeFriend,
-	DataTypeJob
+	DataTypeJob,
+	DataTypeSearchCity
 } DataType;
 
 /// easy interface to various models from the managed object context

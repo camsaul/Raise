@@ -40,6 +40,7 @@ typedef void(^ParseBlock)(NSNumber *ID, NSArray *values);
 	[self importFriends];		// done
 	[self importCompanies];
 	[self importJobs];
+	[self addFakeLocations];
 	
 	BKLog(LogFlagInfo, LogCategoryEtc, @"DataImporter Finished.");
 }
@@ -109,6 +110,34 @@ typedef void(^ParseBlock)(NSNumber *ID, NSArray *values);
 			f.position = j.title;
 		}
 	}];
+}
+
++ (void)addFakeLocations {
+	NSArray *fakeLocations = @[@"Los Angeles, CA",
+							   @"San Francisco, CA",
+							   @"Palmdale, CA",
+							   @"New York City, NY",
+							   @"Chicago, IL",
+							   @"Houston, TX",
+							   @"Boston, MA",
+							   @"Mountain View, CA",
+							   @"Palo Alto, CA",
+							   @"Oakland, CA",
+							   @"Valenica, CA",
+							   @"Redwood City, CA",
+							   @"San Jose, CA",
+							   @"Neverending Quails Store, Chinatown"];
+	int numFakeLocations = fakeLocations.count;
+	for (int i = 0; i < numFakeLocations; i++) {
+		NSString *fakeLocation = fakeLocations[i];
+		SearchCity *sc = [DataManager createObjectOfType:DataTypeSearchCity ID:@(i)];
+		sc.name = fakeLocation;
+		
+		// start with SF and NY selected
+		if (i == 1 || i == 3) {
+			sc.selected = @(YES);
+		}
+	}
 }
 
 
