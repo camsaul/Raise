@@ -1011,6 +1011,7 @@
 				7E6114E21783926B00433603 /* Frameworks */,
 				7E6114E31783926B00433603 /* Resources */,
 				C3349CA7262D4C19895C2FF6 /* Copy Pods Resources */,
+				7E2ED3BF1794FF080029759E /* Auto-Increment Build Number */,
 			);
 			buildRules = (
 			);
@@ -1048,6 +1049,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "LuckyBird, Inc.";
 				TargetAttributes = {
+					7E6114E41783926B00433603 = {
+						DevelopmentTeam = 9W9RBME6M2;
+					};
 					7E6115041783926B00433603 = {
 						TestTargetID = 7E6114E41783926B00433603;
 					};
@@ -1229,6 +1233,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+		7E2ED3BF1794FF080029759E /* Auto-Increment Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Auto-Increment Build Number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Auto Increment Version Script\n# the perl regex splits out the last part of a build number (ie: 1.1.1) and increments it by one\n# if you have a build number that is more than 3 components, add a '\\.\\d+' into the first part of the regex.\nbuildPlist=${INFOPLIST_FILE}\nnewVersion=`/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$buildPlist\" | /usr/bin/perl -pe 's/(\\d+\\.\\d+\\.)(\\d+)/$1.($2+1)/eg'`\necho \"New build version: \" $newVersion;\n/usr/libexec/PListBuddy -c \"Set :CFBundleVersion $newVersion\" \"$buildPlist\"\n/usr/libexec/PListBuddy -c \"Set :CFBundleShortVersionString $newVersion\" \"$buildPlist\"";
 		};
 		C3349CA7262D4C19895C2FF6 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1426,6 +1444,7 @@
 			baseConfigurationReference = 453A707A4B2240CF9E663E90 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "Raise/SupportingFiles/Raise-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -1444,6 +1463,7 @@
 			baseConfigurationReference = 453A707A4B2240CF9E663E90 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "Raise/SupportingFiles/Raise-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
