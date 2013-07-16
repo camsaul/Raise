@@ -75,6 +75,10 @@
 		}
 	}
 	[self.dreamJobButton setTitle:dream forState:UIControlStateNormal];
+	
+	for (UIButton *button in @[self.salaryButton, self.yearsButton, self.dreamJobButton, self.citiesButton]) {
+		button.titleLabel.numberOfLines = 2;
+	}
 }
 
 - (IBAction)salaryButtonPressed:(id)sender {
