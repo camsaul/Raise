@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "DataImporter.h"
 #import "DataManager.h"
+#import "TestFlight.h"
 
 @interface AppDelegate ()
 PROP_STRONG NSManagedObjectContext *managedObjectContext;
@@ -21,6 +22,8 @@ PROP_STRONG RootViewController *rootViewController;
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+	[TestFlight takeOff:@"8b2d687f-e969-4cdc-9b80-e0bafc6ed327"];
+	
 	self.rootViewController = [[RootViewController alloc] init];
 	
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
