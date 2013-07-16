@@ -13,6 +13,7 @@
 #import "LoginViewController.h"
 #import "ProfileViewController.h"
 #import "RaiseNavigationController.h"
+#import "SavedViewController.h"
 
 static const CGFloat AnimationDuration = 0.3;
 
@@ -130,6 +131,7 @@ PROP_STRONG UINavigationController *navigationController;
 		case MenuButtonDiscover:	[self setNavControllerRootVC:[JobDiscoveryViewController class] options:0]; break;
 		case MenuButtonFollowing:	[self setNavControllerRootVC:[FollowingViewController class] options:0]; break;
 		case MenuButtonSearch:		[self setNavControllerRootVC:[FollowingViewController class] options:NavRootOptionStartFocused]; break;
+		case MenubuttonSaved:		[self setNavControllerRootVC:[SavedViewController class] options:0]; break;
 		case MenuButtonDismiss:		break;
 		case MenuButtonProfile:		[self setNavControllerRootVC:[ProfileViewController class] options:0]; break;
 	}

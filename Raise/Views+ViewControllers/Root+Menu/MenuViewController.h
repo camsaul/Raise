@@ -10,6 +10,7 @@ typedef enum : NSUInteger {
 	MenuButtonDiscover,
 	MenuButtonSearch,
 	MenuButtonFollowing,
+	MenubuttonSaved,
 	MenuButtonDismiss,
 	MenuButtonProfile
 } MenuButton;

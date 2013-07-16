@@ -89,7 +89,27 @@
                         <action selector="followingButtonPressed:" destination="-1" eventType="touchUpInside" id="Vfb-sf-mIo"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ps5-KX-AWK">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yx7-2h-VAS">
+                    <rect key="frame" x="0.0" y="170" width="120" height="55"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="FyX-mZ-BtQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="SAVED">
+                        <color key="titleColor" red="0.37647059560000001" green="0.47058823700000002" blue="0.5647059083" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="followingButtonPressed:" destination="-1" eventType="touchUpInside" id="YT3-Om-NEm"/>
+                        <action selector="savedButtonPressed:" destination="-1" eventType="touchUpInside" id="z9A-O8-Hyi"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ps5-KX-AWK" userLabel="profile button">
                     <rect key="frame" x="20" y="342" width="80" height="80"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -123,14 +143,17 @@
                 <constraint firstItem="TMz-Nx-uuf" firstAttribute="top" secondItem="FaJ-nq-daW" secondAttribute="bottom" id="2BU-we-LUW"/>
                 <constraint firstItem="0SR-gS-dd1" firstAttribute="top" secondItem="1" secondAttribute="top" constant="5" id="2Yh-OR-3Ru"/>
                 <constraint firstItem="0SR-gS-dd1" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="4aq-eF-Zvr"/>
+                <constraint firstItem="Yx7-2h-VAS" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="6pE-TC-NLo"/>
                 <constraint firstAttribute="bottom" secondItem="FbK-Zo-RAR" secondAttribute="bottom" constant="10" id="7rI-AT-JqB"/>
                 <constraint firstItem="FbK-Zo-RAR" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="8OW-g5-6FG"/>
+                <constraint firstItem="Yx7-2h-VAS" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="APU-QN-WY4"/>
                 <constraint firstAttribute="trailing" secondItem="FbK-Zo-RAR" secondAttribute="trailing" constant="20" id="AW6-Gm-Pxr"/>
                 <constraint firstItem="rUK-52-WEV" firstAttribute="bottom" secondItem="1" secondAttribute="bottom" id="IVX-kE-1eG"/>
                 <constraint firstItem="TMz-Nx-uuf" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="KsI-xG-A7l"/>
                 <constraint firstItem="0SR-gS-dd1" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="Pph-PI-f7F"/>
                 <constraint firstAttribute="centerX" secondItem="Ps5-KX-AWK" secondAttribute="centerX" id="V2d-Ln-YKE"/>
                 <constraint firstItem="TMz-Nx-uuf" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="Yzx-Ve-tTl"/>
+                <constraint firstItem="Yx7-2h-VAS" firstAttribute="top" secondItem="TMz-Nx-uuf" secondAttribute="bottom" id="bFQ-OT-WHE"/>
                 <constraint firstItem="FaJ-nq-daW" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="cLq-iU-OhR"/>
                 <constraint firstItem="FaJ-nq-daW" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="icU-kx-8GS"/>
                 <constraint firstItem="FbK-Zo-RAR" firstAttribute="top" secondItem="Ps5-KX-AWK" secondAttribute="bottom" constant="10" id="k1n-Tj-aq8"/>

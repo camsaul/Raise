@@ -11,6 +11,8 @@
 		7E2900F5178F2C6100BBD5AE /* SearchCity.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2900F4178F2C6100BBD5AE /* SearchCity.m */; };
 		7E2900F81794B10000BBD5AE /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2900F71794B10000BBD5AE /* User.m */; };
 		7E2900F91794B10000BBD5AE /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2900F71794B10000BBD5AE /* User.m */; };
+		7E2900FD1794CB4000BBD5AE /* SavedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2900FB1794CB4000BBD5AE /* SavedViewController.m */; };
+		7E2900FE1794CB4000BBD5AE /* SavedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E2900FC1794CB4000BBD5AE /* SavedViewController.xib */; };
 		7E4891EF178C0C14008BA105 /* icon_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4891E8178C0C14008BA105 /* icon_ipad.png */; };
 		7E4891F0178C0C14008BA105 /* icon_ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4891E9178C0C14008BA105 /* icon_ipad@2x.png */; };
 		7E4891F1178C0C14008BA105 /* icon_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4891EA178C0C14008BA105 /* icon_iphone.png */; };
@@ -222,6 +224,9 @@
 		7E2900F4178F2C6100BBD5AE /* SearchCity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCity.m; sourceTree = "<group>"; };
 		7E2900F61794B10000BBD5AE /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		7E2900F71794B10000BBD5AE /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		7E2900FA1794CB4000BBD5AE /* SavedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SavedViewController.h; path = Saved/SavedViewController.h; sourceTree = "<group>"; };
+		7E2900FB1794CB4000BBD5AE /* SavedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SavedViewController.m; path = Saved/SavedViewController.m; sourceTree = "<group>"; };
+		7E2900FC1794CB4000BBD5AE /* SavedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SavedViewController.xib; path = Saved/SavedViewController.xib; sourceTree = "<group>"; };
 		7E4891E8178C0C14008BA105 /* icon_ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_ipad.png; sourceTree = "<group>"; };
 		7E4891E9178C0C14008BA105 /* icon_ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_ipad@2x.png"; sourceTree = "<group>"; };
 		7E4891EA178C0C14008BA105 /* icon_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_iphone.png; sourceTree = "<group>"; };
@@ -490,6 +495,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E2900FF1794CB4500BBD5AE /* Saved */ = {
+			isa = PBXGroup;
+			children = (
+				7E2900FA1794CB4000BBD5AE /* SavedViewController.h */,
+				7E2900FB1794CB4000BBD5AE /* SavedViewController.m */,
+				7E2900FC1794CB4000BBD5AE /* SavedViewController.xib */,
+			);
+			name = Saved;
+			sourceTree = "<group>";
+		};
 		7E4891E7178C0C14008BA105 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
@@ -941,6 +956,7 @@
 				7E604EAD178D2423009B9CAD /* Root+Menu */,
 				7E604E83178D2422009B9CAD /* Discovery */,
 				7E604E8A178D2422009B9CAD /* Following */,
+				7E2900FF1794CB4500BBD5AE /* Saved */,
 				7E604E8E178D2422009B9CAD /* Funnel+Editing */,
 				7E604E7C178D2422009B9CAD /* DetailPivots */,
 			);
@@ -1127,6 +1143,7 @@
 				7E604E66178D1E1B009B9CAD /* glyph_money_15.png in Resources */,
 				7E604EFC178D3793009B9CAD /* company_4.jpg in Resources */,
 				7EEF4CEF178E87850085BF5B /* person_14.jpeg in Resources */,
+				7E2900FE1794CB4000BBD5AE /* SavedViewController.xib in Resources */,
 				7E604EF7178D3793009B9CAD /* company_1.jpg in Resources */,
 				7E7110A2178BF3AE0039186F /* bg_navbar.png in Resources */,
 				7E7110B3178BF3AE0039186F /* button_login_facebook@2x.png in Resources */,
@@ -1263,6 +1280,7 @@
 				7E604ECF178D2423009B9CAD /* FunnelNameViewController.m in Sources */,
 				7E604EC4178D2423009B9CAD /* JobDiscoveryViewController.m in Sources */,
 				7E2900F5178F2C6100BBD5AE /* SearchCity.m in Sources */,
+				7E2900FD1794CB4000BBD5AE /* SavedViewController.m in Sources */,
 				7E604E3D178CFF03009B9CAD /* Industry.m in Sources */,
 				7EEF4CC1178E83DA0085BF5B /* CompanyCollectionViewCell.m in Sources */,
 				7E604ED8178D2423009B9CAD /* FunnelViewController.m in Sources */,

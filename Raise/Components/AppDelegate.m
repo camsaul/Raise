@@ -73,9 +73,10 @@ PROP_STRONG RootViewController *rootViewController;
 	NSError *error = nil;
 	NSArray *results = [self.managedObjectContext executeFetchRequest:request error:&error];
 	if (!results.count || error) {
-		// create a new user
+		// create a new user with a few fake settins
 		User *newUser = [NSEntityDescription insertNewObjectForEntityForName:@"User" inManagedObjectContext:self.managedObjectContext];
 		newUser.dreamJob = [DataManager objectOfType:DataTypeJob withID:@(5)]; // add some fake defaults
+		newUser.dreamJob.saved = YES;
 		newUser.dreamCompany = [DataManager objectOfType:DataTypeCompany withID:@(1)];
 		return newUser;
 	} else {

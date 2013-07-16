@@ -42,4 +42,8 @@
 	[self.delegate menuViewControllerButtonPressed:MenuButtonProfile];
 }
 
+- (IBAction)savedButtonPressed:(id)sender {
+	[self.delegate menuViewControllerButtonPressed:MenubuttonSaved];
+}
+
 @end
