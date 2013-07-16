@@ -201,22 +201,20 @@
                         <constraint firstItem="HuX-ft-lFu" firstAttribute="top" secondItem="7hF-OY-y0h" secondAttribute="top" constant="10" id="yOR-a9-uMu"/>
                     </constraints>
                 </view>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Lead" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GzT-uX-9an">
-                    <rect key="frame" x="10" y="10" width="280" height="35"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Lead" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="GzT-uX-9an">
+                    <rect key="frame" x="10" y="10" width="280" height="36"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="35" id="1e4-oS-pxh"/>
-                        <constraint firstAttribute="width" constant="280" id="Or5-3j-jrQ"/>
+                        <constraint firstAttribute="width" constant="280" id="N0D-LW-GgT"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Facebook" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8pr-Td-lf4">
-                    <rect key="frame" x="310" y="10" width="230" height="35"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Facebook" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="230" translatesAutoresizingMaskIntoConstraints="NO" id="8pr-Td-lf4">
+                    <rect key="frame" x="310" y="10" width="230" height="36"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="35" id="87f-XU-RIP"/>
                         <constraint firstAttribute="width" constant="230" id="TWd-MR-DEr"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
@@ -253,8 +251,8 @@
                         <constraint firstAttribute="width" constant="280" id="jgU-28-JGI"/>
                     </constraints>
                 </mapView>
-                <textView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXA-DK-Ldj">
-                    <rect key="frame" x="10" y="60" width="280" height="286"/>
+                <textView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXA-DK-Ldj" userLabel="Text View - job info">
+                    <rect key="frame" x="10" y="61" width="280" height="285"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
@@ -265,7 +263,7 @@
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <textView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hnr-tQ-3SS">
+                <textView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hnr-tQ-3SS" userLabel="Text View - company info">
                     <rect key="frame" x="310" y="60" width="280" height="286"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -300,26 +298,27 @@
                 <constraint firstItem="lRL-y2-Vgd" firstAttribute="leading" secondItem="K2H-Ak-LNE" secondAttribute="trailing" constant="20" id="48v-NA-oMA"/>
                 <constraint firstItem="8pr-Td-lf4" firstAttribute="top" secondItem="MFh-Ir-mFd" secondAttribute="top" constant="10" id="4H8-wY-SmL"/>
                 <constraint firstItem="K2H-Ak-LNE" firstAttribute="leading" secondItem="8pr-Td-lf4" secondAttribute="trailing" constant="10" id="723-QY-d38"/>
-                <constraint firstItem="iXA-DK-Ldj" firstAttribute="top" secondItem="GzT-uX-9an" secondAttribute="bottom" constant="15" id="E5g-ez-YW7"/>
+                <constraint firstItem="iXA-DK-Ldj" firstAttribute="top" secondItem="GzT-uX-9an" secondAttribute="bottom" constant="15" id="8ax-VB-jLX"/>
                 <constraint firstItem="Hlo-bu-IIl" firstAttribute="leading" secondItem="Hnr-tQ-3SS" secondAttribute="trailing" constant="20" id="F3K-ch-HX8"/>
                 <constraint firstItem="Hnr-tQ-3SS" firstAttribute="top" secondItem="K2H-Ak-LNE" secondAttribute="bottom" constant="10" id="FWe-ln-Ee7"/>
                 <constraint firstItem="fpw-4o-vdU" firstAttribute="leading" secondItem="lRL-y2-Vgd" secondAttribute="trailing" constant="20" id="Gci-d2-rnr"/>
                 <constraint firstAttribute="trailing" secondItem="fpw-4o-vdU" secondAttribute="trailing" constant="10" id="Gf6-Gk-zA9"/>
                 <constraint firstItem="VhO-Fv-GIA" firstAttribute="top" secondItem="fpw-4o-vdU" secondAttribute="bottom" constant="15" id="LG0-Dh-Jcj"/>
                 <constraint firstItem="7hF-OY-y0h" firstAttribute="top" secondItem="Hnr-tQ-3SS" secondAttribute="bottom" id="LnR-UZ-Kjd"/>
-                <constraint firstItem="GzT-uX-9an" firstAttribute="leading" secondItem="MFh-Ir-mFd" secondAttribute="leading" constant="10" id="RkH-3H-h95"/>
                 <constraint firstItem="fpw-4o-vdU" firstAttribute="top" secondItem="MFh-Ir-mFd" secondAttribute="top" constant="10" id="TFV-BM-Ybo"/>
-                <constraint firstItem="8pr-Td-lf4" firstAttribute="leading" secondItem="GzT-uX-9an" secondAttribute="trailing" constant="20" id="UBm-UA-frK"/>
                 <constraint firstItem="7hF-OY-y0h" firstAttribute="top" secondItem="iXA-DK-Ldj" secondAttribute="bottom" id="WMK-06-z00"/>
                 <constraint firstItem="iXA-DK-Ldj" firstAttribute="leading" secondItem="MFh-Ir-mFd" secondAttribute="leading" constant="10" id="XJF-y3-edJ"/>
                 <constraint firstItem="7hF-OY-y0h" firstAttribute="leading" secondItem="MFh-Ir-mFd" secondAttribute="leading" id="bwe-02-Z1s"/>
+                <constraint firstItem="8pr-Td-lf4" firstAttribute="leading" secondItem="GzT-uX-9an" secondAttribute="trailing" constant="20" id="ebH-fE-a1h"/>
+                <constraint firstItem="7hF-OY-y0h" firstAttribute="top" secondItem="iXA-DK-Ldj" secondAttribute="bottom" id="f9b-YM-eHv"/>
+                <constraint firstItem="GzT-uX-9an" firstAttribute="top" secondItem="MFh-Ir-mFd" secondAttribute="top" constant="10" id="hvV-M9-Ery"/>
                 <constraint firstItem="lRL-y2-Vgd" firstAttribute="top" secondItem="MFh-Ir-mFd" secondAttribute="top" constant="10" id="kPx-Zl-oQb"/>
                 <constraint firstItem="7hF-OY-y0h" firstAttribute="top" secondItem="Hlo-bu-IIl" secondAttribute="bottom" constant="6" id="kWo-bl-1Fx"/>
                 <constraint firstItem="Hnr-tQ-3SS" firstAttribute="leading" secondItem="iXA-DK-Ldj" secondAttribute="trailing" constant="20" id="lSZ-XS-7Ib"/>
                 <constraint firstAttribute="trailing" secondItem="VhO-Fv-GIA" secondAttribute="trailing" constant="10" id="lty-TQ-6sk"/>
                 <constraint firstAttribute="bottom" secondItem="VhO-Fv-GIA" secondAttribute="bottom" id="m0I-ux-oen"/>
-                <constraint firstItem="GzT-uX-9an" firstAttribute="top" secondItem="MFh-Ir-mFd" secondAttribute="top" constant="10" id="tVL-Mk-h6u"/>
                 <constraint firstItem="Hlo-bu-IIl" firstAttribute="top" secondItem="lRL-y2-Vgd" secondAttribute="bottom" constant="15" id="wez-bh-7bP"/>
+                <constraint firstItem="GzT-uX-9an" firstAttribute="leading" secondItem="MFh-Ir-mFd" secondAttribute="leading" constant="10" id="wf0-8j-hXa"/>
                 <constraint firstItem="K2H-Ak-LNE" firstAttribute="top" secondItem="MFh-Ir-mFd" secondAttribute="top" constant="10" id="xUz-Yi-QKj"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>

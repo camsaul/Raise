@@ -33,7 +33,7 @@
 }
 
 - (void)toggleContinueButton:(NSString *)str {
-	self.continueButton.enabled = !APP_DELEGATE.currentUser || ![APP_DELEGATE.currentUser.name isEqualToString:str];
+	self.continueButton.enabled = str && (!APP_DELEGATE.userLoggedIn || ![APP_DELEGATE.currentUser.name isEqualToString:str]);
 }
 
 - (IBAction)continueButtonPressed:(id)sender {

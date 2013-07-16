@@ -51,7 +51,7 @@ PROP_STRONG FunnelGaugeView *view;
 }
 
 - (void)updateButtonEnabled:(int)newValue {
-	self.view.continueButton.enabled = !APP_DELEGATE.currentUser || newValue != self.originalYears;
+	self.view.continueButton.enabled = !APP_DELEGATE.userLoggedIn || newValue != self.originalYears;
 }
 
 

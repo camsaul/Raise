@@ -83,7 +83,7 @@ PROP Company *dreamCompany;
 	[self.figuringItOutButton setImage:(self.figuringItOut ? [UIImage imageNamed:@"button_check_80.png"] : [UIImage imageNamed:@"button_close_80.png"]) forState:UIControlStateNormal];
 	[self.yesIWantToButton setImage:(!self.figuringItOut ? [UIImage imageNamed:@"button_check_80.png"] : [UIImage imageNamed:@"button_close_80.png"]) forState:UIControlStateNormal];
 	
-	self.continueButton.enabled = self.figuringItOut || APP_DELEGATE.currentUser.dreamCompany || APP_DELEGATE.currentUser.dreamJob;
+	self.continueButton.enabled = self.figuringItOut || self.dreamCompany || self.dreamJob;
 	
 	self.specifiyCompanyButton.enabled = !self.figuringItOut;
 	self.specifyPositionButton.enabled = !self.figuringItOut;
@@ -220,6 +220,7 @@ PROP Company *dreamCompany;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	self.figuringItOut = NO;
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 	if (tableView.tag == TableViewTagCompanies) {
 		Company *c = [self.filteredCompanies objectAtIndex:indexPath.row];

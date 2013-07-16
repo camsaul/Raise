@@ -29,7 +29,7 @@ PROP_STRONG RootViewController *rootViewController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
 	
-	self.userLoggedIn = YES;
+	_userLoggedIn = YES;
 	
 	[DataImporter importData];
 	
@@ -64,11 +64,19 @@ PROP_STRONG RootViewController *rootViewController;
 	[self saveContext];
 }
 
-- (User *)currentUser {
-	if (!self.userLoggedIn) {
-		return nil;
-	}
+- (void)logout {
+	self.currentUser.name = nil;
+	self.currentUser.salary = @(60);
+	self.currentUser.yearsExperience = @(2);
 	
+	_userLoggedIn = NO;
+}
+
+- (void)login {
+	_userLoggedIn = YES;
+}
+
+- (User *)currentUser {
 	NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"User"];
 	NSError *error = nil;
 	NSArray *results = [self.managedObjectContext executeFetchRequest:request error:&error];
@@ -84,8 +92,7 @@ PROP_STRONG RootViewController *rootViewController;
 	}
 }
 
-- (void)saveContext
-{
+- (void)saveContext {
     NSError *error = nil;
     NSManagedObjectContext *managedObjectContext = self.managedObjectContext;
     if (managedObjectContext != nil) {

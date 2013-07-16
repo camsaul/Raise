@@ -12,7 +12,7 @@
 @implementation LoginViewController
 
 - (void)dismiss {
-	APP_DELEGATE.userLoggedIn = YES;
+	[APP_DELEGATE login];
 	[ROOT_VIEW_CONTROLLER dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -25,13 +25,13 @@
 }
 
 - (IBAction)loginLaterButtonPressed:(id)sender {
+	[APP_DELEGATE logout];
 	FunnelNavigationController *funnelNavigationController = [[FunnelNavigationController alloc] init];
 	[self presentViewController:funnelNavigationController animated:YES completion:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
-	APP_DELEGATE.userLoggedIn = NO;
 }
 
 - (void)dismissViewControllerAnimated:(BOOL)flag completion:(void (^)(void))completion {

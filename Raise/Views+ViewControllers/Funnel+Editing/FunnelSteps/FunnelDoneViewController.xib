@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4457.6" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4471.1" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment defaultVersion="1536" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3682.6"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3697.3"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FunnelDoneViewController">
@@ -24,9 +24,13 @@
                         <constraint firstAttribute="width" constant="320" id="wO8-EK-Vbl"/>
                     </constraints>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqS-wL-fnO">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqS-wL-fnO">
                     <rect key="frame" x="240" y="340" width="60" height="60"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="4gY-gk-abS"/>
+                        <constraint firstAttribute="width" constant="60" id="CeQ-lC-p7M"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                     <state key="normal" image="button_check_80.png">
                         <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -44,9 +48,11 @@
             <constraints>
                 <constraint firstItem="adj-3J-xK6" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="0cq-3D-k8H"/>
                 <constraint firstItem="adj-3J-xK6" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="4iT-c6-qS7"/>
+                <constraint firstAttribute="trailing" secondItem="nqS-wL-fnO" secondAttribute="trailing" constant="20" id="6im-xM-V1T"/>
                 <constraint firstItem="adj-3J-xK6" firstAttribute="top" secondItem="1" secondAttribute="top" id="Szk-Ti-zSG"/>
                 <constraint firstItem="adj-3J-xK6" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="agl-ZB-Ynu"/>
                 <constraint firstItem="adj-3J-xK6" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="mkD-8j-bOt"/>
+                <constraint firstItem="nqS-wL-fnO" firstAttribute="top" secondItem="1" secondAttribute="top" constant="340" id="muy-SU-qq3"/>
                 <constraint firstItem="adj-3J-xK6" firstAttribute="top" secondItem="1" secondAttribute="top" id="sme-yX-gUF"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
