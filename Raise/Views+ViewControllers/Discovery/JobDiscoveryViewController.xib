@@ -10,6 +10,7 @@
                 <outlet property="infoButton" destination="7f4-0q-vR4" id="PxV-AB-itc"/>
                 <outlet property="jobCardPlaceholderView" destination="al5-vM-EbX" id="leI-Cv-UQu"/>
                 <outlet property="noButton" destination="tw8-6q-Sac" id="wHF-QN-yvj"/>
+                <outlet property="statusLabel" destination="s6g-b3-3vr" id="uaI-9A-a6N"/>
                 <outlet property="view" destination="1" id="3"/>
                 <outlet property="yesButton" destination="R2s-iw-05D" id="wnQ-MH-8qT"/>
             </connections>
@@ -84,10 +85,19 @@
                         <action selector="infoButtonPressed:" destination="-1" eventType="touchUpInside" id="mwE-WM-w9q"/>
                     </connections>
                 </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="saved." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6g-b3-3vr">
+                    <rect key="frame" x="136" y="300" width="48" height="19"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.37647059560000001" green="0.47058823700000002" blue="0.5647059083" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="7f4-0q-vR4" secondAttribute="bottom" constant="35" id="4dj-5z-FHW"/>
+                <constraint firstAttribute="centerX" secondItem="s6g-b3-3vr" secondAttribute="centerX" id="5K4-d8-biD"/>
+                <constraint firstItem="s6g-b3-3vr" firstAttribute="top" secondItem="al5-vM-EbX" secondAttribute="bottom" constant="10" id="7bp-XR-kNt"/>
                 <constraint firstAttribute="centerX" secondItem="7f4-0q-vR4" secondAttribute="centerX" id="7xq-A8-qz1"/>
                 <constraint firstItem="al5-vM-EbX" firstAttribute="top" secondItem="1" secondAttribute="top" constant="30" id="GTx-jR-tHY"/>
                 <constraint firstItem="al5-vM-EbX" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="30" id="Nze-Iz-yk6"/>

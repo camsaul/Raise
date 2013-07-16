@@ -12,12 +12,13 @@
 
 static const CGFloat PanCompleteThreshold = 50.0;
 
-@interface JobDiscoveryViewController ()
+@interface JobDiscoveryViewController () <JobCardViewControllerDelegate>
 PROP_STRONG IBOutlet UIView *jobCardPlaceholderView; // for layout purposes only.
 PROP_STRONG JobCardViewController *jobCard;
 @property (strong, nonatomic) IBOutlet UIButton *noButton;
 @property (strong, nonatomic) IBOutlet UIButton *yesButton;
 @property (strong, nonatomic) IBOutlet UIButton *infoButton;
+@property (strong, nonatomic) IBOutlet UILabel *statusLabel;
 PROP_STRONG UIPanGestureRecognizer *gestureRecognizer;
 PROP_STRONG NSNumber *jobID;
 @end
@@ -34,6 +35,7 @@ PROP_STRONG NSNumber *jobID;
 	
 	self.gestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan)];
 	self.jobCardPlaceholderView.alpha = 0;
+	self.statusLabel.alpha = 0;
 	
 	dispatch_next_run_loop(^{
 		[self addNewJobCard];
@@ -62,29 +64,33 @@ PROP_STRONG NSNumber *jobID;
 			BOOL left = xDelta < 0;
 			
 			JobCardViewController *oldJobCard = self.jobCard;
-			self.jobCard = nil;
-			[oldJobCard.view removeGestureRecognizer:self.gestureRecognizer];
+			oldJobCard.view.layer.zPosition = 50;
+			
 			[self addNewJobCard];
+			CATransform3D transform = CATransform3DIdentity;
+			transform.m34 = -1/500.0;
+			transform = CATransform3DRotate(transform, (left? - M_PI : M_PI)/1.5, 0, 1, 0);
+			transform = CATransform3DScale(transform, .01, .01, 1);
+			self.jobCard.view.layer.transform = transform;
+			[UIView apply3DTransform:CATransform3DIdentity toView:self.jobCard.view duration:0.4 completion:nil];
 			
-			self.jobCard.view.centerX += left ? 320 : -320;
-			
-			[UIView animateWithDuration:0.4 animations:^{
-				oldJobCard.view.centerX = self.jobCardPlaceholderView.centerX - (left ? 320 : -320);
-				self.jobCard.view.center = self.jobCardPlaceholderView.center;
-				
-				self.noButton.alpha = 1.0;
-				self.yesButton.alpha = 1.0;
-				self.infoButton.alpha = 1.0;
-			} completion:^(BOOL finished) {
-				[oldJobCard.view removeFromSuperview];
-				
-				// TODO - Show the little "explanations" for the first time someone does it
-				
+			transform = oldJobCard.view.layer.transform;
+			UIView *button = left ? self.noButton : self.yesButton;
+			transform = CATransform3DTranslate(transform, button.centerX - oldJobCard.view.centerX, button.centerY - oldJobCard.view.centerY, 0);
+			transform = CATransform3DScale(transform, 0.01, 0.01, 1);
+			[UIView apply3DTransform:transform toView:oldJobCard.view duration:0.4 completion:^{
 				if (left) {
 					[self noAction];
 				} else {
-					[self yesAction];
+					[self yesAction:oldJobCard.job];
 				}
+
+				[oldJobCard.view removeFromSuperview];
+			}];
+			[UIView animateWithDuration:0.4 animations:^{
+				self.noButton.alpha = 1.0;
+				self.yesButton.alpha = 1.0;
+				self.infoButton.alpha = 1.0;
 			}];
 			
 		} else {
@@ -100,6 +106,9 @@ PROP_STRONG NSNumber *jobID;
 }
 
 - (void)addNewJobCard {
+	[self.jobCard.view removeGestureRecognizer:self.gestureRecognizer];
+	self.jobCard = nil;
+	
 	// select a random job
 	NSArray *allJobs = [DataManager allObjectsOfType:DataTypeJob];
 	Job *job = allJobs[rand() % allJobs.count];
@@ -112,7 +121,9 @@ PROP_STRONG NSNumber *jobID;
 	[self.view addSubview:jobCard.view];
 	[jobCard.view addGestureRecognizer:self.gestureRecognizer];
 	self.jobCard = jobCard;
+	self.jobCard.view.layer.zPosition = 200;
 	jobCard.job = job;
+	jobCard.delegate = self;
 }
 
 - (void)panLeft:(CGFloat)amount {
@@ -126,11 +137,47 @@ PROP_STRONG NSNumber *jobID;
 }
 
 - (IBAction)noButtonPressed:(id)sender {
-	[self noAction];
+	JobCardViewController *oldJobCard = self.jobCard;
+	oldJobCard.view.layer.zPosition = 50;
+	
+	[self addNewJobCard];
+	self.jobCard.view.layer.zPosition = 200;
+	CATransform3D transform = CATransform3DIdentity;
+	transform.m34 = -1/500.0;
+	transform = CATransform3DRotate(transform, M_PI/1.5, 0, 1, 0);
+	transform = CATransform3DScale(transform, .01, .01, 1);
+	self.jobCard.view.layer.transform = transform;
+	[UIView apply3DTransform:CATransform3DIdentity toView:self.jobCard.view duration:0.4 completion:nil];
+	
+	transform = oldJobCard.view.layer.transform;
+	transform = CATransform3DTranslate(transform, self.noButton.centerX - oldJobCard.view.centerX, self.noButton.centerY - oldJobCard.view.centerY, 0);
+	transform = CATransform3DScale(transform, 0.01, 0.01, 1);
+	[UIView apply3DTransform:transform toView:oldJobCard.view duration:0.4 completion:^{
+		[self noAction];
+		[oldJobCard.view removeFromSuperview];
+	}];
 }
 
 - (IBAction)yesButtonPressed:(id)sender {
-	[self yesAction];
+	JobCardViewController *oldJobCard = self.jobCard;
+	oldJobCard.view.layer.zPosition = 50;
+	
+	[self addNewJobCard];
+	self.jobCard.view.layer.zPosition = 200;
+	CATransform3D transform = CATransform3DIdentity;
+	transform.m34 = -1/500.0;
+	transform = CATransform3DRotate(transform, -M_PI/1.5, 0, 1, 0);
+	transform = CATransform3DScale(transform, .01, .01, 1);
+	self.jobCard.view.layer.transform = transform;
+	[UIView apply3DTransform:CATransform3DIdentity toView:self.jobCard.view duration:0.4 completion:nil];
+
+	transform = oldJobCard.view.layer.transform;
+	transform = CATransform3DTranslate(transform, self.yesButton.centerX - oldJobCard.view.centerX, self.yesButton.centerY - oldJobCard.view.centerY, 0);
+	transform = CATransform3DScale(transform, 0.01, 0.01, 1);
+	[UIView apply3DTransform:transform toView:oldJobCard.view duration:0.4 completion:^{
+		[self yesAction:oldJobCard.job];
+		[oldJobCard.view removeFromSuperview];
+	}];
 }
 
 - (IBAction)infoButtonPressed:(id)sender {
@@ -138,15 +185,39 @@ PROP_STRONG NSNumber *jobID;
 }
 
 - (void)noAction {
-	TODO_ALERT(@"mark this job as wack and show the next job");
+	self.statusLabel.text = @"not for me.";
+	[UIView animateWithDuration:0.4 animations:^{
+		self.statusLabel.alpha = 1;
+	} completion:^(BOOL finished) {
+		if (!finished) return;
+		[UIView animateWithDuration:1.2 animations:^{
+			self.statusLabel.alpha = 0;
+		}];
+	}];
 }
 
-- (void)yesAction {
-	TODO_ALERT(@"save this job as a favorite and show the next job!");
+- (void)yesAction:(Job *)job {
+	self.statusLabel.text = @"saved.";
+	job.saved = YES;
+	[UIView animateWithDuration:0.4 animations:^{
+		self.statusLabel.alpha = 1;
+	} completion:^(BOOL finished) {
+		if (!finished) return;
+		[UIView animateWithDuration:1.2 animations:^{
+			self.statusLabel.alpha = 0;
+		}];
+	}];
 }
 
 - (void)infoAction {
 	[NavigationService navigateTo:@"JobDetailViewController" params:@{ParamJobIDInt: self.jobID}];
+}
+
+
+#pragma mark - job card delegate 
+
+- (void)jobCardViewControllerButtonPressed:(JobCardViewController *)jobCardViewController {
+	[self infoAction];
 }
 
 @end

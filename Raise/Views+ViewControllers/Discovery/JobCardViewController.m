@@ -27,6 +27,9 @@
 	
 	[self.infoView correctFonts];
 }
+- (IBAction)buttonPressed:(id)sender {
+	[self.delegate jobCardViewControllerButtonPressed:self];
+}
 
 - (void)setJob:(Job *)job {
 	_job = job;
