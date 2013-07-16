@@ -131,8 +131,6 @@
 		7E7110BF178BF3AE0039186F /* logo_navbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E711086178BF3AE0039186F /* logo_navbar@2x.png */; };
 		7E7110C8178BF3AE0039186F /* funnel_done.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E711090178BF3AE0039186F /* funnel_done.png */; };
 		7E7110C9178BF3AE0039186F /* funnel_done@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E711091178BF3AE0039186F /* funnel_done@2x.png */; };
-		7E7110CA178BF3AE0039186F /* funnel_location_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E711092178BF3AE0039186F /* funnel_location_2.png */; };
-		7E7110CB178BF3AE0039186F /* funnel_location_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E711093178BF3AE0039186F /* funnel_location_2@2x.png */; };
 		7E7110D8178BF3AE0039186F /* profile_pic.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7110A0178BF3AE0039186F /* profile_pic.png */; };
 		7E7110D9178BF3AE0039186F /* profile_pic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7110A1178BF3AE0039186F /* profile_pic@2x.png */; };
 		7EBE52B3178ECCE000B92960 /* Company.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EBE52B2178ECCE000B92960 /* Company.m */; };
@@ -374,8 +372,6 @@
 		7E711086178BF3AE0039186F /* logo_navbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo_navbar@2x.png"; sourceTree = "<group>"; };
 		7E711090178BF3AE0039186F /* funnel_done.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = funnel_done.png; path = Mockups/funnel_done.png; sourceTree = "<group>"; };
 		7E711091178BF3AE0039186F /* funnel_done@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "funnel_done@2x.png"; path = "Mockups/funnel_done@2x.png"; sourceTree = "<group>"; };
-		7E711092178BF3AE0039186F /* funnel_location_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = funnel_location_2.png; sourceTree = "<group>"; };
-		7E711093178BF3AE0039186F /* funnel_location_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "funnel_location_2@2x.png"; sourceTree = "<group>"; };
 		7E7110A0178BF3AE0039186F /* profile_pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = profile_pic.png; path = Mockups/profile_pic.png; sourceTree = "<group>"; };
 		7E7110A1178BF3AE0039186F /* profile_pic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "profile_pic@2x.png"; path = "Mockups/profile_pic@2x.png"; sourceTree = "<group>"; };
 		7EBE52B1178ECCE000B92960 /* Company.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Company.h; sourceTree = "<group>"; };
@@ -790,7 +786,6 @@
 				7E71106B178BF3AE0039186F /* Buttons */,
 				7E711082178BF3AE0039186F /* Logo */,
 				7E7110E3178C03D90039186F /* Mockups_OK */,
-				7E711087178BF3AE0039186F /* Mockups */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -844,15 +839,6 @@
 				7E711086178BF3AE0039186F /* logo_navbar@2x.png */,
 			);
 			path = Logo;
-			sourceTree = "<group>";
-		};
-		7E711087178BF3AE0039186F /* Mockups */ = {
-			isa = PBXGroup;
-			children = (
-				7E711092178BF3AE0039186F /* funnel_location_2.png */,
-				7E711093178BF3AE0039186F /* funnel_location_2@2x.png */,
-			);
-			path = Mockups;
 			sourceTree = "<group>";
 		};
 		7E7110E3178C03D90039186F /* Mockups_OK */ = {
@@ -1198,7 +1184,6 @@
 				7EEF4D02178E87850085BF5B /* person_6.jpg in Resources */,
 				7EEF4CF0178E87850085BF5B /* person_15.jpg in Resources */,
 				7EEF4CF1178E87850085BF5B /* person_16.jpg in Resources */,
-				7E7110CA178BF3AE0039186F /* funnel_location_2.png in Resources */,
 				7EEF4CF4178E87850085BF5B /* person_19.jpg in Resources */,
 				7E604ED4178D2423009B9CAD /* LoginViewController.xib in Resources */,
 				7E7110B8178BF3AE0039186F /* button_search_30.png in Resources */,
@@ -1210,7 +1195,6 @@
 				7EEF4CEC178E87850085BF5B /* person_11.jpg in Resources */,
 				7EC1D8F2178F12B000773C60 /* glyph_employee_15.png in Resources */,
 				7EEF4CF2178E87850085BF5B /* person_17.jpg in Resources */,
-				7E7110CB178BF3AE0039186F /* funnel_location_2@2x.png in Resources */,
 				7E604E4D178CFF10009B9CAD /* industry_codes.csv in Resources */,
 				7EEF4CF8178E87850085BF5B /* person_22.jpg in Resources */,
 			);
