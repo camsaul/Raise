@@ -23,6 +23,7 @@
 		7E4891FA178C0E8B008BA105 /* slash_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4891F7178C0E8B008BA105 /* slash_iphone.png */; };
 		7E4891FB178C0E8B008BA105 /* slash_iphone5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4891F8178C0E8B008BA105 /* slash_iphone5@2x.png */; };
 		7E4891FC178C0E8B008BA105 /* slash_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4891F9178C0E8B008BA105 /* slash_iphone@2x.png */; };
+		7E5CCC761794DD6800BA2CD6 /* RaiseAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5CCC751794DD6800BA2CD6 /* RaiseAlertView.m */; };
 		7E604E3A178CFF03009B9CAD /* JobCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E604E39178CFF03009B9CAD /* JobCategory.m */; };
 		7E604E3D178CFF03009B9CAD /* Industry.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E604E3C178CFF03009B9CAD /* Industry.m */; };
 		7E604E43178CFF03009B9CAD /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E604E42178CFF03009B9CAD /* Location.m */; };
@@ -235,6 +236,8 @@
 		7E4891F7178C0E8B008BA105 /* slash_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slash_iphone.png; sourceTree = "<group>"; };
 		7E4891F8178C0E8B008BA105 /* slash_iphone5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slash_iphone5@2x.png"; sourceTree = "<group>"; };
 		7E4891F9178C0E8B008BA105 /* slash_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slash_iphone@2x.png"; sourceTree = "<group>"; };
+		7E5CCC741794DD6800BA2CD6 /* RaiseAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaiseAlertView.h; sourceTree = "<group>"; };
+		7E5CCC751794DD6800BA2CD6 /* RaiseAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RaiseAlertView.m; sourceTree = "<group>"; };
 		7E604E38178CFF03009B9CAD /* JobCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobCategory.h; sourceTree = "<group>"; };
 		7E604E39178CFF03009B9CAD /* JobCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobCategory.m; sourceTree = "<group>"; };
 		7E604E3B178CFF03009B9CAD /* Industry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Industry.h; sourceTree = "<group>"; };
@@ -670,6 +673,8 @@
 				7E604EBB178D2423009B9CAD /* RaiseNavigationController.m */,
 				7E604EBC178D2423009B9CAD /* RaiseViewController.h */,
 				7E604EBD178D2423009B9CAD /* RaiseViewController.m */,
+				7E5CCC741794DD6800BA2CD6 /* RaiseAlertView.h */,
+				7E5CCC751794DD6800BA2CD6 /* RaiseAlertView.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -1293,6 +1298,7 @@
 				7EFCD75A1783BD570067C395 /* UIFont+RaiseFonts.m in Sources */,
 				7EE01763178E3F2100B82328 /* JobCollectionViewCell.m in Sources */,
 				7E604E53178CFF2C009B9CAD /* DataImporter.m in Sources */,
+				7E5CCC761794DD6800BA2CD6 /* RaiseAlertView.m in Sources */,
 				7EBE52B3178ECCE000B92960 /* Company.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

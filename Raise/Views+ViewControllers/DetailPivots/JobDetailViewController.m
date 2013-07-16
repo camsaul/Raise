@@ -104,27 +104,27 @@ PROP_STRONG NSArray *similarJobs;
 }
 
 - (IBAction)saveForLaterButtonPressed:(id)sender {
-	[UIAlertView showAlertWithTitle:@"Saved" message:[NSString stringWithFormat:@"%@ at %@ has been saved for later.", self.job.title, self.job.company.name] cancelButtonTitle:@"Done"];
+	[RaiseAlertView showAlertWithTitle:@"Saved" message:[NSString stringWithFormat:@"%@ at %@ has been saved for later.", self.job.title, self.job.company.name] cancelButtonTitle:@"Done"];
 	self.job.saved = YES;
 	[self.saveForLaterButton setTitle:@"saved" forState:UIControlStateNormal];
 	self.saveForLaterButton.enabled = NO;
 }
 
 - (IBAction)sendToAFriendButtonPressed:(id)sender {
-	[UIAlertView showAlertWithTitle:@"Coming Soon" message:@"This feature isn't finished just jet. But when it's done, you'll be able to send a job to a friend via email, text, tweet, or with a Facebook or LinkedIn message." cancelButtonTitle:@"Done"];
+	[RaiseAlertView showAlertWithTitle:@"Coming Soon" message:@"This feature isn't finished just jet. But when it's done, you'll be able to send a job to a friend via email, text, tweet, or with a Facebook or LinkedIn message." cancelButtonTitle:@"Done"];
 }
 
 - (IBAction)applyNowButtonPressed:(id)sender {
-	[UIAlertView showAlertWithTitle:@"Apply?" message:@"Would you like to use one of your One-Tap Job Apps™ to apply for this job?" buttonPressedBlock:^(BOOL cancelButtonPressed, NSUInteger buttonIndex) {
+	[RaiseAlertView showAlertWithTitle:@"Apply?" message:@"Would you like to use one of your One-Tap Job Apps™ to apply for this job?" buttonPressedBlock:^(BOOL cancelButtonPressed, NSUInteger buttonIndex) {
 		if (!cancelButtonPressed) {
-			[UIAlertView showAlertWithTitle:@"Success" message:[NSString stringWithFormat:@"You have successfully applied to be a %@ at %@.", self.job.title, self.job.company.name]
+			[RaiseAlertView showAlertWithTitle:@"Success" message:[NSString stringWithFormat:@"You have successfully applied to be a %@ at %@.", self.job.title, self.job.company.name]
 						  cancelButtonTitle:@"Done"];
 		}
 	} cancelButtonTitle:@"Not Now" otherButtonTitles:@"Sure!", nil];
 }
 
 - (IBAction)companyFollowButtonPressed:(id)sender {
-	[UIAlertView showAlertWithTitle:@"Followed" message:[NSString stringWithFormat:@"You are now following %@.", self.job.company.name] cancelButtonTitle:@"Done"];
+	[RaiseAlertView showAlertWithTitle:@"Followed" message:[NSString stringWithFormat:@"You are now following %@.", self.job.company.name] cancelButtonTitle:@"Done"];
 	self.job.company.following = @(YES);
 	[self.companyFollowButton setTitle:@"followed" forState:UIControlStateNormal];
 	self.companyFollowButton.enabled = NO;

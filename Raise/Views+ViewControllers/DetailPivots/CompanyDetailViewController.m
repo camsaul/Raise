@@ -82,7 +82,7 @@ PROP_STRONG NSArray *similarCompanies;
 }
 
 - (IBAction)followButtonPressed:(id)sender {
-	[UIAlertView showAlertWithTitle:@"Followed" message:[NSString stringWithFormat:@"You are now following %@.", self.company.name] cancelButtonTitle:@"Done"];
+	[RaiseAlertView showAlertWithTitle:@"Followed" message:[NSString stringWithFormat:@"You are now following %@.", self.company.name] cancelButtonTitle:@"Done"];
 	self.company.following = @(YES);
 	[self.followButton setTitle:@"followed" forState:UIControlStateNormal];
 	self.followButton.enabled = NO;
